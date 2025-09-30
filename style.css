@@ -1,0 +1,161 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+  color: #222;
+  text-align: center;
+  font-size: 16px; /* quan trọng cho iOS không zoom */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+.category-select-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.category-select-wrapper select,
+.category-select-wrapper button,
+input,
+textarea,
+button {
+  font-size: 16px; /* tránh zoom iOS */
+}
+
+.category-select-wrapper select {
+  min-width: 150px;
+  flex: none;
+  padding: 6px;
+}
+
+.category-select-wrapper button,
+button {
+  flex: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #002240;
+  background: #f4f4f4;
+  cursor: pointer;
+}
+button:active {
+  background: #1c3fa8;
+}
+
+.filter-wrapper {
+  margin: 8px 0;
+  font-size: 14px;
+}
+.filter-wrapper input {
+  margin-right: 4px;
+}
+
+.card {
+  width: 300px;
+  max-width: 90%;
+  height: 180px;
+  margin: 20px auto;
+  padding: 20px;
+  white-space: pre-wrap;
+  text-align: left;
+  background: #b8d1ce;
+  line-height: 1.15;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  display: block;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  touch-action: manipulation; /* tránh zoom / nháy iOS */
+}
+
+/* Định dạng ruby cho đẹp */
+ruby {
+  text-align: center;
+  vertical-align: middle;
+}
+
+ruby rt {
+  font-size: 0.6em;
+  color: #986f6f;
+  line-height: 1.2;
+}
+.counter {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#sliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider {
+  width: 100%;
+  accent-color: #007bff; /* Màu thanh trượt */
+}
+
+.controls,
+.action-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal.hidden {
+  display: none;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-content input {
+  width: 90%;
+  margin: 8px 0;
+  padding: 8px;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+body.dark-mode .card {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+body.dark-mode .modal-content {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}

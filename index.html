@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Flashcards App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Flashcards</h1>
+
+    <!-- Chọn nhóm thẻ -->
+    <div class="category-select-wrapper">
+      <label for="categorySelect">✏️</label>
+      <select id="categorySelect"></select>
+      <button id="addCategoryBtn">➕</button>
+    </div>
+
+    <!-- Lọc thẻ -->
+    <div class="filter-wrapper">
+      <label>
+        <input type="checkbox" id="showUnlearnedOnly" />
+        Chỉ hiển thị thẻ chưa học
+      </label>
+    </div>
+
+    <!-- Thẻ -->
+    <div id="flashcard" class="card">Nhấn để lật</div>
+    <div id="cardCounter" class="counter">0 / 0</div>
+    <div id="sliderContainer">
+      <input
+        type="range"
+        id="slider"
+        min="0"
+        value="0"
+        step="1"
+        title="Adjust the slider"
+      />
+    </div>
+
+    <!-- Nút chuyển thẻ -->
+    <div class="controls">
+      <button id="prevBtn">←</button>
+      <button id="nextBtn">→</button>
+    </div>
+
+    <!-- Nút thao tác thẻ -->
+    <div class="action-buttons">
+      <button id="addBtn">➕</button>
+      <button id="editBtn">✏️</button>
+      <button id="deleteBtn">🗑</button>
+      <button id="themeToggleBtn">🌙/☀️</button>
+    </div>
+
+    <!-- Form modal -->
+    <div class="modal hidden" id="formModal">
+      <div class="modal-content">
+        <h3 id="formTitle">Thêm thẻ</h3>
+        <textarea id="frontInput" placeholder="Mặt trước" rows="5"></textarea>
+        <textarea id="backInput" placeholder="Mặt sau" rows="5"></textarea>
+        <div class="controls">
+          <button id="saveBtn">💾 Lưu</button>
+          <button id="cancelBtn">❌</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form thêm nhóm -->
+    <div class="modal hidden" id="categoryModal">
+      <div class="modal-content">
+        <h3>Thêm nhóm thẻ</h3>
+        <input id="categoryNameInput" placeholder="Tên nhóm" />
+        <div class="controls">
+          <button id="saveCategoryBtn">💾 Lưu</button>
+          <button id="cancelCategoryBtn">❌ Hủy</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      // Đăng ký service worker
+      /*
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('./service-worker.js')
+          .then((reg) => {
+            console.log('Service Worker đăng ký thành công:', reg.scope);
+          })
+          .catch((err) => {
+            console.log('Đăng ký Service Worker thất bại:', err);
+          });
+      }
+          */
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/service-worker.js')
+          .then(() => console.log('✅ SW đăng ký thành công'))
+          .catch((err) => console.error('❌ SW lỗi:', err));
+      }
+    </script>
+  </body>
+</html>

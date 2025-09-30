@@ -1,0 +1,52 @@
+[
+  {
+    "categories": [
+      {
+        "name": "n3",
+        "cards": [
+          {
+            "front": "といったら\nNói về...",
+            "back": "N + といったら\nDiễn tả cảm xúc thán phục, ngạc nhiên của người nói về một sự vật, sự việc nào đó. (cả tiêu cực và tích cực)\n\n暗(くらい)い山道(やまみち)を一人(ひとり)で歩(ある)いたときの怖(こわ) さと 言(い) ったら君(きみ)も\n想像出来(そうぞうでき) ない",
+            "learned": true
+          },
+          {
+            "front": "～さえ…ば\nChỉ cần....là đủ",
+            "back": "Nさえ…ば\nVます + さえ + すれば\nVて + さえ + すれば\nĐưa ra điều kiện tối thiểu nhất để điều gì đó có thể xảy ra. Trong đó, vế câu được hình thành bởi さえ〜ば là điều kiện mà chỉ cần nó được thực hiện, vế sau cũng sẽ xảy ra.\n\n謝(あやま)ってさえすれば許(ゆる)してあげるよ。",
+            "learned": true
+          },
+          {
+            "front": "ですから\nVì vậy",
+            "back": "A。ですから、B\n『ですから』là liên từ nối hai câu. Câu sau nêu kết quả, hệ quả đến từ lý do nằm ở câu trước.",
+            "learned": true
+          },
+          {
+            "front": "ば～ほど\nCàng... càng...",
+            "back": "Aいければ ✙ Aいほど\nAななら✙ Aな\nV (thể điều kiện) ✙　V (thể từ điển)ほど",
+            "learned": true
+          },
+          {
+            "front": "に～られる\nBị (gây phiền toái)",
+            "back": "N1は　N2に　V (tự động từ thể bị động)\n\n友達(ともだち)の赤(あか)ちゃんを抱(だ)っこしたら泣(な)かれてしまった。",
+            "learned": true
+          },
+          {
+            "front": "合う\nLàm... cùng nhau",
+            "back": "Vます　✙　合う\n\n『合う』cho biết hành động V (nối phía trước『合う』) được chủ thể thực hiện cùng với người khác.\n\nその二人(ふたり)はいつも競(きそ)い合(あ)っている。",
+            "learned": true
+          },
+          {
+            "front": "それとも\nHay là/Hoặc là",
+            "back": "A？ それとも、 B？\n\n『それとも』là liên từ liên kết hai câu hỏi, dùng để đưa ra nhiều sự lựa chọn cho người đối diện chọn.\n\nコーヒー  にしますか。それとも、紅茶(こうちゃ)にしますか。",
+            "learned": true
+          },
+          {
+            "front": "のでは\nNếu",
+            "back": "Vの + では\n\nDiễn tả ý nghĩa \"trong tình huống như thế thì...\". Phần sau trình bày những sự việc xảy ra từ tình huống đó hoặc cảm tưởng của người nói. Trong văn nói, thường dùng [Vんでは] , [Vんじゃ].\n毎日(まいにち)そんなに遠(とお)くから通学(つうがく)しているのでは大変(たいへん)ですね。",
+            "learned": true
+          }
+        ]
+      }
+    ],
+    "currentCategoryIndex": 0
+  }
+]
