@@ -87,6 +87,31 @@ button:active {
   -ms-touch-action: manipulation;
 }
 
+/* prevent double-tap zoom / tap highlight on interactive elements */
+html,
+body,
+button,
+a,
+input,
+textarea,
+select,
+.card {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation; /* prefer this to allow native scrolling but disable double-tap zoom where supported */
+  -ms-touch-action: manipulation;
+}
+
+/* allow selection for form fields explicitly if needed */
+input,
+textarea,
+select {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 /* Định dạng ruby cho đẹp */
 ruby {
   text-align: center;
