@@ -77,6 +77,14 @@ button:active {
   justify-content: center;
   cursor: pointer;
   touch-action: manipulation; /* tránh zoom / nháy iOS */
+
+  /* ---- thêm để tránh nháy khi giữ lâu trên iOS ---- */
+  -webkit-user-select: none; /* disable text selection iOS */
+  -webkit-touch-callout: none; /* disable callout (copy/paste menu) */
+  -webkit-tap-highlight-color: transparent; /* remove tap highlight */
+  -webkit-user-drag: none;
+  user-select: none;
+  -ms-touch-action: manipulation;
 }
 
 /* Định dạng ruby cho đẹp */
