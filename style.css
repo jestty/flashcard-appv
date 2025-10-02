@@ -85,6 +85,7 @@ button:active {
   -webkit-user-drag: none;
   user-select: none;
   -ms-touch-action: manipulation;
+  will-change: transform;
 }
 
 /* prevent double-tap zoom / tap highlight on interactive elements */
