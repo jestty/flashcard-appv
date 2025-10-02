@@ -1,5 +1,5 @@
 // ⚡ Service Worker - improved (safer caching, navigation fallback, skipWaiting)
-const CACHE_NAME = 'flashcards-cache-v1';
+const CACHE_NAME = 'flashcards-cache-v2';
 
 const urlsToCache = [
   './',
