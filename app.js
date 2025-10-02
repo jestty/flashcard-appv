@@ -401,6 +401,32 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderCard();
   });
 
+  // Prevent double-tap-to-zoom on iOS while keeping form controls usable
+  (function preventDoubleTapZoom() {
+    let lastTouch = 0;
+    document.addEventListener(
+      'touchend',
+      (e) => {
+        // ignore touches on form controls / contenteditable
+        const tag = (e.target && e.target.tagName) || '';
+        const isControl =
+          /^(INPUT|TEXTAREA|SELECT|BUTTON)$/i.test(tag) ||
+          e.target.isContentEditable;
+        if (isControl) {
+          lastTouch = Date.now();
+          return;
+        }
+        const now = Date.now();
+        if (now - lastTouch <= 300) {
+          // second tap within 300ms -> prevent zoom
+          e.preventDefault();
+        }
+        lastTouch = now;
+      },
+      { passive: false }
+    );
+  })();
+
   // =======================
   // Initial Load
   // =======================
