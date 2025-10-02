@@ -1,13 +1,20 @@
 // =======================
-// Flashcard App JS (hoàn chỉnh + online/offline + slider)
+// Flashcard App JS (hoàn chỉnh + offline từ data.json + localStorage)
 // =======================
 
-const apiUrl = '/api/data'; // endpoint server
-
+// NOTE: Bỏ server — chỉ dùng data.json (static) và localStorage
 let data = { categories: [], currentCategoryIndex: 0 };
 let currentCardIndex = 0;
 let showingFront = true;
 let editingIndex = null;
+
+const ensureDataShape = () => {
+  if (!data || typeof data !== 'object')
+    data = { categories: [], currentCategoryIndex: 0 };
+  if (!Array.isArray(data.categories)) data.categories = [];
+  if (typeof data.currentCategoryIndex !== 'number')
+    data.currentCategoryIndex = 0;
+};
 
 document.addEventListener('DOMContentLoaded', async () => {
   // --- DOM Elements ---
@@ -39,61 +46,130 @@ document.addEventListener('DOMContentLoaded', async () => {
   // =======================
   // Local Storage
   // =======================
-  const saveLocalData = () =>
-    localStorage.setItem('flashcardData', JSON.stringify(data));
+  const saveLocalData = () => {
+    try {
+      localStorage.setItem('flashcardData', JSON.stringify(data));
+      console.log('✅ Saved local flashcardData');
+    } catch (err) {
+      console.error('Lỗi lưu localStorage:', err);
+    }
+  };
   const loadLocalData = () => {
-    const stored = localStorage.getItem('flashcardData');
-    if (stored) data = JSON.parse(stored);
+    try {
+      const stored = localStorage.getItem('flashcardData');
+      if (stored) {
+        data = JSON.parse(stored);
+      }
+    } catch (err) {
+      console.warn('Không thể parse localStorage, sẽ khởi tạo mới:', err);
+      data = { categories: [], currentCategoryIndex: 0 };
+    }
+    ensureDataShape();
   };
 
   // =======================
-  // Load/Save Server + Local
+  // Load từ data.json (fallback: localStorage / mặc định)
   // =======================
+  const loadData = async () => {
+    // Hiển thị nhanh từ local nếu có
+    loadLocalData();
 
-const loadData = async () => {
-  // Bước 1: Load từ localStorage trước (để hiển thị nhanh)
-  loadLocalData();
-  renderCategorySelect();
-  renderCard();
+    try {
+      const res = await fetch('./data.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error(`data.json HTTP ${res.status}`);
+      const fileData = await res.json();
 
-  try {
-    // Bước 2: Thử đọc từ file local JSON (data.json)
-    const res = await fetch('./data.json');
-    if (!res.ok) throw new Error('Không tìm thấy file data.json');
-    const fileData = await res.json();
+      // Nếu data.json là mảng và phần tử đầu có 'categories', lấy phần tử đầu
+      if (
+        Array.isArray(fileData) &&
+        fileData.length &&
+        fileData[0] &&
+        Array.isArray(fileData[0].categories)
+      ) {
+        data = fileData[0];
+        console.log(
+          '✅ data.json: array with single object containing categories -> using element 0'
+        );
+      } else if (Array.isArray(fileData)) {
+        // Mảng có thể là mảng categories hoặc mảng cards
+        if (
+          fileData.length &&
+          fileData[0] &&
+          Array.isArray(fileData[0].cards)
+        ) {
+          // mảng categories
+          data = { categories: fileData, currentCategoryIndex: 0 };
+          console.log('✅ data.json: detected array of categories');
+        } else if (
+          fileData.length &&
+          fileData[0] &&
+          (fileData[0].front || fileData[0].back)
+        ) {
+          // mảng cards -> bọc vào một nhóm mặc định
+          data = {
+            categories: [{ name: 'Mặc định', cards: fileData }],
+            currentCategoryIndex: 0,
+          };
+          console.log(
+            '✅ data.json: detected array of cards (wrapped into one category)'
+          );
+        } else {
+          console.warn(
+            'data.json: mảng nhưng không nhận dạng được, giữ localStorage'
+          );
+        }
+      } else if (fileData && typeof fileData === 'object') {
+        if (Array.isArray(fileData.categories)) {
+          // object chuẩn
+          data = fileData;
+          console.log('✅ data.json: loaded object with categories');
+        } else if (Array.isArray(fileData.cards)) {
+          // object có trường cards -> bọc vào categories
+          data = {
+            categories: [
+              { name: fileData.name || 'Mặc định', cards: fileData.cards },
+            ],
+            currentCategoryIndex: 0,
+          };
+          console.log(
+            '✅ data.json: object with cards -> wrapped into categories'
+          );
+        } else {
+          console.warn(
+            'data.json object nhưng không có categories/cards, giữ localStorage'
+          );
+        }
+      } else {
+        console.warn('data.json không có cấu trúc mong đợi, giữ localStorage');
+      }
 
-    // Bước 3: Cập nhật data trong app
-    data = fileData;
-    saveLocalData(); // Lưu xuống localStorage để offline dùng tiếp
-
-    console.log('✅ Dữ liệu được tải từ file data.json');
-  } catch (e) {
-    console.warn('⚠️ Không thể tải file data.json, dùng localStorage');
-    // Nếu chưa có dữ liệu thì tạo mặc định
-    if (!data.categories || data.categories.length === 0) {
-      data = {
-        categories: [{ name: 'Mặc định', cards: [] }],
-        currentCategoryIndex: 0,
-      };
-      saveLocalData();
+      ensureDataShape();
+      saveLocalData(); // cập nhật local từ file nếu đã load
+    } catch (e) {
+      console.warn(
+        '⚠️ Không thể tải data.json, dùng localStorage/mặc định —',
+        e.message
+      );
+      // nếu local chưa có nhóm thì tạo mặc định
+      if (!data.categories || data.categories.length === 0) {
+        data = {
+          categories: [{ name: 'Mặc định', cards: [] }],
+          currentCategoryIndex: 0,
+        };
+        saveLocalData();
+      }
     }
-  }
 
-  renderCategorySelect();
-  renderCard();
-};
+    renderCategorySelect();
+    renderCard();
+  };
 
+  // =======================
+  // Save chỉ local (không có server)
+  // =======================
   const saveData = async () => {
     saveLocalData();
-    try {
-      await fetch(apiUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify([data]),
-      });
-    } catch (e) {
-      console.warn('⚠️ Không thể lưu server, chỉ lưu local');
-    }
+    // nếu muốn sau này sync lên server thì thêm logic ở đây
   };
 
   // =======================
@@ -120,7 +196,7 @@ const loadData = async () => {
         ? 'Không còn thẻ'
         : 'Chưa có nhóm nào';
       counter.textContent = '0 / 0';
-      sliderContainer.style.display = 'none';
+      if (sliderContainer) sliderContainer.style.display = 'none';
       return;
     }
     if (currentCardIndex >= cards.length) currentCardIndex = 0;
@@ -132,7 +208,7 @@ const loadData = async () => {
     counter.textContent = `${currentCardIndex + 1} / ${cards.length}`;
 
     if (slider) {
-      slider.max = cards.length - 1;
+      slider.max = Math.max(0, cards.length - 1);
       slider.value = currentCardIndex;
       sliderContainer.style.display = 'block';
     }
@@ -160,9 +236,11 @@ const loadData = async () => {
     if (!showingFront) {
       const card = getVisibleCards()[currentCardIndex];
       const cat = data.categories[data.currentCategoryIndex];
-      const realIndex = cat.cards.indexOf(card);
-      cat.cards[realIndex].learned = true;
-      saveData();
+      const realIndex = cat?.cards?.indexOf(card);
+      if (realIndex >= 0) {
+        cat.cards[realIndex].learned = true;
+        saveData();
+      }
     }
     renderCard();
   };
@@ -188,9 +266,12 @@ const loadData = async () => {
   // =======================
   const showForm = (isEdit = false) => {
     if (!modal) return;
-    modal.classList.remove('hidden');
     const cat = data.categories[data.currentCategoryIndex];
-    if (!cat) return;
+    if (!cat) {
+      alert('Vui lòng tạo một nhóm trước khi thêm thẻ.');
+      return;
+    }
+    modal.classList.remove('hidden');
     if (isEdit) {
       editingIndex = currentCardIndex;
       const card = getVisibleCards()[currentCardIndex];
@@ -326,8 +407,8 @@ const loadData = async () => {
   loadLocalData();
   await loadData();
 
-  // Auto sync khi online
+  // Auto sync khi online: giờ không có server, nên chỉ reload data.json khi online
   setInterval(() => {
     if (navigator.onLine) loadData();
-  }, 5000);
+  }, 15000);
 });
