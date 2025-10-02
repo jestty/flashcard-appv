@@ -49,21 +49,39 @@ document.addEventListener('DOMContentLoaded', async () => {
   // =======================
   // Load/Save Server + Local
   // =======================
-  const loadData = async () => {
-    try {
-      const res = await fetch(apiUrl);
-      const serverData = await res.json();
-      data = Array.isArray(serverData)
-        ? serverData[0] || { categories: [], currentCategoryIndex: 0 }
-        : serverData;
+
+const loadData = async () => {
+  // Bước 1: Load từ localStorage trước (để hiển thị nhanh)
+  loadLocalData();
+  renderCategorySelect();
+  renderCard();
+
+  try {
+    // Bước 2: Thử đọc từ file local JSON (data.json)
+    const res = await fetch('./data.json');
+    if (!res.ok) throw new Error('Không tìm thấy file data.json');
+    const fileData = await res.json();
+
+    // Bước 3: Cập nhật data trong app
+    data = fileData;
+    saveLocalData(); // Lưu xuống localStorage để offline dùng tiếp
+
+    console.log('✅ Dữ liệu được tải từ file data.json');
+  } catch (e) {
+    console.warn('⚠️ Không thể tải file data.json, dùng localStorage');
+    // Nếu chưa có dữ liệu thì tạo mặc định
+    if (!data.categories || data.categories.length === 0) {
+      data = {
+        categories: [{ name: 'Mặc định', cards: [] }],
+        currentCategoryIndex: 0,
+      };
       saveLocalData();
-    } catch (e) {
-      console.warn('⚠️ Không thể tải server, dùng local');
-      loadLocalData();
     }
-    renderCategorySelect();
-    renderCard();
-  };
+  }
+
+  renderCategorySelect();
+  renderCard();
+};
 
   const saveData = async () => {
     saveLocalData();
