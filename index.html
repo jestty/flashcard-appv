@@ -56,6 +56,16 @@
       <button id="editBtn">✏️</button>
       <button id="deleteBtn">🗑</button>
       <button id="themeToggleBtn">🌙/☀️</button>
+
+      <!-- Export / Import data.json -->
+      <button id="exportBtn" title="Tải data.json">⬇️ Export</button>
+      <button id="importBtn" title="Tải lên data.json">⬆️ Import</button>
+      <input
+        id="importInput"
+        type="file"
+        accept=".json"
+        style="display: none"
+      />
     </div>
 
     <!-- Form modal -->
@@ -83,6 +93,22 @@
       </div>
     </div>
 
+    <script>
+      // TEMP: unregister all SWs + clear caches (dùng để debug, xóa sau khi xong)
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then((regs) => {
+          regs.forEach((r) => r.unregister());
+          console.log('SW: unregistered', regs);
+        });
+      }
+      if ('caches' in window) {
+        caches.keys().then((keys) => {
+          keys.forEach((k) => caches.delete(k));
+          console.log('Caches cleared');
+        });
+      }
+    </script>
+    <!-- sau đó phần đăng ký SW hiện tại -->
     <script src="app.js"></script>
     <script>
       // Đăng ký service worker
