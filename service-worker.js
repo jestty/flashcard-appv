@@ -1,5 +1,5 @@
 // ⚡ Service Worker - improved (safer caching, navigation fallback, skipWaiting)
-const CACHE_NAME = 'flashcards-cache-v2';
+const CACHE_NAME = 'flashcards-cache-v3';
 
 const urlsToCache = [
   './',
@@ -123,3 +123,4 @@ self.addEventListener('message', (event) => {
     self.skipWaiting();
   }
 });
+
