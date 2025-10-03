@@ -403,12 +403,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     reader.readAsText(file);
   };
 
-  // Sync from remote data.json on-demand (confirm if local modified)
+  // Sync from remote data.json on-demand (merge, không overwrite)
   const syncFromRemote = async (force = false) => {
     const localModified = localStorage.getItem('flashcardDataModified') === '1';
     if (localModified && !force) {
       const ok = confirm(
-        'Phát hiện thay đổi trên thiết bị. Đồng bộ từ remote sẽ GHI ĐÈ dữ liệu local. Tiếp tục?'
+        'Phát hiện thay đổi trên thiết bị. Đồng bộ từ remote sẽ THÊM các thẻ mới nhưng KHÔNG ghi đè dữ liệu local. Tiếp tục?'
       );
       if (!ok) return;
     }
@@ -421,11 +421,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       // normalize nhiều dạng data.json vào form { categories: [...], currentCategoryIndex: 0 }
       const normalize = (fd) => {
         if (Array.isArray(fd)) {
-          // case: array of categories
           if (fd.length && fd[0] && Array.isArray(fd[0].cards)) {
             return { categories: fd, currentCategoryIndex: 0 };
           }
-          // case: array with single object that contains categories (your current file)
           if (fd.length && fd[0] && Array.isArray(fd[0].categories)) {
             const candidate = fd[0];
             return {
@@ -434,10 +432,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 typeof candidate.currentCategoryIndex === 'number'
                   ? candidate.currentCategoryIndex
                   : 0,
-              ...candidate, // keep other top-level if any
             };
           }
-          // case: array of cards -> wrap into one category
           if (fd.length && fd[0] && (fd[0].front || fd[0].back)) {
             return {
               categories: [{ name: 'Mặc định', cards: fd }],
@@ -464,20 +460,59 @@ document.addEventListener('DOMContentLoaded', async () => {
         return null;
       };
 
-      const newData = normalize(fileData);
-      if (!newData) throw new Error('data.json: mảng không nhận dạng được');
+      const remote = normalize(fileData);
+      if (!remote) throw new Error('data.json: cấu trúc không nhận dạng được');
 
-      data = newData;
-      ensureDataShape();
-      // lưu local mà không đặt flag modified (remote là nguồn chính)
+      // Merge remote into local: add new categories/cards, do NOT delete or overwrite local cards
+      const mergeRemoteIntoLocal = (remoteData) => {
+        ensureDataShape();
+        if (!remoteData || !Array.isArray(remoteData.categories)) return;
+
+        remoteData.categories.forEach((rCat) => {
+          const rName = rCat.name || 'Mặc định';
+          const rCards = Array.isArray(rCat.cards) ? rCat.cards : [];
+
+          // tìm category local bằng tên (case-sensitive). Bạn có thể đổi sang toLowerCase nếu muốn
+          let lCat = data.categories.find((c) => c.name === rName);
+          if (!lCat) {
+            // thêm toàn bộ category remote (clone để an toàn)
+            data.categories.push({
+              name: rName,
+              cards: rCards.map((c) => ({ ...c })),
+            });
+            return;
+          }
+
+          // merge cards: nếu card remote chưa tồn tại (so sánh front+back) thì thêm
+          lCat.cards = lCat.cards || [];
+          rCards.forEach((rCard) => {
+            const exists = lCat.cards.some((lCard) => {
+              // so sánh front + back; nếu cần bạn có thể mở rộng check (trim, lowercase, id)
+              return lCard.front === rCard.front && lCard.back === rCard.back;
+            });
+            if (!exists) {
+              lCat.cards.push({ ...rCard });
+            }
+          });
+        });
+
+        // giữ data.currentCategoryIndex như local (không overwrite)
+        ensureDataShape();
+      };
+
+      mergeRemoteIntoLocal(remote);
+
+      // lưu local (không đặt flag modified vì remote chỉ bổ sung)
       saveLocalDataNoMark();
-      // xóa flag modified vì giờ local khớp remote
-      localStorage.removeItem('flashcardDataModified');
+
       renderCategorySelect();
+      // giữ currentCardIndex, nhưng reset hiển thị về đầu category nếu muốn:
       currentCardIndex = 0;
       showingFront = true;
       renderCard();
-      alert('Đã đồng bộ từ data.json (remote) và lưu local.');
+      alert(
+        'Đã đồng bộ (merge) từ data.json — chỉ thêm các thẻ mới, không xóa dữ liệu local.'
+      );
     } catch (err) {
       console.error('Sync failed', err);
       alert('Không thể đồng bộ từ remote: ' + (err.message || err));
