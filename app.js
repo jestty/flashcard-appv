@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const exportBtn = document.getElementById('exportBtn');
   const importBtn = document.getElementById('importBtn');
   const importInput = document.getElementById('importInput');
+  const syncBtn = document.getElementById('syncBtn');
 
   const nextBtn = document.getElementById('nextBtn');
   const prevBtn = document.getElementById('prevBtn');
@@ -57,6 +58,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.log('✅ Saved local flashcardData (modified flag set)');
     } catch (err) {
       console.error('Lỗi lưu localStorage:', err);
+    }
+  };
+  // Lưu local nhưng KHÔNG đặt flag modified (dùng khi đồng bộ từ remote)
+  const saveLocalDataNoMark = () => {
+    try {
+      localStorage.setItem('flashcardData', JSON.stringify(data));
+      console.log('✅ Saved local flashcardData (no modified flag)');
+    } catch (err) {
+      console.error('Lỗi lưu localStorage (no mark):', err);
     }
   };
   const loadLocalData = () => {
@@ -393,6 +403,76 @@ document.addEventListener('DOMContentLoaded', async () => {
     reader.readAsText(file);
   };
 
+  // Sync from remote data.json on-demand (confirm if local modified)
+  const syncFromRemote = async (force = false) => {
+    const localModified = localStorage.getItem('flashcardDataModified') === '1';
+    if (localModified && !force) {
+      const ok = confirm(
+        'Phát hiện thay đổi trên thiết bị. Đồng bộ từ remote sẽ GHI ĐÈ dữ liệu local. Tiếp tục?'
+      );
+      if (!ok) return;
+    }
+
+    try {
+      const res = await fetch('./data.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error(`data.json HTTP ${res.status}`);
+      const fileData = await res.json();
+
+      // reuse same parsing logic as loadData
+      let newData = null;
+      if (Array.isArray(fileData)) {
+        if (
+          fileData.length &&
+          fileData[0] &&
+          Array.isArray(fileData[0].cards)
+        ) {
+          newData = { categories: fileData, currentCategoryIndex: 0 };
+        } else if (
+          fileData.length &&
+          fileData[0] &&
+          (fileData[0].front || fileData[0].back)
+        ) {
+          newData = {
+            categories: [{ name: 'Mặc định', cards: fileData }],
+            currentCategoryIndex: 0,
+          };
+        } else {
+          throw new Error('data.json: mảng không nhận dạng được');
+        }
+      } else if (fileData && typeof fileData === 'object') {
+        if (Array.isArray(fileData.categories)) {
+          newData = fileData;
+        } else if (Array.isArray(fileData.cards)) {
+          newData = {
+            categories: [
+              { name: fileData.name || 'Mặc định', cards: fileData.cards },
+            ],
+            currentCategoryIndex: 0,
+          };
+        } else {
+          throw new Error('data.json object không có categories/cards');
+        }
+      } else {
+        throw new Error('data.json không có cấu trúc mong đợi');
+      }
+
+      data = newData;
+      ensureDataShape();
+      // lưu không đặt flag modified (remote là nguồn chính)
+      saveLocalDataNoMark();
+      // xóa flag modified vì giờ local khớp remote
+      localStorage.removeItem('flashcardDataModified');
+      renderCategorySelect();
+      currentCardIndex = 0;
+      showingFront = true;
+      renderCard();
+      alert('Đã đồng bộ từ data.json (remote) và lưu local.');
+    } catch (err) {
+      console.error('Sync failed', err);
+      alert('Không thể đồng bộ từ remote: ' + (err.message || err));
+    }
+  };
+
   exportBtn?.addEventListener('click', exportData);
   importBtn?.addEventListener('click', () => importInput?.click());
   importInput?.addEventListener('change', (e) => {
@@ -400,6 +480,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (f) importDataFromFile(f);
     e.target.value = ''; // reset input
   });
+  syncBtn?.addEventListener('click', () => syncFromRemote(false));
 
   // =======================
   // Event Listeners
