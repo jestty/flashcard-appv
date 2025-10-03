@@ -145,6 +145,35 @@ ruby rt {
   display: flex;
   gap: 10px;
   justify-content: center;
+
+  /* Cho phép xuống dòng khi màn hình nhỏ */
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 720px; /* giới hạn chiều ngang container */
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+/* Nút trong controls/action: co giãn, nhưng có kích thước tối thiểu */
+.controls button,
+.action-buttons button,
+button {
+  flex: 1 1 80px; /* grow | shrink | base */
+  min-width: 56px;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
+/* Khi cần, trên màn hình rất rộng giữ nút ở kích thước tự nhiên */
+@media (min-width: 900px) {
+  .controls button,
+  .action-buttons button {
+    flex: 0 1 auto;
+    min-width: 56px;
+  }
 }
 
 /* Modal */
