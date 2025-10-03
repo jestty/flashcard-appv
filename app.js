@@ -52,7 +52,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   const saveLocalData = () => {
     try {
       localStorage.setItem('flashcardData', JSON.stringify(data));
-      console.log('✅ Saved local flashcardData');
+      // Đánh dấu là đã chỉnh sửa local — tránh bị overwrite bởi data.json khi online
+      localStorage.setItem('flashcardDataModified', '1');
+      console.log('✅ Saved local flashcardData (modified flag set)');
     } catch (err) {
       console.error('Lỗi lưu localStorage:', err);
     }
@@ -77,30 +79,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Hiển thị nhanh từ local nếu có
     loadLocalData();
 
+    // Nếu local đã được chỉnh sửa bởi người dùng, không tự overwrite từ data.json
+    const localModified = localStorage.getItem('flashcardDataModified') === '1';
+    if (localModified) {
+      console.log(
+        '⚠️ Local changes detected — will NOT overwrite from data.json'
+      );
+      renderCategorySelect();
+      renderCard();
+      return;
+    }
+
     try {
       const res = await fetch('./data.json', { cache: 'no-store' });
       if (!res.ok) throw new Error(`data.json HTTP ${res.status}`);
       const fileData = await res.json();
 
-      // Nếu data.json là mảng và phần tử đầu có 'categories', lấy phần tử đầu
-      if (
-        Array.isArray(fileData) &&
-        fileData.length &&
-        fileData[0] &&
-        Array.isArray(fileData[0].categories)
-      ) {
-        data = fileData[0];
-        console.log(
-          '✅ data.json: array with single object containing categories -> using element 0'
-        );
-      } else if (Array.isArray(fileData)) {
-        // Mảng có thể là mảng categories hoặc mảng cards
+      // (giữ nguyên logic thích ứng với nhiều cấu trúc data.json)
+      if (Array.isArray(fileData)) {
         if (
           fileData.length &&
           fileData[0] &&
           Array.isArray(fileData[0].cards)
         ) {
-          // mảng categories
           data = { categories: fileData, currentCategoryIndex: 0 };
           console.log('✅ data.json: detected array of categories');
         } else if (
@@ -108,14 +109,11 @@ document.addEventListener('DOMContentLoaded', async () => {
           fileData[0] &&
           (fileData[0].front || fileData[0].back)
         ) {
-          // mảng cards -> bọc vào một nhóm mặc định
           data = {
             categories: [{ name: 'Mặc định', cards: fileData }],
             currentCategoryIndex: 0,
           };
-          console.log(
-            '✅ data.json: detected array of cards (wrapped into one category)'
-          );
+          console.log('✅ data.json: detected array of cards');
         } else {
           console.warn(
             'data.json: mảng nhưng không nhận dạng được, giữ localStorage'
@@ -123,11 +121,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       } else if (fileData && typeof fileData === 'object') {
         if (Array.isArray(fileData.categories)) {
-          // object chuẩn
           data = fileData;
           console.log('✅ data.json: loaded object with categories');
         } else if (Array.isArray(fileData.cards)) {
-          // object có trường cards -> bọc vào categories
           data = {
             categories: [
               { name: fileData.name || 'Mặc định', cards: fileData.cards },
@@ -147,13 +143,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       ensureDataShape();
-      saveLocalData(); // cập nhật local từ file nếu đã load
+      // Lưu vào local để làm nguồn chính cho lần mở sau
+      saveLocalData();
     } catch (e) {
       console.warn(
         '⚠️ Không thể tải data.json, dùng localStorage/mặc định —',
         e.message
       );
-      // nếu local chưa có nhóm thì tạo mặc định
       if (!data.categories || data.categories.length === 0) {
         data = {
           categories: [{ name: 'Mặc định', cards: [] }],
