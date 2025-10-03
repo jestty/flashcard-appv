@@ -418,47 +418,58 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (!res.ok) throw new Error(`data.json HTTP ${res.status}`);
       const fileData = await res.json();
 
-      // reuse same parsing logic as loadData
-      let newData = null;
-      if (Array.isArray(fileData)) {
-        if (
-          fileData.length &&
-          fileData[0] &&
-          Array.isArray(fileData[0].cards)
-        ) {
-          newData = { categories: fileData, currentCategoryIndex: 0 };
-        } else if (
-          fileData.length &&
-          fileData[0] &&
-          (fileData[0].front || fileData[0].back)
-        ) {
-          newData = {
-            categories: [{ name: 'Mặc định', cards: fileData }],
-            currentCategoryIndex: 0,
-          };
-        } else {
-          throw new Error('data.json: mảng không nhận dạng được');
+      // normalize nhiều dạng data.json vào form { categories: [...], currentCategoryIndex: 0 }
+      const normalize = (fd) => {
+        if (Array.isArray(fd)) {
+          // case: array of categories
+          if (fd.length && fd[0] && Array.isArray(fd[0].cards)) {
+            return { categories: fd, currentCategoryIndex: 0 };
+          }
+          // case: array with single object that contains categories (your current file)
+          if (fd.length && fd[0] && Array.isArray(fd[0].categories)) {
+            const candidate = fd[0];
+            return {
+              categories: candidate.categories || [],
+              currentCategoryIndex:
+                typeof candidate.currentCategoryIndex === 'number'
+                  ? candidate.currentCategoryIndex
+                  : 0,
+              ...candidate, // keep other top-level if any
+            };
+          }
+          // case: array of cards -> wrap into one category
+          if (fd.length && fd[0] && (fd[0].front || fd[0].back)) {
+            return {
+              categories: [{ name: 'Mặc định', cards: fd }],
+              currentCategoryIndex: 0,
+            };
+          }
+          return null;
+        } else if (fd && typeof fd === 'object') {
+          if (Array.isArray(fd.categories))
+            return {
+              ...fd,
+              currentCategoryIndex:
+                typeof fd.currentCategoryIndex === 'number'
+                  ? fd.currentCategoryIndex
+                  : 0,
+            };
+          if (Array.isArray(fd.cards))
+            return {
+              categories: [{ name: fd.name || 'Mặc định', cards: fd.cards }],
+              currentCategoryIndex: 0,
+            };
+          return null;
         }
-      } else if (fileData && typeof fileData === 'object') {
-        if (Array.isArray(fileData.categories)) {
-          newData = fileData;
-        } else if (Array.isArray(fileData.cards)) {
-          newData = {
-            categories: [
-              { name: fileData.name || 'Mặc định', cards: fileData.cards },
-            ],
-            currentCategoryIndex: 0,
-          };
-        } else {
-          throw new Error('data.json object không có categories/cards');
-        }
-      } else {
-        throw new Error('data.json không có cấu trúc mong đợi');
-      }
+        return null;
+      };
+
+      const newData = normalize(fileData);
+      if (!newData) throw new Error('data.json: mảng không nhận dạng được');
 
       data = newData;
       ensureDataShape();
-      // lưu không đặt flag modified (remote là nguồn chính)
+      // lưu local mà không đặt flag modified (remote là nguồn chính)
       saveLocalDataNoMark();
       // xóa flag modified vì giờ local khớp remote
       localStorage.removeItem('flashcardDataModified');
