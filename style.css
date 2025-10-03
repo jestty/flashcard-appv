@@ -85,7 +85,6 @@ button:active {
   -webkit-user-drag: none;
   user-select: none;
   -ms-touch-action: manipulation;
-  will-change: transform;
 }
 
 /* prevent double-tap zoom / tap highlight on interactive elements */
@@ -192,4 +191,14 @@ body.dark-mode .card {
 body.dark-mode .modal-content {
   background: #2c2c2c;
   color: #f0f0f0;
+}
+
+.card.no-touch-flicker {
+  /* giữ nguyên trạng thái hiển thị tạm thời, tránh outline/active styles */
+  -webkit-tap-highlight-color: transparent;
+  background-color: inherit !important;
+  transition: none !important;
+  /* đảm bảo không highlight text */
+  -webkit-user-select: none;
+  user-select: none;
 }
