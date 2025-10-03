@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   const showUnlearnedOnly = document.getElementById('showUnlearnedOnly');
   const sliderContainer = document.getElementById('sliderContainer');
   const slider = document.getElementById('slider');
+  const exportBtn = document.getElementById('exportBtn');
+  const importBtn = document.getElementById('importBtn');
+  const importInput = document.getElementById('importInput');
 
   const nextBtn = document.getElementById('nextBtn');
   const prevBtn = document.getElementById('prevBtn');
@@ -345,6 +348,64 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
 
   // =======================
+  // Export / Import
+  // =======================
+  // Export current data as data.json (download)
+  const exportData = () => {
+    try {
+      const blob = new Blob([JSON.stringify(data, null, 2)], {
+        type: 'application/json',
+      });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'data.json';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      console.log('✅ Exported data.json');
+    } catch (e) {
+      console.error('Export failed', e);
+      alert('Không thể xuất file.');
+    }
+  };
+
+  // Import data.json from file input
+  const importDataFromFile = (file) => {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const parsed = JSON.parse(ev.target.result);
+        // basic validation: accept object with categories OR array forms handled by existing logic
+        if (!parsed) throw new Error('Empty JSON');
+        // assign and normalize using existing ensureDataShape logic
+        data = parsed;
+        ensureDataShape();
+        saveLocalData();
+        renderCategorySelect();
+        currentCardIndex = 0;
+        showingFront = true;
+        renderCard();
+        alert('Đã import data.json thành công (đã lưu local).');
+      } catch (err) {
+        console.error('Import lỗi', err);
+        alert('File JSON không hợp lệ.');
+      }
+    };
+    reader.readAsText(file);
+  };
+
+  exportBtn?.addEventListener('click', exportData);
+  importBtn?.addEventListener('click', () => importInput?.click());
+  importInput?.addEventListener('change', (e) => {
+    const f = e.target.files && e.target.files[0];
+    if (f) importDataFromFile(f);
+    e.target.value = ''; // reset input
+  });
+
+  // =======================
   // Event Listeners
   // =======================
   flashcard?.addEventListener('click', flipCard);
@@ -352,6 +413,53 @@ document.addEventListener('DOMContentLoaded', async () => {
     e.preventDefault();
     flipCard();
   });
+
+  // --- Prevent long-press flicker / native context menu on iOS PWA ---
+  if (flashcard) {
+    let lpTimer = null;
+    const LP_DELAY = 500; // ms, long-press threshold
+
+    // prevent the long-press context menu (only for flashcard)
+    flashcard.addEventListener(
+      'contextmenu',
+      (ev) => {
+        ev.preventDefault();
+      },
+      { passive: false }
+    );
+
+    flashcard.addEventListener(
+      'touchstart',
+      (ev) => {
+        if (ev.touches && ev.touches.length > 1) return; // ignore multi-touch
+        lpTimer = setTimeout(() => {
+          // On long press, prevent default to avoid iOS special UI/selection
+          // Use preventDefault on the last touch event when it fires (we can't call it here safely)
+          // Add a temporary flag class to reduce visual flicker
+          flashcard.classList.add('no-touch-flicker');
+        }, LP_DELAY);
+      },
+      { passive: true }
+    );
+
+    const clearLP = () => {
+      if (lpTimer) {
+        clearTimeout(lpTimer);
+        lpTimer = null;
+      }
+      flashcard.classList.remove('no-touch-flicker');
+    };
+
+    flashcard.addEventListener(
+      'touchend',
+      (ev) => {
+        clearLP();
+      },
+      { passive: true }
+    );
+    flashcard.addEventListener('touchmove', clearLP, { passive: true });
+    flashcard.addEventListener('touchcancel', clearLP, { passive: true });
+  }
 
   nextBtn?.addEventListener('click', nextCard);
   prevBtn?.addEventListener('click', prevCard);
