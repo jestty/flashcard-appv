@@ -62,7 +62,7 @@ button:active {
 .card {
   width: 300px;
   max-width: 90%;
-  height: 180px;
+  /*height: 180px;*/
   margin: 20px auto;
   padding: 20px;
   white-space: pre-wrap;
