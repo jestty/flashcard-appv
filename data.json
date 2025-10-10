@@ -5,112 +5,152 @@
       "cards": [
         {
           "front": "といったら\nNói về...",
-          "back": "N + といったら\nDiễn tả cảm xúc thán phục, ngạc nhiên của người nói về một sự vật, sự việc nào đó. (cả tiêu cực và tích cực)\n\n暗(くらい)い山道(やまみち)を一人(ひとり)で歩(ある)いたときの怖(こわ) さと 言(い) ったら君(きみ)も\n想像出来(そうぞうでき) ない",
-          "learned": true
-        },
-        {
-          "front": "～さえ…ば\nChỉ cần....là đủ",
-          "back": "Nさえ…ば\nVます + さえ + すれば\nVて + さえ + すれば\nĐưa ra điều kiện tối thiểu nhất để điều gì đó có thể xảy ra. Trong đó, vế câu được hình thành bởi さえ〜ば là điều kiện mà chỉ cần nó được thực hiện, vế sau cũng sẽ xảy ra.\n\n謝(あやま)ってさえすれば許(ゆる)してあげるよ。",
+          "back": "N + といったら\nDiễn tả cảm xúc thán phục, ngạc nhiên của người nói về một sự vật, sự việc nào đó. (cả tiêu cực và tích cực)\n暗(くらい)山道(さんどう)を一人 (ひとり)で歩(ある)いたときの怖(こわ)さと言 いったら、君(きみ)も想像(そうぞう)出来(でき)ない。\nNói về nỗi sợ lúc đi bộ một mình trên đường núi tối om, anh không tưởng tượng được đâu.",
           "learned": true
         },
         {
           "front": "ですから\nVì vậy",
-          "back": "A。ですから、B\n『ですから』là liên từ nối hai câu. Câu sau nêu kết quả, hệ quả đến từ lý do nằm ở câu trước.\nこの機械(きかい)はとても熱(あつい)です。ですから、触(さわ)らないでください。\nCái máy này rất nóng. Vì vậy, xin đừng chạm vào nó.",
-          "learned": true
-        },
-        {
-          "front": "ば～ほど\nCàng... càng...",
-          "back": "Aいければ ✙ Aいほど\nAななら✙ Aな\nV (thể điều kiện) ✙　V (thể từ điển)ほど\n『ば～ほど』diễn tả ý: khi một sự việc tiến triển, thay đổi theo chiều hướng nào đó thì một sự việc khác cũng tiến triển, thay đổi theo.\n\"Càng... càng...\"\nこの本(ほん)は読(よ)めば読(よ)むほど面白(おもしろ)い。\nQuyển sách này càng đọc càng thấy thú vị.",
+          "back": "A。ですから、B\n『ですから』là liên từ nối hai câu. Câu sau nêu kết quả, hệ quả đến từ lý do nằm ở câu trước.\nこの機械(きかい)はとても熱(あつ)いです。ですから、触(さわ)らないでください。\nCái máy này rất nóng. Vì vậy, xin đừng chạm vào nó.",
           "learned": true
         },
         {
           "front": "に～られる\nBị (gây phiền toái)",
-          "back": "N1は　N2に　V (tự động từ thể bị động)\n\n友達(ともだち)の赤(あか)ちゃんを抱(だ)っこしたら泣(な)かれてしまった。",
-          "learned": true
-        },
-        {
-          "front": "合う\nLàm... cùng nhau",
-          "back": "Vます　✙　合う\n\n『合う』cho biết hành động V (nối phía trước『合う』) được chủ thể thực hiện cùng với người khác.\n\nその二人(ふたり)はいつも競(きそ)い合(あ)っている。\n2 người đó luôn cạnh tranh với nhau.",
+          "back": "N1は　N2に　V (tự động từ thể bị động)\n『に～られる』diễn tả ý: N1 (tuy không chịu tác động trực tiếp từ N2 nhưng) thấy phiền toái do N2 thực hiện hành động V. V là tự động từ được chia ở thể bị động.\n友達(ともだち)の赤(あかちゃん)を抱(だ)っこしたら、泣(な)かれてしまった。\nTôi vừa ẵm con của bạn mình lên thì đứa bé liền òa khóc.",
           "learned": true
         },
         {
           "front": "それとも\nHay là/Hoặc là",
-          "back": "A？ それとも、 B？\n\n『それとも』là liên từ liên kết hai câu hỏi, dùng để đưa ra nhiều sự lựa chọn cho người đối diện chọn.\n\nコーヒー  にしますか。それとも、紅茶(こうちゃ)にしますか。\nCậu uống cà phê nhé? Hay là uống trà?",
-          "learned": true
-        },
-        {
-          "front": "のでは\nNếu",
-          "back": "Vの + では\nDiễn tả ý nghĩa \"trong tình huống như thế thì...\". Phần sau trình bày những sự việc xảy ra từ tình huống đó hoặc cảm tưởng của người nói. Trong văn nói, thường dùng [Vんでは] , [Vんじゃ].\n毎日(まいにち)そんなに遠(とお)くから通学(つうがく)しているのでは大変(たいへん)ですね。\nNếu mỗi ngày phải đi học xa thế thì vất vả quá nhỉ.",
+          "back": "A？ それとも、 B？\n『それとも』là liên từ liên kết hai câu hỏi, dùng để đưa ra nhiều sự lựa chọn cho người đối diện chọn.\nコーヒーにしますか。それとも、紅茶(こうちゃ)にしますか。\nCậu uống cà phê nhé? Hay là uống trà?",
           "learned": true
         },
         {
           "front": "よく(も)\nSao anh dám...",
-          "back": "よく(も)\nDiễn tả tâm trạng giận dữ, than phiền, sửng sốt \"tại sao lại làm như thế\" khi có ai đó làm những chuyện bất ngờ, phiền phức, tồi tệ\nよくも  彼女(かのじょ)  にそんなことが  言(い)  えるものだ。\nSao anh dám nói với cô ấy như thế.",
+          "back": "よく(も)\nDiễn tả tâm trạng giận dữ, than phiền, sửng sốt \"tại sao lại làm như thế\" khi có ai đó làm những chuyện bất ngờ, phiền phức, tồi tệ.\nよくもまあ、あんな嫌(いや)らしい物(もの)が食(たべ)られるわ。\nSao anh có thể ăn được thứ kinh khủng như thế nhỉ.",
+          "learned": true
+        },
+        {
+          "front": "たとたん(に)\nVừa mới... thì",
+          "back": "Vた　✙　とたん\nVた　✙　とたんに\nVた。そのとたん、\n『たとたんに』diễn tả ý: vừa thực hiện một hành động nào đó thì một sự việc khác liền bất ngờ xảy ra ngay sau. Vì vế sau là sự việc ngoài dự đoán, không do chủ thể ở vế trước cố ý hay dự tính (như sai khiến, ép buộc...) nên vế sau không dùng động từ, cấu trúc thể hiện ý chí, mệnh lệnh... của chủ thể vế trước.\nChữ Hán của 『とたん』là『途端』.\n窓(まど)を開(あ)けたとたん、強(つよ)い風(かぜ)が入(はい)ってきた。\nTôi vừa mở cửa sổ ra thì có một luồng gió lạnh tràn vào.",
+          "learned": true
+        },
+        {
+          "front": "～られる\nBị/Được (thể hiện sự việc, thông tin)",
+          "back": "V(thể từ điển)　➔　V(thể bị động)\n行う　　　　　➔　行われる\n建てる　　　　➔　建てられる\nする　　　　　➔　される\nv.v\n言う　　　　　➔　言われている\n見る　　　　　➔　見られている\n思う　　　　　➔　思われている\nv.v\n『と言われている』『と見られている』『と思われている』... cho biết điều được nói tới trong câu không phải ý kiến của cá nhân người nói, mà là ý kiến, đánh giá, suy nghĩ... chung của nhiều người, hoặc của xã hội. Các cấu trúc này thường được dùng trên tin tức hoặc báo chí.\nこの建物(たてもの)は300年前(ねんまえ)に建(た)てられました。\nTòa nhà này được xây dựng cách đây 300 năm về trước.",
+          "learned": true
+        },
+        {
+          "front": "一度に\nCùng một lúc",
+          "back": "一度に　✙　Câu văn\n『一度に』diễn tả ý: trong một lần thì làm cùng lúc bao nhiêu việc, hoặc xử lý cùng lúc bao nhiêu vật, người... Cấu trúc này nhấn mạnh số lượng việc làm, số đồ vật... được nhắc đến trong câu.\n彼(かれ)は一度(いちど)にクッキーを3つ取(と)った。\nAnh ta lấy 3 cái bánh quy cùng một lúc.",
+          "learned": true
+        },
+        {
+          "front": "は～で有名\nNổi tiếng vì/Nổi tiếng với",
+          "back": "N　　　　　　✙　で有名\nAな/Aなこと　✙　で有名\nAいこと　　　✙　で有名\nVること　　　✙　で有名\n『は～で有名(ゆうめい)』cho biết một người, một địa danh, một sự vật... được biết đến, nổi tiếng bởi một tính chất, khía cạnh hay lĩnh vực nào đó.\n日本(にほん)は電子製品(でんしせいひん)で有名(ゆうめい)です。\nNhật Bản nổi tiếng với các thiết bị điện tử.\n京都(きょうと)は古(ふる)いお寺(てら)があることで有名(ゆうめい)だ。\nKyoto nổi tiếng với những ngôi chùa cổ kính.",
+          "learned": true
+        },
+        {
+          "front": "にしては\nVậy mà",
+          "back": "N/V (thể thông thường)　　　✙　にしては\n(Gần như không đi với tính từ)\n『にしては』diễn tả một sự thật trái với tưởng tượng, dự đoán. Vế trước『にしては』thể hiện tưởng tượng, dự đoán ấy, còn vế sau thì cho biết sự thật trái ngược.\n外国人(がいこくじん)にしては、日本語(にほんご)が上手(じょうず)だ。\nLà người nước ngoài mà tiếng Nhật của bạn ấy rất giỏi",
+          "learned": true
+        },
+        {
+          "front": "そこへいくと\nSo với, chẳng bù với",
+          "back": "Dùng để so sánh hai người, sự vật, sự việc với nhau. Dùng trong văn nói.\nそこへいくと、私(わたし)のほうが給料(きゅうりょう)が低(ひく)いだ。\nSo với chỗ anh thì lương của tôi thấp hơn.",
+          "learned": true
+        },
+        {
+          "front": "によると / によれば\nTheo...",
+          "back": "N + によると/によれば\nDùng để nêu ra nguồn gốc hoặc cơ sở của thông tin mà người nói có được. Vế sau của câu thường sử dụng 「そうだ」,「ということだ」(nghe nói).\n天気予報(てんきよほう)によると、明日(あした)は雪(ゆき)が降(ふ)るそうだ。\nNghe nói theo dự báo thời tiết, ngày mai tuyết sẽ rơi.",
+          "learned": true
+        },
+        {
+          "front": "などする\nNhư... chẳng hạn",
+          "back": "V-る + などする\nDùng để nêu lên sự việc chủ yếu trong nhiều sự việc khác nhau làm ví dụ. Ngầm hàm ý ngoài ra còn có những sự việc khác tương tự.\n髪(かみ)を切(き)るなどして、もっと見(み)かけに気(き)を付(つ)けてほしい。\nTôi muốn anh chú ý đến vẻ ngoài của mình nhiều hơn như cắt tóc chẳng hạn.",
+          "learned": true
+        },
+        {
+          "front": "ようやく\nCuối cùng, mãi mới, rồi cũng",
+          "back": "ようやく   +   V-た/V-る・Nだ\nDiễn tả những hiện tượng tự nhiên biến đổi dần dần và trở thành một trạng thái nào đó. Ngoài ra cũng sừ dụng trong trường hợp những dự đoán, mong đợi của người nói được thực hiện. Hoặc sự việc đã có biến đổi sau khi tốn nhiều thời gian, xảy ra nhiều việc.\nようやく朝日(あさひ)が明(あ)けて長(なが)い夜(よる)が終(お)わった。\nCuối cùng đêm dài cũng kết thúc, bình minh đã bắt đầu hé rạng.",
+          "learned": true
+        },
+        {
+          "front": "～さえ…ば\nChỉ cần....là đủ",
+          "back": "Nさえ…ば\nVます + さえ + すれば\nVて + さえ + すれば\nĐưa ra điều kiện tối thiểu nhất để điều gì đó có thể xảy ra. Trong đó, vế câu được hình thành bởi さえ〜ば là điều kiện mà chỉ cần nó được thực hiện, vế sau cũng sẽ xảy ra. \n\n\n彼女(かのじょ)は幸(しあわ)せさえあれば、何(なに)の困(こま)っても超(こ)えられます。\nChỉ cần cô ấy hạnh phúc, tôi có thể vượt qua bất cứ khó khăn nào.",
+          "learned": true
+        },
+        {
+          "front": "ば～ほど\nCàng... càng...",
+          "back": "Aいければ　　　　✙ 　Aいほど\nAななら　　　　　✙ 　Aなほど\nV (thể điều kiện) 　 ✙　V (thể từ điển)ほど\n『ば～ほど』diễn tả ý: khi một sự việc tiến triển, thay đổi theo chiều hướng nào đó thì một sự việc khác cũng tiến triển, thay đổi theo.\n\"Càng... càng...\"\n荷物(にもつ)は少(すく)なければ少(すく)ないほどいい。\nHành lý càng ít càng tốt.\nこの問題(もんだい)はかなり複雑(ふくざつ)で、考(かんが)えれば考(かんがえ)るほど分(わ)からなくなります。\nVấn đề này khá phức tạp, càng nghĩ lại càng không hiểu.",
+          "learned": true
+        },
+        {
+          "front": "合う\nLàm... cùng nhau",
+          "back": "V(ますなし)　✙　合う\n『合う』cho biết hành động V (nối phía trước『合う』) được chủ thể thực hiện cùng với người khác.\nその二人(ふたり)はいつも競(きそ)い合(あ)っている。\n2 người đó luôn cạnh tranh với nhau.",
+          "learned": true
+        },
+        {
+          "front": "のでは\nNếu",
+          "back": "Vの + では\nDiễn tả ý nghĩa \"trong tình huống như thế thì...\". Phần sau trình bày những sự việc xảy ra từ tình huống đó hoặc cảm tưởng của người nói. Trong văn nói, thường dùng [Vんでは] , [Vんじゃ].\n毎日(まいにち)そんなに遠(とお)くから通学(つうがく)しているのでは大変(たいへん)ですね。\nNếu mỗi ngày phải đi học xa thế thì vất vả quá nhỉ",
           "learned": true
         },
         {
           "front": "させていただく\nXin phép, cho phép làm gì đó",
-          "back": "V-ます + させていただく\nĐây là cách nói lịch sự hơn cách nói sử dụng もらう (いただく là khiêm nhường ngữ của もらう nên khi sử dụng từ này sẽ mang lại cảm giác khiêm tốn, lịch sự hơn ).\nご注文(ちゅうもん)はこれで終(お)わらせていただきます。\nTôi xin kết thúc đơn đặt hàng của bạn tại đây.",
-          "learned": true
-        },
-        {
-          "front": "たとたん(に)\nVừa mới... thì\nChữ Hán của 『とたん』là『途端』.",
-          "back": "Vた　✙　とたん, Vた　✙　とたんに, Vた。そのとたん、\ndiễn tả ý: vừa thực hiện một hành động nào đó thì một sự việc khác liền bất ngờ xảy ra ngay sau.vế sau không dùng động từ, cấu trúc thể hiện ý chí, mệnh lệnh... của chủ thể vế trước.\n窓(まど)を開(あ)けたとたん、強(つよ)い風(かぜ)が入(はい)ってきた。Tôi vừa mở cửa sổ ra thì có một luồng gió lạnh tràn vào.",
+          "back": "V-ます + させていただく\nĐây là cách nói lịch sự hơn cách nói sử dụng もらう (いただく là khiêm nhường ngữ của もらう nên khi sử dụng từ này sẽ mang lại cảm giác khiêm tốn, lịch sự hơn ).\n自己紹介(じこしょうかい)をさせていただきます。\nTôi xin phép được tự giới thiệu bản thân.\n体調(たいちょう)が優(すぐ)れないため、今夜(こんや)の会食(かいしょく)については欠席(けっせき)させていただきます。\nTôi cảm thấy không khỏe nên về buổi tiệc tối nay, tôi xin phép được vắng mặt.",
           "learned": true
         },
         {
           "front": "わざと\nCố tình/Cố ý",
-          "back": "わざと　✙　V\n『わざと』cho biết hành động đang nói tới là có mục đích, có chủ ý, do ai đó cố tình làm.\n私(わたし)は彼(かれ)がわざとそうしたと思(おも)いません。\nTôi không nghĩ rằng anh ấy cố tình làm vậy.",
+          "back": "わざと　✙　V\n『わざと』cho biết hành động đang nói tới là có mục đích, có chủ ý, do ai đó cố tình làm.\n彼(かれ)はわざと間違(まちが)えた。\nAnh ấy đã phạm sai lầm về chủ ý.\n私(わたし)は彼(かれ)がわざとそうしたとは思(おも)いません。\nTôi không nghĩ rằng anh ấy cố tình làm vậy.",
           "learned": true
         },
         {
           "front": "ふと\nĐột nhiên/Tình cờ/Chợt",
-          "back": "ふと　✙　Câu văn\n『ふと』diễn tả một hành động, sự việc xảy ra đột ngột, tình cờ, hoặc ngẫu hứng.\nふと街(まち)で彼(かれ)に会(あ)った。\nTôi gặp anh ấy trên phố một cách tình cờ",
+          "back": "ふと　✙　Câu văn\n『ふと』diễn tả một hành động, sự việc xảy ra đột ngột, tình cờ, hoặc ngẫu hứng.\nふと街(まち)で彼(かれ)に会(あ)った。\nTôi gặp anh ấy trên phố một cách tình cờ.\n財布(さいふ)がないのにふと気(き)がついた。\nTôi chợt nhận ra ví của mình đã biến mất.",
           "learned": true
         },
         {
           "front": "といいなあ/たらいいなあ/ばいいなあ\nƯớc gì/Mong sao",
-          "back": "Thể điều kiện (と/たら/ば)✙いい(のに)なあ\n『といいなあ/たらいいなあ/ばいいなあ』là câu cảm thán, dùng để thể hiện ý muốn, mong ước của cá nhân người nói.\nもっと日本語(にほんご)がうまく話(はな)せたらいいなあ。\nƯớc gì tôi có thể nói tiếng Nhật trôi chảy hơn.",
+          "back": "Thể điều kiện (と/たら/ば)　✙　いい(のに)なあ\n『といいなあ/たらいいなあ/ばいいなあ』là câu cảm thán, dùng để thể hiện ý muốn, mong ước của cá nhân người nói.\n明日(あした)、雨(あめ)が降(ふ)らないといいなあ。\nƯớc gì ngày mai trời không mưa.",
           "learned": true
         },
         {
           "front": "たび(に)\nMỗi khi/Mỗi lần",
-          "back": "Nの✙たび(に)、V (thể từ điển)✙たび(に)、V (thể từ điển)。そのたび(に)\n-Dùng để nhắc đến một sự việc thường xảy ra mỗi khi có một tình huống cụ thể nào đó. Không dùng để nói về các hiện tượng tự nhiên xảy ra hằng ngày.\n買(か)い物(もの)のたびに、袋 (ふくろ)をたくさんもらう。Mỗi lần đi mua sắm, tôi lại nhận được nhiều túi.",
+          "back": "Nの　✙　たび(に)\nV (thể từ điển)　✙　たび(に)\nV (thể từ điển)。そのたび(に)\n『たび(に)』dùng để nhắc đến một sự việc thường xảy ra mỗi khi có một tình huống cụ thể nào đó. Không dùng để nói về các hiện tượng tự nhiên xảy ra hằng ngày.\n買(かい)物(もの)たびに、袋(ふくろ)をたくさんもらう。\nMỗi lần đi mua sắm, tôi lại nhận được nhiều túi.\nこの曲(きょく)を聞(き)くたびに、故郷(ふるさと)を思(おも)い出(だ)す。\nMỗi lần nghe khúc nhạc này, tôi lại nhớ về quê hương.",
           "learned": true
         },
         {
           "front": "例えば\nVí dụ như/Chẳng hạn như",
-          "back": "例えば　✙　Câu văn\n『例えば』dùng để nêu ví dụ hoặc trình bày kĩ hơn về điều được nói trước đó.\n日本(にほん)の食(たべ)物(もの)は美味(おい)しいです。例 たとえば、寿司(すし)はすごく美味(おい)しい！\nĐồ ăn Nhật rất ngon, ví dụ như sushi cũng rất ngon!",
+          "back": "例えば　✙　Câu văn\n『例えば』dùng để nêu ví dụ hoặc trình bày kĩ hơn về điều được nói trước đó.\n日本(にほん)の食(たべ)物(もの)は美味(おい)しいです。例(たと)えば、寿司(すし)はすごく美味(おい)しい！",
           "learned": true
         },
         {
           "front": "なんと～のだろう\n...dường nào, ...biết bao",
-          "back": "なんと + N + なのだろう　なんと + Na +なのだろう　\nなんと + A-い + のだろう\nDiễn tả tâm trạng ngạc nhiên, kinh ngạc của người nói trước một người, sự vật nào đó. Cách nói thân mật là 「なんて～んだろう」.\nなんと頭(あたま)がいい人(ひと)なのでしょう。\nThật là một người thông minh làm sao.",
+          "back": "なんと + N + なのだろう　\nなんと + Na +なのだろう　\nなんと + A-い + のだろう\nDiễn tả tâm trạng ngạc nhiên, kinh ngạc của người nói trước một người, sự vật nào đó. Cách nói thân mật là 「なんて～んだろう」.\nなんと頭(あたま)がいい人(ひと)なのだろう。\nThật là một người thông minh làm sao.",
           "learned": true
         },
         {
           "front": "～は～くらいです     \nKhoảng cỡ, như là…",
-          "back": "Nは ～くらいです\nKhoảng cỡ, đến mức, như là…\nChỉ mức độ của trạng thái.\n母(はは)の普通(ふつう)の睡眠時間(すいみんじかん)は5時間(じかん)から6時間(じかん)くらいです。\nThời gian ngủ thông thường của mẹ tôi khoảng cỡ từ 5 đến 6 tiếng.",
+          "back": "Nは ～くらいです\nKhoảng cỡ, đến mức, như là…\nChỉ mức độ của trạng thái.\nここの標高(ひょうこう)は富士山(ふじさん)の頂上(ちょうじょう)とほぼ同(おなじ)くらいです。\nĐộ cao so với mực nước biển ở đây khoảng giống như ở đỉnh núi Phú Sĩ.",
           "learned": true
         },
         {
           "front": "にしても \nNgay cả...",
-          "back": "N + にしても\nDùng để nhấn mạnh sự vật, sự việc được nhắc tới.\n日本人(にぽんじん)にしても敬語(けいご)は難(むずか)しい。\nKính ngữ cũng khó ngay cả với người Nhật.",
+          "back": "N + にしても\nDùng để nhấn mạnh sự vật, sự việc được nhắc tới.\n日本人(にほんじん)にしても敬語(けいご)は難(むずか)しい。\nKính ngữ cũng khó ngay cả với người Nhật.",
           "learned": true
         },
         {
           "front": "ばかりでなく\nKhông chỉ... mà còn",
-          "back": "V/Aい/Aな/N(thể　thông　thường)✙ばかりで(は)なく、～(も/まで/さえ)(Riêng Aなだ➔Aなだ / Aである、Nだ➔N/Nである)\n『ばかりでなく』diễn tả ý: không chỉ có hành động, đặc điểm, đối tượng... này, mà còn có hành động, đặc điểm, đối tượng... khác.\n『ばかりでなく』có thể nói về sự việc tích cực hoặc tiêu cực. Nó thường thể hiện thái độ ngạc nhiên, bất ngờ của người nói, cho nên vế sau hay đi cùng các trợ từ như も、まで、さえ...\nMặt khác, khi vế sau là các cấu trúc dạng mệnh lệnh, kêu gọi, thì『ばかりでなく』thể hiện thái độ phê phán của người nói với vế trước.\nあの店(みせ)は味(あじ)が悪(わるい)ばかりでなく、店員(てんいん)の態度(たいど)もひどい。\nTiệm đó không chỉ dở về hương vị món ăn mà thái độ của nhân viên cũng tệ.",
+          "back": "V/Aい/Aな/ N (thể thông thường)　✙　ばかりで(は)なく、～(も/まで/さえ)\n『ばかりでなく』diễn tả ý: không chỉ có hành động, đặc điểm, đối tượng... này, mà còn có hành động, đặc điểm, đối tượng... khác.\n『ばかりでなく』có thể nói về sự việc tích cực hoặc tiêu cực. Nó thường thể hiện thái độ ngạc nhiên, bất ngờ của người nói, cho nên vế sau hay đi cùng các trợ từ như も、まで、さえ...\nMặt khác, khi vế sau là các cấu trúc dạng mệnh lệnh, kêu gọi, thì『ばかりでなく』thể hiện thái độ phê phán của người nói với vế trước.\nあの店(みせ)は味(あじ)がまずいばかりでなく、店員(てんいん)の態度(たいど)もひどい。\nTiệm đó không chỉ dở về hương vị món ăn mà thái độ của nhân viên cũng tệ.",
           "learned": true
         },
         {
           "front": "もしかすると/もしかしたら～かもしれない\nCó lẽ/Không chừng",
-          "back": "もしかすると / もしかしたら　✙　V,Aい、Aな、N (thể thông thường)　　✙　かもしれない\n(Riêng: A, Nだ　　➔A, N)\n『かもしれない』dùng để đưa ra suy đoán của người nói. Suy đoán này có ít căn cứ, độ chắc chắn và khả năng chỉ khoảng 50%, thấp hơn『だろう』. Khi đi với『もしかすると』 hoặc『もしかしたら』thì khả năng đó còn thấp hơn nữa.\n『もしかすると』 được dùng trong cả văn viết và văn nói, còn『もしかしたら』thường được dùng trong văn nói.\nもしかすると彼(かれ)の話(はなし)は嘘(うそ)かもしれない。\nCó khi chuyện anh ta nói là dối trá cũng nên.",
+          "back": "もしかすると / もしかしたら ✙　V , Aい, Aな, N (thể thông thường), ✙　かもしれない\n『かもしれない』dùng để đưa ra suy đoán của người nói. Suy đoán này có ít căn cứ, độ chắc chắn và khả năng chỉ khoảng 50%, thấp hơn『だろう』. Khi đi với『もしかすると』 hoặc『もしかしたら』thì khả năng đó còn thấp hơn nữa.\n『もしかすると』 được dùng trong cả văn viết và văn nói, còn『もしかしたら』thường được dùng trong văn nói.\nもしかすると彼(かれ)の話(はなし)は嘘(うそ)かもしれない。\nCó khi chuyện anh ta nói là dối trá cũng nên.",
           "learned": true
         },
         {
           "front": "に代わって\nThay mặt/Thay cho",
-          "back": "N　✙　に代わって\nN　✙　に代わり\n『に代わって』diễn tả ý: thay mặt cho ai đó, hoặc thay thế/thế chỗ cho cái gì đó.\n『に代わり』được dùng trong văn viết hoặc văn nói trang trọng.\n父(ちち)に代(か)わって、一言(ひとこと)お礼申(れいもう)し上(あ)げます。\nThay mặt cha tôi, tôi xin có đôi lời cảm tạ.",
+          "back": "N　✙　に代わって\nN　✙　に代わり\n『に代わって』diễn tả ý: thay mặt cho ai đó, hoặc thay thế/thế chỗ cho cái gì đó.\n『に代わり』được dùng trong văn viết hoặc văn nói trang trọng.\n出張中(しゅっちょうちゅう)の部長(ぶちょう)に代(か)わって、私(わたし)がご挨拶(あいさつ)させていただきます。",
           "learned": true
         },
         {
@@ -120,17 +160,37 @@
         },
         {
           "front": "べき\nPhải/Nên...",
-          "back": "V (thể từ điển) / A(い)くある / A(な)である 　✙　べきだ / べきではない/べきだった/べきではなかった\n(Riêng するべき ➔ すべき)\n『べきだ/べきではない』được dùng để mạnh mẽ đưa ra lời khuyên cho người nghe, dựa trên nhận định chủ quan của người nói, rằng nên (べきだ) hoặc không nên (べきではない) làm gì.\nNgay cả khi không phải để khuyên người nghe,『べき』cũng được dùng để nêu quan niệm của người nói, rằng theo nguyên tắc đạo đức chung, theo lẽ thường, thì một điều gì đó là nên hoặc không nên làm.\nCũng bởi vậy, khi người nói đưa ra lời khuyên vì cho rằng nó đúng với đạo lý, bổn phận, trách nhiệm...『べき』thường được dùng hơn『ほうがいい』.\n『べきだった/べきではなかった』cho biết một điều gì đó đáng lẽ nên (べきだった) hoặc không nên (べきではなかった) làm, qua đó thể hiện thái độ tiếc nuối hoặc hối hận của người nói.\n『べき』được sử dụng trong cả văn viết và hội thoại thường ngày.\n親(おや)に対(たい)してはこんな失礼(しつれい)なことを言(い)うべきではありません。\nCậu không nên nói những lời vô lễ như thế với cha mẹ mình.",
+          "back": "V (thể từ điển) / A(い)くある / A(な)である 　✙　べきだ / べきではない\nV (thể từ điển) / A(い)くある / A(な)である 　✙　べきだった / べきではなかった\n『べきだ/べきではない』được dùng để mạnh mẽ đưa ra lời khuyên cho người nghe, dựa trên nhận định chủ quan của người nói, rằng nên (べきだ) hoặc không nên (べきではない) làm gì.\nNgay cả khi không phải để khuyên người nghe,『べき』cũng được dùng để nêu quan niệm của người nói, rằng theo nguyên tắc đạo đức chung, theo lẽ thường, thì một điều gì đó là nên hoặc không nên làm.\nCũng bởi vậy, khi người nói đưa ra lời khuyên vì cho rằng nó đúng với đạo lý, bổn phận, trách nhiệm...『べき』thường được dùng hơn『ほうがいい』.\n『べきだった/べきではなかった』cho biết một điều gì đó đáng lẽ nên (べきだった) hoặc không nên (べきではなかった) làm, qua đó thể hiện thái độ tiếc nuối hoặc hối hận của người nói.\n『べき』được sử dụng trong cả văn viết và hội thoại thường ngày.\n親(おや)に対(たい)してはこんな失礼(しつれい)なことを言(い)うべきではありません。\nCậu không nên nói những lời vô lễ như thế với cha mẹ mình.\n(Riêng するべき ➔ するべき / すべき)\nV (thể từ điển) / A(い)くある / A(な)である 　✙　べきN",
           "learned": true
         },
         {
           "front": "は別として\nNgoại trừ/Không quan trọng",
-          "back": "1. N　✙　は別として\n2. V/Aい/Aな/N (thể thông thường)　✙　かどうか　✙　は別として\n(Riêng A(な)だ　➔　A\n　　　　N(だ)　　➔　N)\nNghi vấn từ✙か✙は別として\n1. Đi trực tiếp với danh từ N thì biểu đạt ý: N là đặc biệt, là ngoại lệ. \"Ngoại trừ...\"\n2. Đi với động từ, tính từ, danh từ thể thông thường kèm かどうか, hoặc đi với nghi vấn từ kèm か thì biểu đạt ý: hành động, tính chất, sự vật, sự việc... đó hiện không phải vấn đề, không quan trọng, mà nội dung ở vế sau mới đáng quan tâm. \"Không quan trọng/Không biết...\"\n天気(てんき)は別(べつ)として、それは楽(たの)しいピクニックだった。\nNgoài thời tiết, đó là một buổi dã ngoại tốt.",
+          "back": "1. N　✙　は別として\n2. V/Aい/Aな/N (thể thông thường)　✙　かどうか　✙　は別として\nNghi vấn từ　✙　か　✙　は別として\n『は別として』\n1. Đi trực tiếp với danh từ N thì biểu đạt ý: N là đặc biệt, là ngoại lệ. \"Ngoại trừ...\"\n2. Đi với động từ, tính từ, danh từ thể thông thường kèm かどうか, hoặc đi với nghi vấn từ kèm か thì biểu đạt ý: hành động, tính chất, sự vật, sự việc... đó hiện không phải vấn đề, không quan trọng, mà nội dung ở vế sau mới đáng quan tâm. \"Không quan trọng/Không biết...\"\n野球(やきゅう)は別(べつ)として、私(わたし)はすべてのスポーツが好(すき)だ。\nNgoại trừ bóng chày, tôi thích tất cả các môn thể thao.\n天気(てんき)は別(べつ)として、それは楽(たの)しいピクニックだった。\nNgoài thời tiết, đó là một buổi dã ngoại tốt.",
           "learned": true
         },
         {
           "front": "もしも～なら/ もしも～たら/ もしも～ても\nNếu... thì/Nếu... đi chăng nữa",
-          "back": "もしも　✙　～なら/たら\nもしも　✙　～ても\n『もしも』dùng để nhấn mạnh điều kiện giả định trong câu điều kiện, rằng \"nếu điều kiện ấy có khả năng xảy ra dù chỉ một chút thôi...\" Đây là từ dùng trong văn nói và là hình thức nhấn mạnh hơn của『もし』.\nもしも地震(じしん)が起(お)きても、この家(いえ)、丈夫(じょうぶ)だから倒(たお)れない。\nDù động đất có xảy ra thì căn nhà này cũng không đổ được vì rất vững chắc.",
+          "back": "もしも　✙　～なら/たら\nもしも　✙　～ても\n『もしも』dùng để nhấn mạnh điều kiện giả định trong câu điều kiện, rằng \"nếu điều kiện ấy có khả năng xảy ra dù chỉ một chút thôi...\" Đây là từ dùng trong văn nói và là hình thức nhấn mạnh hơn của『もし』.\nもしも地震(じしん)が起(おき)ても、この家(いえ)、丈夫(じょうぶ)だから倒(たお)れない。\nDù động đất có xảy ra thì căn nhà này cũng không đổ được vì rất vững chắc.",
+          "learned": true
+        },
+        {
+          "front": "しばらく\nMột lúc/Một thời gian",
+          "back": "しばらく　✙　Câu văn\n『しばらく』dùng để diễn tả ý: thời gian này/trong một khoảng thời gian ngắn, đã/sẽ thực hiện hành động nào đó, hoặc có sự việc nào đó xảy ra. \"Thời gian ngắn\" ở đây có thể tính bằng phút, giờ hoặc ngày, tùy vào cảm nhận của người nói.\nしばらくここでお待(ま)ちください。\nVui lòng đợi ở đây một lúc.",
+          "learned": true
+        },
+        {
+          "front": "っけ\nNhỉ",
+          "back": "V、Aい、Aな、N、(thể thông thường)、Câu hỏi dùng từ để hỏi　 　✙　っけ\n『っけ』dùng nhiều trong hội thoại, đặt ở cuối câu trần thuật để:\n1. Xác nhận lại với người khác hoặc với chính mình về những điều bản thân không nhớ rõ.\n2. Thể hiện sự hoài niệm về một điều gì đó.\n『っけ』cũng đi với câu hỏi dùng từ để hỏi, mục đích là để hỏi người khác hoặc chính mình thông tin nào đó.\n『っけ』cũng đi được với câu ở thể lịch sự, có thể dùng với thầy cô hoặc đàn anh, đàn chị trong công ty...\nThông tin ở hiện tại hoặc tương lai cũng có thể chia về dạng quá khứ khi đi với『っけ』mà ý nghĩa không đổi.\n今日(きょう)は火曜日(かようび)だっけ。\nHôm nay là thứ Ba nhỉ?\nいくらだったっけ。\nBao nhiêu tiền ấy nhỉ?",
+          "learned": true
+        },
+        {
+          "front": "み\nĐiểm/Nỗi/Niềm",
+          "back": "Aい　✙　み　(VD: 悲しい　➔　悲しみ)\nAな　✙　み　(VD: 真剣な　➔　真剣み)\n『み』được thêm vào sau tính từ để tạo thành danh từ chỉ tình trạng hoặc tính chất.\nHậu tố『み』chỉ có thể thêm vào một số tính từ nhất định như 悲しい、楽しい、弱い、苦しい...\nNhiều tính từ có thể danh từ hóa bằng cách thêm cả hậu tố『さ』và hậu tố『み』nhưng về ý nghĩa có chút khác nhau.\nHậu tố『さ』nhấn mạnh mức độ và có tính khách quan. Tính từ nó đi cùng miêu tả thứ có thể đo lường như kích thước, cân nặng... Hoặc nếu là tính từ chỉ cảm xúc, thì『さ』sẽ thể hiện cảm xúc chung mà nhiều người cảm nhận được trước một sự vật, sự việc và có thể chia sẻ với nhau phần nào.\nMặt khác, hậu tố『み』nhấn mạnh tính chất, tình trạng và có tính chủ quan. Tính chất, tình trạng này là thứ cần trải nghiệm thực tế mới biết được, như hương vị, độ ấm... hoặc là cảm xúc mà chỉ từng cá nhân mới cảm nhận được và do đó khó chia sẻ với nhau.\nVD: 強さ (độ mạnh) và 強み (điểm mạnh); 甘さ (độ ngọt) và 甘み (vị ngọt)...\n田中(たなか)さんの強(つよ)みは、2ヵ国語(かこくご)が話(はな)せるということです。\nĐiểm mạnh của Tanaka là có thể nói được 2 ngôn ngữ.\n私(わたし)は少(すこ)し苦(にが)みのあるコーヒーが好(すき)です。\nTôi thích cà phê có một chút vị đắng.",
+          "learned": true
+        },
+        {
+          "front": "について\nVề...",
+          "back": "Nに✙　ついて,ついては,ついても,ついての N,つき\n『について』dùng để nêu ra đối tượng/chủ đề (N) mà hành động theo sau (như nói, nghe, suy nghĩ, tìm hiểu...) nhắm tới. Thường sử dụng trong văn nói.\n『につき』là dạng văn viết hoặc văn nói trang trọng của『について』.\n日本(にほん)の文化(ぶんか)について勉強(べんきょう)しています。\nTôi đang tìm hiểu về văn hóa Nhật Bản.",
           "learned": true
         }
       ]
