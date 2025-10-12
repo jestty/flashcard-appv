@@ -192,6 +192,101 @@
           "front": "について\nVề...",
           "back": "Nに✙　ついて,ついては,ついても,ついての N,つき\n『について』dùng để nêu ra đối tượng/chủ đề (N) mà hành động theo sau (như nói, nghe, suy nghĩ, tìm hiểu...) nhắm tới. Thường sử dụng trong văn nói.\n『につき』là dạng văn viết hoặc văn nói trang trọng của『について』.\n日本(にほん)の文化(ぶんか)について勉強(べんきょう)しています。\nTôi đang tìm hiểu về văn hóa Nhật Bản.",
           "learned": true
+        },
+        {
+          "front": "さえ/でさえ\nNgay cả/Thậm chí",
+          "back": "N / Nに / Nで　✙　さえ\nN　 ✙　でさえ\n『さえ』dùng để nêu ra một ví dụ cực đoan, qua đó thể hiện ý: đến cái đó còn vậy, thì những cái khác là dĩ nhiên. Danh từ vốn đi với các trợ từ が hoặc を thì khi đi với『さえ』sẽ bỏ が và を. Khi danh từ là chủ ngữ thì có thể đi kèm『でさえ』thay cho『さえ』.\nそんなこと、子供(こども)でさえ知(し)っている。\nĐiều ấy ngay cả trẻ con cũng biết.",
+          "learned": true
+        },
+        {
+          "front": "というより/というか\nĐúng hơn là/Thì đúng hơn",
+          "back": "V/Aい/Aな/N (thông thường)　✙　というより,というか\n『というより/というか』diễn tả ý: so với nói như vế đằng trước, thì nói như vế đằng sau thích đáng hơn. \"Đúng hơn là/Thì đúng hơn...\"\n『というか』thường được dùng trong câu nêu nhận định của người nói về một đối tượng nào đó, với hàm ý bản thân đang tìm từ hoặc cách diễn đạt phù hợp. \"Không biết có nên gọi là...\"\n今日(きょう)は涼(すず)しいというより寒(さむ)いくらいだった。\nHôm nay trời lạnh hơn là mát.\nあの学生(がくせい)は出来(でき)ないというかやる気(き)がないのでしょう。\nCậu học sinh đó không phải không biết làm, mà không muốn làm thì đúng hơn.",
+          "learned": true
+        },
+        {
+          "front": "代わりに\nThay cho/Đổi lại",
+          "back": "V (thể thông thường),Aい (thể thông thường),Aな (thể thông thường)✙　 代わりに\nNの　　　　　　　　　　✙　代わりに\n『代わりに』diễn tả ý:\n1. Thay thế người, hành động, sự vật này bằng người, hành động, sự vật khác. \"Thay cho/Thay vì...\"\n2. Tuy có những điều tốt, nhưng bù lại, cũng có những điều không tốt hoặc ngược lại (thể hiện mặt tích cực và tiêu cực của một sự vật, vấn đề). \"Đổi lại...\"\n3. Làm một việc để đổi lấy một việc khác. \"Đổi lại...\"\nLưu ý: Nghĩa 1 chỉ dùng với danh từ và động từ ở thể từ điển. Nghĩa 2, 3 mới dùng được với danh từ, động từ và tính từ ở thể thông thường.\n私(わたし)が部長(ぶちょう)の代(か)わりに出張(しゅっちょう)に行(い)きます。\nTôi sẽ đi công tác thay cho trưởng phòng.\n今朝(けさ)はコーヒーの代(か)わりにお茶(ちゃ)を飲(の)んだ。\nSáng nay tôi uống trà thay vì cà phê.",
+          "learned": true
+        },
+        {
+          "front": "によって\nDo/Bằng/Tùy theo",
+          "back": "N 　✙　　によって,によっては,により,による,によるN'\n『によって』\n1. Biểu thị nguyên nhân, lý do của sự việc. \"Do...\"\n2. Biểu thị phương pháp thực hiện. \"Bằng/Bởi/Theo...\"\nLưu ý: 『によって』khó dùng khi phương pháp được nói tới là các công cụ thường ngày (dao, kéo, điện thoại...) được sử dụng một cách cá nhân. Song dùng dưới dạng『によるN'』thì được.\nVD: 合否の結果は後日書面で連絡します。電話による問い合わせは受け付けません。(Kết quả đỗ hay trượt sẽ được báo bằng văn bản vào hôm sau. Không chấp nhận trả lời qua điện thoại.)\n3. Biểu thị một điều kiện mà sự việc sẽ thay đổi tùy theo đó. Sau『によって』thường là động từ thể hiện sự thay đổi như 違う、異なる、変わる... Hoặc, vị ngữ có thể chính là『による』mà không cần động từ thể hiện sự thay đổi nào khác. Khi thêm trợ từ は, tức thành『によっては』, vế sau sẽ biểu thị một trường hợp đặc biệt có thể xảy ra trong điều kiện kể trên.\n『により』là cách nói trang trọng hơn『によって』và dùng nhiều trong văn viết.\n不注意(ふちゅうい)によって、大事故(だいじこ)が発生(はっせい)した。\nDo bất cẩn mà một tai nạn lớn đã xảy ra.\nはなし合(あ)いによって、問題(もんだい)を解決(かいけつ)する。\nChúng tôi sẽ giải quyết vấn đề bằng đối thoại.",
+          "learned": true
+        },
+        {
+          "front": "最中に\nĐúng lúc đang/Ngay giữa lúc",
+          "back": "Nの　　　✙　最中に　/　最中だ\nVている　✙　最中に　/　最中だ\n『最中に』mang nghĩa: đúng lúc, ngay giữa lúc một sự việc, hành động đang diễn ra, thì có một sự việc bất ngờ, ngoài dự đoán xảy ra gây cản trở cho sự việc, hành động ban đầu.\n食事(しょくじ)の最中(さいちゅう)に、お客(きゃく)さんが来(き)た。\nĐúng lúc đang ăn cơm thì có khách đến.\n人(ひと)が話(はな)している最中(さいちゅう)に口(くち)を挟(はさ)まないでください。\nĐừng nói xen vào khi người khác đang nói chuyện.",
+          "learned": true
+        },
+        {
+          "front": "ところだった\nSuýt nữa",
+          "back": "Vる / Vない　✙　ところだった\n『ところだった』diễn tả một sự việc (tốt hoặc xấu) suýt nữa đã xảy ra. Cấu trúc bao hàm cảm xúc của người nói trước sự việc (thất vọng, tức giận, tiếc nuối, nhẹ nhõm...). Thường đi với もう少しで、もうちょっとで...\nTrước câu『ところだった』có thể là một câu điều kiện giả định như『ば』『たら』.\nもう少(すこ)しで遅刻(ちこく)するところだった。\nSuýt chút nữa là trễ rồi.\nもう少(すこ)しで階段(かいだん)から落(お)ちるところだった。\nTôi suýt chút nữa đã ngã cầu thang.",
+          "learned": true
+        },
+        {
+          "front": "ものだ\nĐúng là (cảm thán)/Thật muốn (ước muốn)",
+          "back": "V/Aい/Aな (thể thông thường) ✙　ものだ/もんだ\nVたい/Vたくない　　　　　　✙　ものだ/もんだ\nVてほしい/Vてほしくない　　✙　ものだ/もんだ\n『ものだ』diễn tả:\n1. Cảm xúc ngạc nhiên hoặc sự cảm khái trước một sự việc; Tâm trạng hoài niệm trước một thói quen hoặc tình huống kéo dài trong quá khứ (たものだ); Thái độ mỉa mai hoặc chỉ trích gay gắt hành động của người khác (よくもまあ～ものだ).\n2. Tâm trạng rất muốn, rất ao ước một việc gì đó. Đi với các cấu trúc như『たい』『ほしい』.\n息子(むすこ)も来月(らいげつ)で高校卒業(こうこうそつぎょう)か。時(とき)が流(なが)れるのは早(はや)いものだ。\nCon trai tôi tháng sau cũng đã tốt nghiệp cấp ba rồi. Thời gian trôi nhanh thật đấy.\nうちの息子(むすこ)なんて私(わたし)の言(い)うことなんか全然聞(ぜんぜんき)かないんですから。本当(ほんとう)に困(こま)ったもんですよ。\nCon trai tôi chẳng chịu nghe lời tôi gì cả. Đúng là không biết phải làm sao.",
+          "learned": true
+        },
+        {
+          "front": "んだって\nNghe nói",
+          "back": "V/Aい/Aな/N (thể thông thường)　✙　んだって\n(Riêng A(な)だ　➔　Aな(だ)\n　　　Nだ　　➔　N(だ)な)\nまでだって / からだって / だけだって...\n『んだって』dùng để truyền đạt lại thông tin nghe được hoặc để trích dẫn lời của ai đó. Thường dùng trong giao tiếp hằng ngày.\n『田中(たなか)さん、結婚(けっこん)してるんだって。』『へー ー、知(し)らなかった。』\n『Nghe nói chị Tanaka đã kết hôn rồi.』『Hả, tôi không biết đấy.』",
+          "learned": true
+        },
+        {
+          "front": "上げる\nLàm... xong",
+          "back": "N　(を)　V(ます)　✙　上げる\nN　(が)　V(ます)　✙　上がる\n『上げる』diễn tả ý: đã hoàn thành, kết thúc một công việc sáng tạo, chế tạo nào đó vốn kéo dài liên tục trong một khoảng thời gian nhất định.『上げる』thường đi với các động từ thể hiện sự sáng tác, chế tạo, chế biến, xây dựng... như 作る、できる、書く、育てる...\nやっとレポートを書(か)き上(あ)げた。\nCuối cùng tôi cũng đã viết xong báo cáo.\nケーキが焼(や)き上(あ)がりましたよ。\nBánh đã nướng xong rồi đấy.",
+          "learned": true
+        },
+        {
+          "front": "その結果\nKết quả là",
+          "back": "A。 その結果、B\n『その結果』là liên từ dùng để nối hai câu. Sự việc đã xảy ra ở câu trước là lý do dẫn đến kết quả ở câu sau.\n父(ちち)は人(ひと)の何倍(なんばい)も努力(どりょく)した。その結果(けっか)、仕事(しごと)で成功(せいこう)した。\nBố tôi đã nỗ lực gấp nhiều lần người khác. Kết quả là, ông đã thành công trong công việc.",
+          "learned": true
+        },
+        {
+          "front": "きり\nChỉ có",
+          "back": "N✙　きり,きりだ,っきり,っきりだ\n『きり』dùng để nhấn mạnh số lượng ít. Biến âm『っきり』dùng trong văn nói.\n二人(ふたり)きりで話(はなし)をしたいです。\nTôi muốn nói chuyện chỉ hai người với nhau.\n彼(かれ)に会(あ)ったのは一回(いっかい)きりです。\nTôi chỉ gặp anh ta đúng một lần.",
+          "learned": true
+        },
+        {
+          "front": "ほど～ない\nKhông bằng/Không gì bằng",
+          "back": "1. N1は　　N2ほど　Vない/A(い)くない/ A(な)じゃない\n　N1は　　V (thể thông thường dạng khẳng định) ほど　Vない/A(い)くない/ A(な)じゃない\n2. N2ほど　N1は　　ない/いない\n『ほど～ない』ở cấu trúc 1. diễn tả ý: N1 không bằng được như N2 về hành động hoặc tính chất (V và A) đang nói tới. Đây là cách nói so sánh hơn kém, mang tính chủ quan của người nói. \"Không bằng...\"\n『ほど～ない』ở cấu trúc 2. diễn tả ý: không có gì bằng được, sánh được với N2. N1 là danh từ chung bao hàm N2. Đây là cách nói so sánh nhất. \"Không gì bằng/Không gì hơn...\"\nこの町(まち)は今(いま)も人(ひと)が多(おお)いですが、昔(むかし)ほど賑(にぎ)やかじゃありません。\nThị trấn này bây giờ đông đúc đấy, nhưng không sầm uất bằng hồi xưa.",
+          "learned": true
+        },
+        {
+          "front": "てくれと\nĐược nhờ/Được nhắc",
+          "back": "Vてくれと　　 　✙　頼まれる / 言われる\nVないでくれと　 ✙　頼まれる / 言われる\n『てくれと』dùng để kể về việc được/bị ai đó nhờ vả, nhắc nhở làm hoặc không làm gì.\n『てくれと』thường dùng trong hội thoại thân mật, không cứng nhắc như『なと』.\n友達(ともだち)に、田中(たなか)さんの電話番号(でんわばんごう)を教(おし)えてくれと頼(たの)まれた。\nBạn tôi nhờ tôi cho cậu ấy số điện thoại của Tanaka.\n大家(おおや)に玄関(げんかん)の前(まえ)に自転車(じてんしゃ)を置(お)かないでくれと言(い)われた。\nTôi bị chủ nhà nhắc nhở là không được để xe đạp trước cửa ra vào.",
+          "learned": true
+        },
+        {
+          "front": "だけ\nNhất có thể/Thỏa thích",
+          "back": "V (thể khả năng)/Vたい　✙　だけ\nAい/Aな/ほしい　　 　　✙　だけ\n『だけ』dùng để biểu đạt ý:\n1. Làm hết sức, làm đến mức tối đa có thể. \"Hết sức/Nhất có thể...\"\n2. Làm tùy thích đến khi thỏa mong muốn. \"Thỏa thích...\"\n僕(ぼく)は頑張(がんば)れるだけ頑張(がんば)ってみます。\nTớ sẽ cố gắng hết sức.\n私(わたし)はそれをできるだけ早(はや)くいただけますか。\nTôi có thể nhận được cái đó sớm nhất có thể không?",
+          "learned": true
+        },
+        {
+          "front": "ますように\nMong sao",
+          "back": "Vます　　✙　ように\nVません　✙　ように\nVれます　✙　ように\n『ますように』dùng để thể hiện nguyện vọng thiết tha của người nói.\n合格(ごうかく)しますように。\nƯớc gì mình thi đỗ.\n母(はは)の病気(びょうき)が治(なお)りますように。\nCầu cho mẹ khỏi bệnh.",
+          "learned": true
+        },
+        {
+          "front": "だけで(は)なく\nKhông chỉ... mà còn",
+          "back": "V/Aい/Aな/N (thể thông thường)　✙　だけで(は)なく\n『だけでなく』dùng để thể hiện ý \"không chỉ A mà B cũng…”. Thường đi cùng も.\nTrong văn nói còn có hình thức『だけじゃなく』.\n彼(かれ)は医者(いしゃ)だっただけでなく、作家(さっか)でもあった。\nÔng ấy không chỉ là một bác sĩ mà còn là một nhà văn.\n彼(かれ)は知識(ちしき)だけではなく、経験(けいけん)も豊(ゆた)かである。\nAnh ấy không chỉ thông thái mà còn có kinh nghiệm dồi dào.",
+          "learned": true
+        },
+        {
+          "front": "はずだ/はずがない\nChắc chắn là/Chắc chắn không có chuyện",
+          "back": "V,Aい, Aな,N(thể thông thường) ✙　はずだ / はずがない\n私(わたし)の記憶(きおく)が正(ただ)しければ、ここには郵便局(ゆうびんきょく)があったはずです。\nNếu tôi nhớ không nhầm thì chỗ này chắc chắn từng là bưu điện.\n彼(かれ)はもう寝(ね)ているはずです。部屋(へや)が静(しず)かですから。\nAnh ấy chắc chắn đã ngủ rồi. Bởi căn phòng vô cùng yên lặng.",
+          "learned": true
+        },
+        {
+          "front": "ちゃった\nLàm xong/Làm gì đó mất rồi",
+          "back": "V(てしまった)　✙　ちゃった\nV(でしまった)　✙　じゃった\nV(てしまう)　✙　ちゃう\nV(でしまう)　✙　じゃう\n『ちゃった』là cách nói ngắn gọn của Vてしまった , dùng trong văn nói, diễn tả ý nghĩa:\n1. Đã hoàn thành một việc gì đó\n2. Tiếc nuối về sự việc đã qua; Đã lỡ làm gì đó (Làm... mất rồi/luôn rồi…)\n\n『ちゃう』là cách nói ngắn gọn của Vてしまう , dùng trong văn nói, diễn tả ý nghĩa:\n1. Sẽ, sắp hoàn thành một việc gì đó\n2. Tiếc nuối trước một sự việc xảy ra trong tương lai, hoặc một sự việc thường xảy ra\n3. Yêu cầu, mời gọi người khác làm gì đó (Làm... luôn đi!)\nあ、バス バス、行(い)っちゃった。\nA, xe buýt đi mất rồi.\nそんなに食(たべ)ると太(ふと)っちゃうよ！\nNếu cậu ăn nhiều như thế thì sẽ béo đấy!",
+          "learned": false
+        },
+        {
+          "front": "ことはない\nKhông cần phải",
+          "back": "V (thể từ điển)　✙　ことはない\n『ことはない』dùng để nói với người nghe rằng không nhất thiết phải thực hiện một hành động nào đó, không thực hiện hành động đó thì vẫn chấp nhận được.\n急(いそぐ)ことはない。ゆっくりでいい。\nKhông cần phải gấp đâu. Cứ từ từ thôi.\n自分(じぶん)を責(せ)めることはないよ。\nAnh không cần phải tự trách mình.",
+          "learned": true
         }
       ]
     }
