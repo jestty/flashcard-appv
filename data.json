@@ -287,6 +287,71 @@
           "front": "ことはない\nKhông cần phải",
           "back": "V (thể từ điển)　✙　ことはない\n『ことはない』dùng để nói với người nghe rằng không nhất thiết phải thực hiện một hành động nào đó, không thực hiện hành động đó thì vẫn chấp nhận được.\n急(いそぐ)ことはない。ゆっくりでいい。\nKhông cần phải gấp đâu. Cứ từ từ thôi.\n自分(じぶん)を責(せ)めることはないよ。\nAnh không cần phải tự trách mình.",
           "learned": true
+        },
+        {
+          "front": "わけだ\nThảo nào/Chẳng trách/Bảo sao (vỡ lẽ)",
+          "back": "V (thể thông thường)　　✙　 わけだ\nAい (thể thông thường)　✙　 わけだ\nAな (thể thông thường)　✙　 わけだ\n『わけだ』diễn tả tâm trạng hiểu ra và hài lòng với nguyên nhân tại sao sự việc lại trở nên như vậy. Phần nguyên nhân được trình bày ở câu trước hoặc câu sau của『わけだ』.\n暑(あつ)いわけだ。気温(きおん)が36度(ど)もある。\nBảo sao trời nóng. Nhiệt độ lên đến 36 độ cơ mà.\nこんなところで工事(こうじ)をしたのか。渋滞(じゅうたい)するわけだ。\nỞ chỗ này mà có công trình hả? Thảo nào tắc đường.",
+          "learned": true
+        },
+        {
+          "front": "せいで\nVì/Do/Tại",
+          "back": "V/Aい/Aな/N (thể thông thường)　　 ✙　せいで / せいだ\nNだ　➔　N(だ)である)\nNの　✙　せいで / せいだ\n『せいで』chỉ nguyên nhân, lý do của việc gì đó. Việc này là một kết quả xấu.\nバスが遅(おく)れたせいで、約束(やくそく)の時間(じかん)に間(ま)に合(あ)わなかった。\nDo xe buýt tới muộn nên tôi đã không đến kịp giờ hẹn.\n部屋(へや)があまりにも汚(きたな)いせいで、必要(ひつよう)なものがすぐに見(み)つからない。\nTại phòng quá bẩn mà tôi không tìm thấy ngay thứ mình cần.",
+          "learned": true
+        },
+        {
+          "front": "ふりをする\nGiả vờ/Tỏ ra",
+          "back": "V (thể thông thường),Aい/Aな,Nの✙　ふりをする\n『ふりをする』diễn tả thái độ hoặc hành động mà đối tượng chỉ tỏ ra chứ thực chất thì không phải vậy.\n彼女(かのじょ)は聞(き)こえないふりをした。\nCô ấy giả vờ không nghe thấy.\n彼(かれ)は何(なに)か探(さが)すふりをした。\nAnh ấy giả vờ tìm cái gì đó.",
+          "learned": true
+        },
+        {
+          "front": "切る/切れる/切れない\nLàm hết/Làm... không hết",
+          "back": "Nを　V(ます)　✙　切る\nNが　V(ます)　✙　切れる / 切れない\n『切る』\n1. Làm hết, hoàn thành một việc gì đó (một cách trọn vẹn, triệt để).\n2. Diễn tả một cảm xúc, cảm giác là \"cực kỳ, hết sức\"...\n『切れる』Có thể làm hết một việc gì đó từ đầu đến cuối.\n『切れない』Không thể làm hết một việc gì đó (do quá nhiều, quá sức...)\n長(なが)い小説(しょうせつ)を二日間(ふつかかん)で読(よみ)切(き)った。\nTôi đã đọc hết 1 cuốn tiểu thuyết dài trong 2 ngày.\n数(かぞ)え切(き)れないほどたくさん星(ほし)が光(ひか)っている。\nVô số vì sao đang chiếu sáng.",
+          "learned": true
+        },
+        {
+          "front": "なんという\n...gọi là gì, tên là gì",
+          "back": "なんという～\nDùng để hỏi tên sự vật, sự việc. Cách nói thân mật là「なんていう」.\nその猫(ねこ)はなんという名前(なまえ)ですか。\nCon mèo đó tên gọi là gì?",
+          "learned": true
+        },
+        {
+          "front": "ついでに\nNhân tiện/Tiện thể",
+          "back": "V (thể từ điển)/Vた　✙　ついでに\n　　　　　　 Nの 　 ✙　ついでに\n『ついでに』diễn tả ý: khi thực hiện một hành động thì nhân tiện thực hiện thêm một hành động khác.\n公園(こうえん)を散歩(さんぽ)するついでに、ゴミを出(だ)しなさい。\nĐi dạo công viên thì tiện đổ rác luôn nhé.\n買(かい)物(もの)ついでに、図書館(としょかん)へ行(い)って本(ほん)を借(か)りてきた。\nTôi đi mua đồ, tiện thể đến thư viện mượn sách.",
+          "learned": true
+        },
+        {
+          "front": "させてください/させてもらえますか/させてもらえませんか\nXin được phép/Cho phép tôi... được không?",
+          "back": "V (thể sai khiến)て　✙　ください, もらえますか, もらえませんか\n『 させてください / させてもらえますか / させてもらえませんか』dùng để xin phép người khác cho mình làm việc gì đó. Mức độ lịch sự tăng dần:『ください』<『もらえますか』<『もらえませんか』.\nちょっと気分(きぶん)が悪(わるい)ので、早(はやく)帰(かえ)らせてください。\nVì không khỏe lắm nên cho phép tôi về sớm nhé.\nあなたの会社(かいしゃ)のお話(はなし)を聞(き)かせてください。\nXin hãy cho tôi nghe chuyện của công ty anh.",
+          "learned": true
+        },
+        {
+          "front": "がる\nCảm thấy (Cảm xúc, cảm giác, ý muốn của người khác)",
+          "back": "A(い) / A(な) / Vた(い)✙　がる,がっている, がらないで\n『がる』dùng để diễn tả cảm xúc, cảm giác, ý muốn hiện ra qua vẻ mặt, hành động của người khác, chứ không dùng cho bản thân người nói.\nVì cảm xúc, cảm giác, ý muốn ở đây được nắm bắt qua vẻ mặt và hành động, nên『がる』đôi khi còn mang ý nghĩa: người được nói tới tỏ ra như vậy chứ đó không phải điều họ thực sự cảm thấy. Ý nghĩa này cần dựa vào văn cảnh để nắm bắt.\nLưu ý:\n- Cấu trúc này thực chất đã động từ hóa tính từ, nên trợ từ が đi với tính từ, 『ほしい』hoặc『たい』, sẽ đổi thành を khi đi với『がる』.\n- Có một số tính từ tuy không tả cảm xúc, cảm giác nhưng vẫn đi với『がる』như: 新しがる、重宝がる、強がる、粋がる...\n- So sánh『がる』và『がっている』:『がる』thể hiện cảm xúc, cảm giác thường xuyên xảy ra hoặc đã thành thói quen.『がっている』thể hiện cảm xúc, cảm giác nhất thời hoặc đang xảy ra ở hiện tại.\n-『がる』về cơ bản chỉ dùng cho người thứ ba, nhưng người nói cũng có thể dùng cho chính mình, khi nhìn nhận mình khách quan từ góc độ của người thứ ba. VD:\n父(ちち)が亡(な)くなったのは辛(つら)いけど、いつまでも悲(かな)しがっているわけにはいかない。(Người nói nhận thấy mình đang buồn, nên tự nhắc mình không thể cứ buồn mãi được.)\n恥(は)ずかしがらないで、前(まえ)に出(で)てきてください。\nĐừng xấu hổ, hãy bước ra phía trước.\n失敗(しっぱい)を怖(こわ)がらないで。\nĐừng sợ thất bại.",
+          "learned": true
+        },
+        {
+          "front": "というと/といえば/といったら\nNói đến",
+          "back": "N　✙　というと / といえば / といったら\n『というと/といえば/といったら』dùng để nhắc đến một điều nổi bật, tiêu biểu, hoặc liên tưởng tới từ chủ đề (N) mà người nói nghe được từ người đối diện.\nNhìn chung các cấu trúc này có thể thay thế cho nhau, song khi đặt câu hỏi ngược lại cho người kia về chủ đề, ta thường chỉ dùng『というと』, còn『といえば』chủ yếu dùng trong câu trần thuật nói về nội dung người nói nhớ ra từ chủ đề đó.\n日本(にほん)の山(やま)といったら、富士山(ふじさん)です。\nNói đến các ngọn núi của Nhật thì phải nhắc tới núi Phú Sĩ.\n京都(きょうと)というと、お寺(てら)をイメージします。\nNói đến Kyoto, ta sẽ liên tưởng tới các ngôi chùa.",
+          "learned": true
+        },
+        {
+          "front": "込む\n(Nhét) vào/(Chất) lên",
+          "back": "V(ます)　✙ 　込む\n『込む』\n1. Đi sau tha động từ, diễn tả ý: cho/nhét vào trong một cái gì đó hoặc một nơi nào đó.\n2. Đi sau một động từ để tạo thành cụm động từ mang ý nghĩa: làm một cách triệt để, chuyên tâm, đầy đủ; làm trong một thời gian dài.\nこの紙(かみ)に必要(ひつよう)な情報(じょうほう)を書(か)き込(こ)んでください。\nHãy điền những thông tin cần thiết vào tờ giấy này.\nあなたの口座(こうざ)にお金(かね)を振(ふり)込(こ)んだよ。\nTôi đã chuyển tiền vào tài khoản của bạn đấy.",
+          "learned": true
+        },
+        {
+          "front": "なかなか\nRất/Khá là",
+          "back": "なかなか✙　Aい/Aな/V,のN\n『なかなか』khi bổ nghĩa cho tính từ, danh từ, động từ ở thể khẳng định, sẽ cho biết tính chất, sự việc, hành động đó có mức độ cao hơn bình thường, vượt qua dự đoán của người nói.\nこの料理(りょうり)はなかなか美味(おい)しいですね。\nMón ăn này khá ngon đấy nhỉ.\n彼(かれ)らはなかなか手(て)ごわい相手(あいて)ですね。\nHọ là những đối thủ khá khó chơi đấy nhỉ.",
+          "learned": true
+        },
+        {
+          "front": "といっても\nDù nói là... nhưng...",
+          "back": "V/Aい/Aな/N (thể thông thường)　✙　と(は)いっても\n『といっても』diễn tả ý: cái danh nghĩa (nêu ở vế trước) thì đúng, nhưng thực tế (nêu ở vế sau) thì không bằng hoặc khác với mong đợi/ấn tượng mà cái danh nghĩa đó mang lại.\n庭(にわ)があるといっても、とても小(ちい)さいです。\nGọi là có vườn nhưng nó rất nhỏ.\n今週(こんしゅう)は忙(いそが)しいといっても、先週(せんしゅう)ほどじゃない。\nTuần này nói là bận nhưng cũng không bằng tuần trước.",
+          "learned": true
+        },
+        {
+          "front": "に対して\nĐối với/Trái với/Cho mỗi",
+          "back": "Nに　✙　対して / 対し / 対しては / 対しても / 対するN' / 対してのN'\n『に対して』\n1. Cho biết đối tượng N mà hành động, cảm xúc hoặc thái độ ở vế sau đang hướng đến. \"Đối với...\"\n2. Cho biết đối tượng N và một đối tượng khác đối lập với N. \"Trái với...\"\n3. Cho biết một số lượng tương ứng với mỗi N. \"Cho mỗi...\"\n田中先生(たなかせんせい)は生徒(せいと)に対(たい)して厳(きび)しい。\nThầy Tanaka nghiêm khắc đối với học sinh.\nお客様(きゃくさま)に対(たい)しては、敬語(けいご)を使 つかうようにしています。\nChúng tôi luôn chú ý dùng kính ngữ với khách hàng.",
+          "learned": true
         }
       ]
     }
