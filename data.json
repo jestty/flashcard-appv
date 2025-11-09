@@ -352,6 +352,106 @@
           "front": "に対して\nĐối với/Trái với/Cho mỗi",
           "back": "Nに　✙　対して / 対し / 対しては / 対しても / 対するN' / 対してのN'\n『に対して』\n1. Cho biết đối tượng N mà hành động, cảm xúc hoặc thái độ ở vế sau đang hướng đến. \"Đối với...\"\n2. Cho biết đối tượng N và một đối tượng khác đối lập với N. \"Trái với...\"\n3. Cho biết một số lượng tương ứng với mỗi N. \"Cho mỗi...\"\n田中先生(たなかせんせい)は生徒(せいと)に対(たい)して厳(きび)しい。\nThầy Tanaka nghiêm khắc đối với học sinh.\nお客様(きゃくさま)に対(たい)しては、敬語(けいご)を使 つかうようにしています。\nChúng tôi luôn chú ý dùng kính ngữ với khách hàng.",
           "learned": true
+        },
+        {
+          "front": "に関して\nVề/Liên quan đến",
+          "back": "N　✙ に関して,に関しては, に関しても, に関するN', に関してのN'\n『に関して』dùng để nêu ra chủ đề của một vấn đề, câu chuyện... nào đó. Đây là cách nói cứng hơn『について』, thường được dùng trong văn nói trang trọng hoặc văn viết như điều tra, nghiên cứu...\nこの問題(もんだい)に関(かん)してご意見(いけん)ありませんか。\nCó ai có ý kiến gì về vấn đề này không?\nこの事件(じけん)に関(かん)して新(あたら)しい情報(じょうほう)が入(はい)りました。\nĐã có thông tin mới về vụ việc này.",
+          "learned": true
+        },
+        {
+          "front": "て(は)はじめて\nSau khi... thì mới bắt đầu",
+          "back": "Vて　✙　(は)はじめて\n『てはじめて』diễn tả ý: sau khi thực hiện một hành động nào đó thì mới bắt đầu nhận thức được, mới hiểu ra vấn đề gì.\n歌舞伎(かぶき)を見(み)てはじめて、日本文化(にほんぶんか)に興味(きょうみ)を持(も)った。\nSau khi xem kabuki, tôi mới bắt đầu hứng thú với văn hóa Nhật Bản.\n入院(にゅういん)してはじめて、健康(けんこう)の重要(じゅうよう)さが分(わ)かりました。\nMãi đến khi phải nhập viện, tôi mới hiểu ra tầm quan trọng của sức khỏe.",
+          "learned": true
+        },
+        {
+          "front": "つまり\nNói cách khác/Tóm lại là",
+          "back": "A　つまり　B\n『つまり』dùng để:\n1. Diễn đạt cùng một ý tưởng với vế trước, nhưng bằng cách dùng từ khác hoặc cách nói khác. Gần nghĩa với『すなわち』nhưng mang tính văn nói hơn. \"Nói cách khác/Tức là...\"\n2. Tóm gọn lại nội dung vừa được nói. Tương tự『要(よう)するに』và『結局(けっきょく)』. \"Tóm lại là...\"\n父(ちち)の兄(あに)、つまり私(わたし)の伯父(おじ)は医者(いしゃ)をしている。\nAnh trai của bố tôi, tức là bác tôi, hiện đang làm bác sĩ.\n彼(かれ)は獣医(じゅうい)、つまり動物(どうぶつ)のお医者(いしゃ)さんです。\nAnh ấy là bác sĩ thú y, nói cách khác là bác sĩ khám cho động vật.",
+          "learned": true
+        },
+        {
+          "front": "によれば/によると\nTheo/Dựa vào",
+          "back": "N　✙　によれば　\nN　✙　によると\n『によれば/によると』cho biết nguồn gốc hoặc cơ sở của một thông tin người nói có được. Vế sau thường dùng các cấu trúc truyền đạt thông tin như『そう』『らしい』『ということだ』...\n天気予報(てんきよほう)によれば、明日(あした)は晴(はれ)るらしい。\nTheo dự báo thời tiết thì ngày mai trời nắng.\nみんなの話(はなし)によれば、彼(かれ)は辞職(じしょく)するそうだ。\nTheo lời mọi người thì anh ấy sắp từ chức.",
+          "learned": true
+        },
+        {
+          "front": "ことになる/ことになっている\nĐược quyết định/Được quy định",
+          "back": "V (thể từ điển)/Vない　✙　ことになる, ことになっている\n『ことになる』cho biết một quyết định được đưa ra, nhưng không phải do bản thân người thi hành tự muốn mà do người khác hoặc tổ chức định đoạt.『ことになる』nhấn mạnh nội dung của quyết định chứ không làm rõ chủ thể đưa ra quyết định đó (khác với『ことにする』). Vì thế, có những việc do bản thân quyết định, nhưng để tránh thể hiện ý chí của chính mình, người nói cũng dùng『ことになる』(VD: 結婚することになる). \"Được quyết định...\"\n『ことになっている』cho biết một kế hoạch, lịch trình đã được lên sẵn, hoặc một quy định, luật lệ được đặt ra. \"Được quyết định/Được quy định...\"\n中国(ちゅうごく)へは田中(たなか)さんが行(い)くことになるでしょう。\nCó lẽ anh Tanaka sẽ được cử đi Trung Quốc.",
+          "learned": true
+        },
+        {
+          "front": "ということ/というの\nChuyện/Việc/Tin...",
+          "back": "Câu văn (thể thông thường)　✙ ということ / っていうこと,というの / っていうの, というN / っていうN\n『ということ/というの』dùng để nêu ra một nội dung cụ thể bằng cách danh từ hóa câu văn mang nội dung đó. Ngoài こと và の, cũng có thể dùng các danh từ khác như 話 (chuyện)、意見 (ý kiến)、ニュース (tin tức)、批判 (lời phê bình)、噂 (tin đồn)、考え (quan điểm)...\nTrong văn nói, 『という』sẽ được nói tắt thành『っていう』.\nリンさんが帰国(きこく)するということを聞(き)いて驚(おどろ)きました。\nTôi rất ngạc nhiên khi nghe tin Linh sẽ về nước.\n田中(たなか)さんが医者(いしゃ)だというのを知(し)らなかった。\nTôi không biết chị Tanaka là bác sĩ đấy.\n彼(かれ)が結婚(けっこん)しているという話(はなし)を知(し)らなかった。\nTôi không biết chuyện anh ta đã kết hôn.",
+          "learned": true
+        },
+        {
+          "front": "たて\nVừa mới... xong",
+          "back": "V(ます)たて のN, だ\n『たて』dùng để diễn tả cái gì đó vừa mới làm xong, hoặc sự việc nào đó vừa mới xảy ra mà vẫn còn nhìn thấy.\n焼(やき)たてのパン パンは美味(おい)しい。\nBánh mì mới nướng rất ngon.\nあのスーパー スーパーはとりたての新鮮(しんせん)な野菜(やさい)を売(う)っている。\nSiêu thị kia bán rau tươi vừa mới hái.",
+          "learned": true
+        },
+        {
+          "front": "だからこそ\nChính vì thế",
+          "back": "だからこそ～\nDùng để nhấn mạnh lý do dẫn đến một sự việc nào đó.\nだからこそ、バイク ばいくで行(い)くなと言(い)ったんだ。\nChính vì thế mà tớ đã bảo cậu đừng đi xe máy.",
+          "learned": false
+        },
+        {
+          "front": "ふそくはない\nKhông có gì đáng để phàn nàn, chê trách",
+          "back": "～ふそくはない\nÝ nghĩa là: không có gì đáng phàn nàn, đúng như mong đợi của người nói.\nこの仕事(しごと)にとって不足(ふそく)はない。\nKhông có gì đáng để phàn nàn đối với công việc này.\n彼 かれは首相 しゅしょうとして不足(ふそく)のない候補者(こうほしゃ)だ。\nÔng ấy là ứng cử viên không có gì đáng chê trách cho vai trò thủ tướng cả.",
+          "learned": true
+        },
+        {
+          "front": "また\n(Lựa chọn) mà, hoặc",
+          "back": "また～\nDiễn tả ý nghĩa \"một trong hai đều được\".\n登録(とうろく)してもいい。また、登録(とうろく)しなくてもいい。\nĐăng ký cũng được, mà không đăng ký cũng được.",
+          "learned": true
+        },
+        {
+          "front": "くもなんともない\nHoàn toàn không..., không... chút nào cả",
+          "back": "A-く + もなんともない\nThường đi với những từ chỉ cảm xúc để diễn tả ý phủ định mạnh mẽ \"không như thế\".Đồng nghĩa với [まったく...ない], [ぜんぜん...ない].\nそんな映画(えいが)は恐(おそ)ろしくもなんともない。\nBộ phim đó chẳng kinh dị chút nào.\nこの小説(しょうせつ)は面白(おもしろ)くもなんともない。\nCuốn tiểu thuyết này chẳng thú vị chút nào.",
+          "learned": false
+        },
+        {
+          "front": "よりない\nKhông còn cách nào khác ngoài..., chỉ còn cách...",
+          "back": "Vる + よりない\nDiễn tả ý nghĩa: trong một tình huống khó khăn thì không có cách nào giải quyết ngoài cách làm như thế.\nCũng có cách nói khác như là 「...しかない」、「 ... 以外にない」.\nこんな経済危機(けいざいきき)なら、どこでもいいから採用(さいよう)してくれるところに就職(しゅうしょく)するよりなさそうだ。\nTrong tình hình khủng hoảng kinh tế như thế này, xem ra chỉ còn cách xin làm ở bất cứ nơi nào tuyển dụng mình.",
+          "learned": true
+        },
+        {
+          "front": "決して～ない\nNhất định không/Tuyệt đối không",
+          "back": "決して　✙ Vない, A(い)くない, A(な)ではない, Nではない\n『決して～ない』\n- Thể hiện quyết tâm không thực hiện một hành động nào đó.\n- Khi đi với cấu trúc cấm đoán thì nhấn mạnh sự cấm đoán đó, rằng \"dù thế nào cũng tuyệt đối không được làm\".\n- Thể hiện sự phủ nhận mạnh mẽ, rằng một điều gì đó \"tuyệt đối, chắc chắn không phải vậy\".\n私(わたし)は決(け)っして夢(ゆめ)を諦(あきら)めません。\nTôi nhất định sẽ không từ bỏ ước mơ của mình.\n噓(うそ)は決(け)っして申(もう)しません。\nTôi sẽ không bao giờ nói dối.",
+          "learned": true
+        },
+        {
+          "front": "それゆえ\nDo đó",
+          "back": "それゆえ～\nそれゆえ dùng để nối câu, biểu thị quan hệ nguyên nhân - kết quả. Đây là lối nói trang trọng, thường dùng trong văn viết.\n彼(かれ)は病気(びょうき)になった。それゆえ、外国(がいこく)行(い)きをあきらめた。\nAnh ấy bị bệnh. Do đó, anh ấy phải từ bỏ việc đi nước ngoài.\n世界(せかい)の人口(じんこう)が増加(ぞうか)している。それゆえ、ますます多(おお)くの食料(しょくりょう)が必要(ひつよう)なのだ。\nDân số thế giới đang gia tăng. Do đó, chúng ta cần lương thực ngày càng nhiều.",
+          "learned": true
+        },
+        {
+          "front": "そうしたら\nNhư thế, đến lúc đó, rồi (Tương lai)",
+          "back": "そうしたら～\nĐi sau một nội dung diễn tả kế hoạch để nói về kết quả do kế hoạch ấy mang lại trong tương lai.\nもう一杯飲(いっぱいの)もう、そうしたら、家(いえ)まで送(おく)っていくよ。\nUống một cốc nữa thôi, rồi tôi sẽ đưa cậu về tận nhà.\n手(て)を貸(か)してくれ、そうしたら、君(きみ)に一杯(いっぱい)おごるから。\nHãy giúp tôi một tay, rồi tôi sẽ mời cậu uống nước.",
+          "learned": true
+        },
+        {
+          "front": "どうも\nThế nào ấy (Nghi hoặc)",
+          "back": "どうも～\nDiễn tả tâm trạng “không hiểu tại sao lại trở nên như vậy”. Theo sau thường là những cách nói mang nghĩa không tốt, tiêu cực.\n一生懸命(いっしょうけんめい)頑張(がんば)っていたが、どうも成績(せいせき)はまだ悪(わる)かった。\nTôi đã cố gắng hết sức nhưng không hiểu sao thành tích học tập vẫn kém.",
+          "learned": true
+        },
+        {
+          "front": "なんという～だ\n...thật là kinh khủng, đáng nể, đáng ngạc nhiên",
+          "back": "なんという + N + だ\nDiễn tả tâm trạng ngạc nhiên, kinh ngạc của người nói trước một người, sự vật nào đó.\n彼(かれ)はなんという天才(てんさい)なんだろう。\nAnh ấy đúng là một thiên tài đáng nể.\nなんというばかげた考(かんが)えだ。\nThật là một suy nghĩ ngớ ngẩn.",
+          "learned": true
+        },
+        {
+          "front": "ていただきたい\nXin ông vui lòng... cho",
+          "back": "V-て, V-ないで + いただきたい\nDùng khi muốn nhờ vả, yêu cầu đối phương làm gì đó cho mình. Đây là cách nói khiêm nhường, trang trọng hơn của 「てもらいたい」 .\n今朝中(けさちゅう)に提供者(ていきょうしゃ)に連絡(れんらく)していただきたいんです。\nXin anh liên lạc với nhà cung cấp trong sáng nay.\n同(おなじ)誤(あやま)りを繰(くり)返(かえ)さないでいただきたいんです。\nXin anh đừng lặp lại sai lầm tương tự nữa.",
+          "learned": true
+        },
+        {
+          "front": "あれでも\nNhư thế mà cũng",
+          "back": "あれでも\nあれでも彼(かれ)は社会(しゃかい)に寄付(きふ)しているつもりらしいが、かえって破壊(はかい)だ。\nLàm ăn như thế mà anh ta cứ nghĩ mình đang đóng góp cho xã hội. Phá hoại thì có!\n彼女(かのじょ)は学生(がくせい)を殴(なぐ)ってばかりいて、あれでも先生(せんせい)なのですか。\nBà ấy chỉ toàn đánh đập học sinh thôi, như thế mà cũng gọi là cô giáo à.",
+          "learned": true
+        },
+        {
+          "front": "すでに\nĐã... rồi",
+          "back": "すでに　✙　Câu văn\n『すでに』dùng để:\n1. Diễn tả một hành động, một sự việc nào đó đã xảy ra. Khi này động từ sẽ ở thể quá khứ.\n2. Diễn tả ý: ở thời điểm đó thì sự việc, hành động được nhắc đến đã ở trạng thái như vậy rồi. Khi này động từ thường ở thể tiếp diễn.\nChữ Hán của『すでに』là『既に』.\n彼(かれ)らはすでに外出(がい)してしまいました。\nHọ đã đi ra ngoài rồi.\n彼(かれ)とはすでに10年間(じゅうねんかん)の付(つ)き合(あ)いである。\nMình và anh ấy quen nhau cũng đã 10 năm rồi.",
+          "learned": true
         }
       ]
     }
