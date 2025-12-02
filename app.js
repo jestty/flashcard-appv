@@ -1,4 +1,3 @@
-// =======================
 // Flashcard App JS (hoàn chỉnh + offline từ data.json + localStorage)
 // =======================
 
@@ -60,7 +59,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.error('Lỗi lưu localStorage:', err);
     }
   };
-
   // Lưu local nhưng KHÔNG đặt flag modified (dùng khi đồng bộ từ remote)
   const saveLocalDataNoMark = () => {
     try {
@@ -70,7 +68,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.error('Lỗi lưu localStorage (no mark):', err);
     }
   };
-
   const loadLocalData = () => {
     try {
       const stored = localStorage.getItem('flashcardData');
@@ -663,6 +660,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // =======================
   // Initial Load
   // =======================
+  loadLocalData();
   await loadData();
 
   // Auto sync khi online: giờ không có server, nên chỉ reload data.json khi online
