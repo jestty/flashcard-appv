@@ -454,7 +454,22 @@
           "learned": true
         }
       ]
+    },
+    {
+      "name": "QC検定3級",
+      "cards": [
+        {
+          "front": "手法編（しゅほうへん)\nPhần phương pháp\nデータのとり方(かた)\nCách thu thập dữ liệu",
+          "back": "。データの種類(しゅるい)\nCác loại dữ liệu\n。データの変換(へんかん)\nChuyển đổi dữ liệu\n。母集団(ぼしゅうだん)とサンプル\nTổng thể và mẫu\n母集団(ぼしゅうだん) = toàn bộ đối tượng\nサンプル = mẫu lấy ra để phân tích\n。サンプルと誤差(ごさ)\nMẫu và sai số\n(sai số lấy mẫu, sai số đo…)\n。基本統計量(きほんとうけいりょう)とグラフ\nCác thống kê cơ bản và biểu đồ\n(trung bình, phương sai, độ lệch chuẩn, histogram, biểu đồ Pareto…)",
+          "learned": true
+        },
+        {
+          "front": "手法編（しゅほうへん)\nPhần phương pháp\nQC七つ(ななつ)の道具(どうぐ)\n7 công cụ QC",
+          "back": "。パレート図(ず)\n(80/20 – xác định các nguyên nhân quan trọng)\n。特性要因図(よういんず)\nBiểu đồ nhân quả / Biểu đồ xương cá (Ishikawa)\n。チェックシート\nPhiếu kiểm tra (Check sheet)\n。ヒストグラム\nHistogram (biểu đồ tần suất)\n。散布図(さんぷず)\nBiểu đồ phân tán (Scatter plot)\n(dùng để xem tương quan giữa 2 đại lượng)\n。グラフ（管理図(かんりず)は別項目(べつこうもく)として記載(きさい)）\nBiểu đồ (Biểu đồ kiểm soát – Control chart được ghi ở mục riêng)\n。層別(そうべつ)\nPhân tầng (Stratification)\n(phân loại dữ liệu theo nhóm: theo ca, theo máy, theo công nhân…)",
+          "learned": true
+        }
+      ]
     }
   ],
-  "currentCategoryIndex": 0
+  "currentCategoryIndex": 1
 }
