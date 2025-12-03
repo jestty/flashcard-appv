@@ -583,33 +583,43 @@ document.addEventListener('DOMContentLoaded', async () => {
     flashcard.addEventListener('touchcancel', clearLP, { passive: true });
   }
     // --- iOS SAFE TOUCH FLIP PATCH (prevent flicker when finger moves) ---
-  if (flashcard) {
-    let startX = 0, startY = 0, moved = false;
-    const MOVE_TOLERANCE = 10; // px
+if (flashcard) {
+  let startX = 0, startY = 0, moved = false;
+  const MOVE_TOLERANCE = 10; // px
 
-    flashcard.addEventListener("touchstart", (e) => {
-      if (e.touches.length > 1) return;
-      const t = e.touches[0];
-      startX = t.clientX;
-      startY = t.clientY;
-      moved = false;
-    }, { passive: true });
+  flashcard.addEventListener("touchstart", (e) => {
+    if (e.touches.length > 1) return;
+    const t = e.touches[0];
+    startX = t.clientX;
+    startY = t.clientY;
+    moved = false;
+  }, { passive: true });
 
-    flashcard.addEventListener("touchmove", (e) => {
-      const t = e.touches[0];
-      if (Math.abs(t.clientX - startX) > MOVE_TOLERANCE ||
-          Math.abs(t.clientY - startY) > MOVE_TOLERANCE) {
-        moved = true;
-      }
-    }, { passive: true });
+  flashcard.addEventListener("touchmove", (e) => {
+    const t = e.touches[0];
+    if (Math.abs(t.clientX - startX) > MOVE_TOLERANCE ||
+        Math.abs(t.clientY - startY) > MOVE_TOLERANCE) {
+      moved = true;
+    }
+  }, { passive: true });
 
-    flashcard.addEventListener("touchend", (e) => {
+  flashcard.addEventListener("touchend", (e) => {
+    e.preventDefault();
+    if (!moved) flipCard();
+  }, { passive: false });
+
+  // --- BLOCK CLICK AFTER SWIPE (iOS creates synthetic click events) ---
+  flashcard.addEventListener("click", (e) => {
+    if (moved) {
+      e.stopImmediatePropagation();
       e.preventDefault();
-      if (!moved) flipCard();
-    }, { passive: false });
+      return;
+    }
+    // click hợp lệ nếu không di chuyển
+  });
 
-    flashcard.addEventListener("contextmenu", (e) => e.preventDefault());
-  }
+  flashcard.addEventListener("contextmenu", (e) => e.preventDefault());
+}
   
 
   nextBtn?.addEventListener('click', nextCard);
