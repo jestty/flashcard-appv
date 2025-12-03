@@ -467,6 +467,36 @@
           "front": "手法編（しゅほうへん)\nPhần phương pháp\nQC七つ(ななつ)の道具(どうぐ)\n7 công cụ QC",
           "back": "。パレート図(ず)\n(80/20 – xác định các nguyên nhân quan trọng)\n。特性要因図(よういんず)\nBiểu đồ nhân quả / Biểu đồ xương cá (Ishikawa)\n。チェックシート\nPhiếu kiểm tra (Check sheet)\n。ヒストグラム\nHistogram (biểu đồ tần suất)\n。散布図(さんぷず)\nBiểu đồ phân tán (Scatter plot)\n(dùng để xem tương quan giữa 2 đại lượng)\n。グラフ（管理図(かんりず)は別項目(べつこうもく)として記載(きさい)）\nBiểu đồ (Biểu đồ kiểm soát – Control chart được ghi ở mục riêng)\n。層別(そうべつ)\nPhân tầng (Stratification)\n(phân loại dữ liệu theo nhóm: theo ca, theo máy, theo công nhân…)",
           "learned": true
+        },
+        {
+          "front": "手法編（しゅほうへん)\nPhần phương pháp\n新QC七つ道具\n7 công cụ QC mới",
+          "back": "。親和図法(しんわずほう)\nPhương pháp biểu đồ quan hệ / biểu đồ đồng cảm (Affinity Diagram)\n(Dùng để nhóm các ý tưởng hoặc vấn đề có liên quan)\n。連関図法(れんかんずほう)\nPhương pháp sơ đồ quan hệ nhân – quả / mối liên kết (Relation Diagram)\n(Hiển thị mối liên kết phức tạp giữa các yếu tố)\n。系統図法(けいとうずほう)\nPhương pháp sơ đồ hệ thống (Tree Diagram)\n(Phân chia mục tiêu lớn thành bước nhỏ theo cấu trúc cây)\n。マトリックス図法(ずほう)\nPhương pháp ma trận (Matrix Diagram)\n(Thể hiện mối quan hệ giữa nhiều nhóm yếu tố)\n。アローダイアグラム法(ほう)\nPhương pháp sơ đồ mũi tên (Arrow Diagram / PERT)\n(Dùng trong lập kế hoạch tiến độ, phân tích đường găng)\n。PDPC法(ほう)\nPhương pháp PDPC (Process Decision Program Chart)\n(Phân tích rủi ro và hành động đối phó khi lập kế hoạch)\n。マトリックスデータ解析法(かいせきほう)\nPhương pháp phân tích dữ liệu bằng ma trận (Matrix Data Analysis)\n(Dùng để phân tích dữ liệu phức tạp theo dạng ma trận để tìm mối quan hệ)",
+          "learned": true
+        },
+        {
+          "front": "手法編（しゅほうへん)\nPhần phương pháp\n統計的方法(とうけいてきほうほう)の基礎(きそ)\nCơ sở của các phương pháp thống kê",
+          "back": "。正規分布(せいきぶんぷ)(確率計算(かくりつけいさん)を含(ふく)む)\nPhân bố chuẩn (bao gồm tính toán xác suất)\n正規分布 = Normal distribution\nBao gồm các bài: tính Z-score, vùng xác suất, biểu đồ chuông…\n。二項分布(にこうぶんぷ)(確率計算(かくりつけいさん)を含(ふく)む)\nPhân bố nhị thức (bao gồm tính toán xác suất)\n二項分布 = Binomial distribution\nDùng để tính xác suất thành công/thất bại lặp lại nhiều lần.",
+          "learned": true
+        },
+        {
+          "front": "手法編（しゅほうへん)\nPhần phương pháp\n管理図(かんりず)\nBiểu đồ kiểm soát (Control chart)",
+          "back": "。管理図(かんりず)を考(かんが)え方(かた)、使(つか)い方(かた)\nCách hiểu và cách sử dụng biểu đồ kiểm soát\n(nguyên lý, mục đích, cách đọc, xác định bất thường, v.v.)\n。X̄-R管理図(かんりず)\nBiểu đồ kiểm soát X̄–R (X-bar – R chart)\nX̄ = giá trị trung bình mẫu\nR = phạm vi (Range)\nDùng để kiểm soát quá trình sản xuất có dữ liệu dạng liên tục, lấy mẫu theo nhóm nhỏ.\n。p管理図(かんりず)、np管理図(かんりず)\n-Biểu đồ kiểm soát p (p-chart)\nDùng để kiểm soát tỷ lệ lỗi (tỷ lệ sản phẩm không đạt) trong mẫu.\n-Biểu đồ kiểm soát np (np-chart)\nDùng để kiểm soát số lượng lỗi (số sản phẩm không đạt) trong mỗi mẫu, khi kích thước mẫu không đổi.",
+          "learned": true
+        },
+        {
+          "front": "手法編（しゅほうへん)\nPhần phương pháp\n工程能力指数(こうていのうりょくしすう)\nChỉ số năng lực quá trình (Process Capability Index)",
+          "back": "。工程能力指数(こうていのうりょくしすう)の計算(けいさん)と評価方法(ひょうかほうほう)\nCách tính và phương pháp đánh giá chỉ số năng lực quá trình",
+          "learned": true
+        },
+        {
+          "front": "手法編(しゅほうへん)\nphần phuong pháp\n相関分析(そうかんぶんせき)\nPhân tích tương quan (Correlation Analysis)\nDùng để xem mối quan hệ giữa hai biến có mạnh hay yếu, cùng chiều hay ngược chiều.",
+          "back": "。相関係数(そうかんけいすう)\nHệ số tương quan (Correlation Coefficient)\nThường là hệ số r (Pearson), có giá trị từ –1 đến +1, cho biết mức độ liên quan giữa hai biến.",
+          "learned": false
+        },
+        {
+          "front": "実践編(じっせんへん)\n品質管理(ひんしつかんり)の基本(きほん)\nNhững điều cơ bản trong quản lý chất lượng\n(QC的(てき)なものの見方(みかた)／考(かんが)え方(かた))\nCách nhìn và cách suy nghĩ theo quan điểm QC",
+          "back": "。マーケットイン、プロダクトアウト、顧客(こきゃく)の特定(とくてい)、win-win\n-マーケットイン: phát triển sản phẩm dựa vào nhu cầu thị trường\n-プロダクトアウト: làm ra sản phẩm rồi mới tìm thị trường\n-顧客(こきゃく)の特定(とくてい): xác định rõ ai là khách hàng\n-win-win: đôi bên cùng có lợi\n。品質優先(ひんしつゆうせん)、品質第一(ひんしつだいいち)\nƯu tiên chất lượng, chất lượng là hàng đầu\n。後工程(こうこうてい)はお客様(おきゃくさま)\nCông đoạn sau chính là khách hàng\n(Nghĩa: giao sản phẩm đúng chất lượng cho bước sau như giao cho khách)\n。プロセス重視(じゅうし)(品質(ひんしつ)は工程(こうてい)で作(つく)るの広義(こうぎ)の意味(いみ))\nTập trung vào quá trình (chất lượng được tạo ra từ quá trình, theo nghĩa rộng)\n。特性(とくせい)と要因(よういん)、因果関係(いんがかんけい)\nĐặc tính và yếu tố, quan hệ nhân quả\n(Dùng để phân tích nguyên nhân – kết quả trong QC\n。応急対策(おうきゅうたいさく)、再発防止(さいはつぼうし)、未然防止(みぜんぼうし)\nBiện pháp tạm thời, phòng tái phát, phòng ngừa từ trước\n。源流管理(げんりゅうかんり)\nQuản lý từ nguồn gốc\n(Nhắm vào nguyên nhân gốc để ngăn lỗi ngay từ đầu)\n。目的志向(もくてきしこう)\nĐịnh hướng mục tiêu\n(Luôn hành động dựa trên mục tiêu rõ ràng)\n。QCD +PSME\nQ (Quality – chất lượng)\nC (Cost – chi phí)\nD (Delivery – giao hàng / tiến độ)\nP (Productivity – năng suất)\nS (Safety – an toàn)\nM (Morale – tinh thần nhân viên)\nE (Environment – môi trường)\n。重点指向(じゅうてんしこう)\nĐịnh hướng trọng điểm\n(Tập trung vào vấn đề quan trọng nhất để cải tiến)",
+          "learned": true
         }
       ]
     }
