@@ -489,7 +489,7 @@
           "learned": true
         },
         {
-          "front": "手法編(しゅほうへん)\nphần phuong pháp\n相関分析(そうかんぶんせき)\nPhân tích tương quan (Correlation Analysis)\nDùng để xem mối quan hệ giữa hai biến có mạnh hay yếu, cùng chiều hay ngược chiều.",
+          "front": "手法編（しゅほうへん)\nPhần phương pháp\n相関分析(そうかんぶんせき)\nPhân tích tương quan (Correlation Analysis)\nDùng để xem mối quan hệ giữa hai biến có mạnh hay yếu, cùng chiều hay ngược chiều.",
           "back": "。相関係数(そうかんけいすう)\nHệ số tương quan (Correlation Coefficient)\nThường là hệ số r (Pearson), có giá trị từ –1 đến +1, cho biết mức độ liên quan giữa hai biến.",
           "learned": false
         },
@@ -504,13 +504,33 @@
           "learned": true
         },
         {
-          "front": "品質(ひんしつ)の概念(がいねん)\nCác khái niệm về chất lượng",
+          "front": "実践編(じっせんへん)\n品質(ひんしつ)の概念(がいねん)\nCác khái niệm về chất lượng",
           "back": "。品質(ひんしつ)の定義(ていぎ)\n→ Định nghĩa về chất lượng\n。要求品質(ようきゅうひんしつ)と品質要素(ひんしつようそ)\n→ Chất lượng yêu cầu và các yếu tố chất lượng\n。ねらいの品質(ひんしつ)とできばえの品質(ひんしつ)\n→ Chất lượng mục tiêu và chất lượng thực tế đạt được\n。品質特性(ひんしつとくせい)、代用特性(だいようとくせい)\n→ Đặc tính chất lượng và đặc tính thay thế\n。当たり前品質(あたりまえひんしつ)と魅力的品質(みりょくてきひんしつ)\n→ Chất lượng hiển nhiên và chất lượng hấp dẫn\n。サービスの品質(ひんしつ)、仕事の品質(ひんしつ)\n→ Chất lượng dịch vụ, chất lượng công việc\n。社会的品質(しゃかいてきひんしつ)\n→ Chất lượng mang tính xã hội",
           "learned": true
         },
         {
-          "front": "管理の方法(かんりのほうほう)\n→ Phương pháp quản lý",
+          "front": "実践編(じっせんへん)\n管理(かんり)の方法(ほうほう)\n→ Phương pháp quản lý",
           "back": "。PDCA, SDCA\nPDCA (Plan – Do – Check – Act)\nPDCA là chu trình cải tiến liên tục nổi tiếng trong quản lý chất lượng.\nNó gồm 4 bước:\nP – Plan (Lập kế hoạch)\nXác định vấn đề\nĐặt mục tiêu\nLập kế hoạch thực hiện (ai làm, làm gì, khi nào, bằng cách nào)\nD – Do (Thực hiện)\nThực hiện đúng theo kế hoạch đã lập\nThu thập dữ liệu trong quá trình thực hiện\nC – Check (Kiểm tra)\nKiểm tra kết quả thực tế so với kế hoạch\nPhân tích dữ liệu: đã đạt mục tiêu chưa? có vấn đề gì phát sinh không?\nA – Act (Hành động cải tiến)\nNếu đạt: chuẩn hóa quy trình\nNếu chưa đạt: tìm nguyên nhân và vòng PDCA tiếp theo được bắt đầu\nMục đích: cải tiến liên tục và nâng cao chất lượng\nPDCA = chu trình dành cho cải tiến (改善 / Kaizen)\nSDCA giống PDCA nhưng thêm chữ S = Standardize (Tiêu chuẩn hóa)\nSDCA dùng khi quy trình đã ổn định và cần duy trì.\nS – Standardize (Tiêu chuẩn hóa)\nThiết lập tiêu chuẩn\nViết quy trình, hướng dẫn\nĐào tạo nhân viên để đảm bảo ai làm cũng giống nhau\nD – Do (Thực hiện)\nThực hiện theo tiêu chuẩn đã ban hành\nC – Check (Kiểm tra)\nKiểm tra xem quy trình có được tuân thủ không\nCó sai lệch hay lỗi phát sinh không?\nA – Act (Hành động)\nKhắc phục sai lệch\nĐiều chỉnh lại tiêu chuẩn nếu cần\nDuy trì sự ổn định của quy trình\nSDCA = chu trình dành cho duy trì (維持 / いじ)\n。問題解決型(もんだいかいけつがた)QCストーリー\n→ QC Story kiểu giải quyết vấn đề\n。維持(いじ)と改善(かいぜん)\n→ Duy trì và cải tiến\n。継続的改善(けいぞくてきかいぜん)\n→ Cải tiến liên tục (Continuous Improvement / Kaizen)\n。問題(もんだい)と課題(かだい)\n→ Vấn đề và nhiệm vụ (thách thức cần đạt)\n問題: vấn đề hiện tại cần xử lý\n課題: mục tiêu / thử thách cần đạt trong tương lai\n。課題達成型(かだいたっせいがた)QCストーリー\n→ QC Story kiểu đạt mục tiêu (Goal-achievement QC Story)",
+          "learned": true
+        },
+        {
+          "front": "実践編(じっせんへん)\n品質保証(ひんしつほしょう)ーー＞プロセス保証(ほしょう)\n→ Đảm bảo chất lượng → Đảm bảo theo quá trình",
+          "back": "。作業標準書(さぎょうひょうじゅんしょ)\n→ Tài liệu tiêu chuẩn công việc (Standard Work Instruction)\nTài liệu mô tả:\ncách làm việc đúng\nđiều kiện chuẩn\ncông cụ, vật tư cần thiết\nđiểm chú ý để tránh lỗi\nMục đích: để ai làm cũng tạo ra kết quả như nhau.\n。プロセス(工程(こうてい))の考(かんが)え方(かた)\n→ Cách suy nghĩ về quá trình (công đoạn)\nCách nghĩ quan trọng:\nQuá trình tốt → sản phẩm tốt\nNếu sản phẩm xấu, phải tìm nguyên nhân trong quá trình, không phải ở người vận hành\nDữ liệu quá trình quan trọng hơn dữ liệu sản phẩm\n。検査(けんさ)の目的(もくてき)・意義(いぎ)・考え方(かんがえかた)\n(適合(てきごう)、不適合(ふてきごう))\n→ Mục đích – ý nghĩa – quan điểm về kiểm tra (hàng đạt, hàng không đạt)\n◆ Mục đích:\nPhát hiện lỗi\nNgăn sản phẩm không đạt đến khách hàng\n◆ Ý nghĩa:\nKiểm tra không tạo ra chất lượng, chỉ giúp phát hiện chất lượng kém\nKiểm tra là hoạt động hỗ trợ, không phải giải pháp gốc rễ\n◆ Quan điểm:\n分類 (phân loại): 適合 (hàng đạt) và 不適合 (hàng không đạt)\nQuyết định dựa trên tiêu chuẩn rõ ràng\n。検査の種類(しゅるい)と方法(ほうほう)\n→ Các loại kiểm tra và phương pháp kiểm tra\n◆ Kiểm tra 100% (全数検査(ぜんすうけんさ))\nKiểm tra toàn bộ sản phẩm.\n◆ Kiểm tra lấy mẫu (抜(ぬ)き取(と)り検査(けんさ))\nDựa trên lấy mẫu đại diện → QC cấp cao hơn.\n◆ Phương pháp:\n-目視検査(もくしけんさ): kiểm tra bằng mắt\n-測定検査(そくていけんさ): kiểm tra bằng đo\n-自動検査(じどうけんさ): máy kiểm tra tự động",
+          "learned": true
+        },
+        {
+          "front": "実践編(じっせんへん)\nLà chương nói về ứng dụng thực tế các kiến thức QC, cách áp dụng trong doanh nghiệp.\n品質経営(ひんしつけいえい)の要素(ようそ)\nYếu tố của quản trị chất lượng\nーー＞\n方針管理(ほうしんかんり)\nLà quản lý chính sách – một yếu tố quan trọng trong quản trị chất lượng:\nđặt mục tiêu chất lượng hàng năm\ntriển khai mục tiêu xuống từng bộ phận\nquản lý tiến độ\nkiểm tra – đánh giá\ncải tiến liên tục theo PDCA\nĐây là nền tảng trong quản trị chất lượng kiểu Nhật (TQM).",
+          "back": "方針(ほうしん)(目標(もくひょう)と方策(ほうさく))\n→ Phương châm (Mục tiêu và giải pháp)\n◆ 方針(ほうしん)\n= Phương châm / Chính sách / Định hướng\n→ Là định hướng lớn mà tổ chức phải theo.\n◆ 目標(もくひょう)\n= Mục tiêu\n→ Kết quả cụ thể muốn đạt được (định lượng, đo được).\n◆ 方策(ほうさく)\n= Giải pháp / chiến lược thực hiện\n→ Cách thức, phương pháp để đạt mục tiêu.",
+          "learned": true
+        },
+        {
+          "front": "実践編(じっせんへん)\nLà chương nói về ứng dụng thực tế các kiến thức QC, cách áp dụng trong doanh nghiệp.\n品質経営(ひんしつけいえい)の要素(ようそ)\nYếu tố của quản trị chất lượng\nーー＞\n日常管理(にちじょうかんり)\n→ Quản lý hằng ngày (Daily Management)\nLà hoạt động quản lý nhằm:　duy trì quy trình ổn định,　đảm bảo công việc được thực hiện đúng tiêu chuẩn, xử lý kịp thời khi có bất thường\n↪ Thường kết hợp với SDCA (Standardize – Do – Check – Act).",
+          "back": "。業務分掌(ぎょうむぶんしょう)、責任(せきにん)と権限(けんげん)\n→ Phân công nghiệp vụ, trách nhiệm và quyền hạn\n。管理項目(かんりこうもく)(管理点(かんりてん)と点検点(てんけんてん))、管理項目一覧表(かんりこうもくいちらんひょう)\n→ Mục quản lý (điểm quản lý và điểm kiểm tra), bảng danh mục các mục quản lý\n。異常(いじょう)とその処置(しょち)\n→ Bất thường và cách xử lý",
+          "learned": true
+        },
+        {
+          "front": "実践編(じっせんへん)\nLà chương nói về ứng dụng thực tế các kiến thức QC, cách áp dụng trong doanh nghiệp.\n品質経営(ひんしつけいえい)の要素(ようそ)\nYếu tố của quản trị chất lượng\nーー＞\n小集団活動(しょうしゅうだんかつどう)\n→ Hoạt động nhóm nhỏ",
+          "back": "。小集団改善活動(しょうしゅうだんかいぜんかつどう)(QCサークル活動 など) と その進(すす)め方(かた)\n→ Hoạt động cải tiến của nhóm nhỏ (như hoạt động QC Circle) và cách triển khai",
           "learned": true
         }
       ]
