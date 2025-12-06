@@ -459,37 +459,37 @@
       "name": "QC検定3級",
       "cards": [
         {
-          "front": "手法編（しゅほうへん)\nPhần phương pháp\nデータのとり方(かた)\nCách thu thập dữ liệu",
+          "front": "手法編(しゅほうへん)\nPhần phương pháp\nデータのとり方(かた)\nCách thu thập dữ liệu",
           "back": "。データの種類(しゅるい)\nCác loại dữ liệu\n。データの変換(へんかん)\nChuyển đổi dữ liệu\n。母集団(ぼしゅうだん)とサンプル\nTổng thể và mẫu\n母集団(ぼしゅうだん) = toàn bộ đối tượng\nサンプル = mẫu lấy ra để phân tích\n。サンプルと誤差(ごさ)\nMẫu và sai số\n(sai số lấy mẫu, sai số đo…)\n。基本統計量(きほんとうけいりょう)とグラフ\nCác thống kê cơ bản và biểu đồ\n(trung bình, phương sai, độ lệch chuẩn, histogram, biểu đồ Pareto…)",
           "learned": true
         },
         {
-          "front": "手法編（しゅほうへん)\nPhần phương pháp\nQC七つ(ななつ)の道具(どうぐ)\n7 công cụ QC",
+          "front": "手法編(しゅほうへん)\nPhần phương pháp\nQC七(なな)つの道具(どうぐ)\n7 công cụ QC",
           "back": "。パレート図(ず)\n(80/20 – xác định các nguyên nhân quan trọng)\n。特性要因図(よういんず)\nBiểu đồ nhân quả / Biểu đồ xương cá (Ishikawa)\n。チェックシート\nPhiếu kiểm tra (Check sheet)\n。ヒストグラム\nHistogram (biểu đồ tần suất)\n。散布図(さんぷず)\nBiểu đồ phân tán (Scatter plot)\n(dùng để xem tương quan giữa 2 đại lượng)\n。グラフ（管理図(かんりず)は別項目(べつこうもく)として記載(きさい)）\nBiểu đồ (Biểu đồ kiểm soát – Control chart được ghi ở mục riêng)\n。層別(そうべつ)\nPhân tầng (Stratification)\n(phân loại dữ liệu theo nhóm: theo ca, theo máy, theo công nhân…)",
           "learned": true
         },
         {
-          "front": "手法編（しゅほうへん)\nPhần phương pháp\n新QC七つ道具\n7 công cụ QC mới",
+          "front": "手法編(しゅほうへん)\nPhần phương pháp\n新(しん)QC七(なな)つ道具(どうぐ)\n7 công cụ QC mới",
           "back": "。親和図法(しんわずほう)\nPhương pháp biểu đồ quan hệ / biểu đồ đồng cảm (Affinity Diagram)\n(Dùng để nhóm các ý tưởng hoặc vấn đề có liên quan)\n。連関図法(れんかんずほう)\nPhương pháp sơ đồ quan hệ nhân – quả / mối liên kết (Relation Diagram)\n(Hiển thị mối liên kết phức tạp giữa các yếu tố)\n。系統図法(けいとうずほう)\nPhương pháp sơ đồ hệ thống (Tree Diagram)\n(Phân chia mục tiêu lớn thành bước nhỏ theo cấu trúc cây)\n。マトリックス図法(ずほう)\nPhương pháp ma trận (Matrix Diagram)\n(Thể hiện mối quan hệ giữa nhiều nhóm yếu tố)\n。アローダイアグラム法(ほう)\nPhương pháp sơ đồ mũi tên (Arrow Diagram / PERT)\n(Dùng trong lập kế hoạch tiến độ, phân tích đường găng)\n。PDPC法(ほう)\nPhương pháp PDPC (Process Decision Program Chart)\n(Phân tích rủi ro và hành động đối phó khi lập kế hoạch)\n。マトリックスデータ解析法(かいせきほう)\nPhương pháp phân tích dữ liệu bằng ma trận (Matrix Data Analysis)\n(Dùng để phân tích dữ liệu phức tạp theo dạng ma trận để tìm mối quan hệ)",
           "learned": true
         },
         {
-          "front": "手法編（しゅほうへん)\nPhần phương pháp\n統計的方法(とうけいてきほうほう)の基礎(きそ)\nCơ sở của các phương pháp thống kê",
+          "front": "手法編(しゅほうへん)\nPhần phương pháp\n統計的方法(とうけいてきほうほう)の基礎(きそ)\nCơ sở của các phương pháp thống kê",
           "back": "。正規分布(せいきぶんぷ)(確率計算(かくりつけいさん)を含(ふく)む)\nPhân bố chuẩn (bao gồm tính toán xác suất)\n正規分布 = Normal distribution\nBao gồm các bài: tính Z-score, vùng xác suất, biểu đồ chuông…\n。二項分布(にこうぶんぷ)(確率計算(かくりつけいさん)を含(ふく)む)\nPhân bố nhị thức (bao gồm tính toán xác suất)\n二項分布 = Binomial distribution\nDùng để tính xác suất thành công/thất bại lặp lại nhiều lần.",
           "learned": true
         },
         {
-          "front": "手法編（しゅほうへん)\nPhần phương pháp\n管理図(かんりず)\nBiểu đồ kiểm soát (Control chart)",
+          "front": "手法編(しゅほうへん)\nPhần phương pháp\n管理図(かんりず)\nBiểu đồ kiểm soát (Control chart)",
           "back": "。管理図(かんりず)を考(かんが)え方(かた)、使(つか)い方(かた)\nCách hiểu và cách sử dụng biểu đồ kiểm soát\n(nguyên lý, mục đích, cách đọc, xác định bất thường, v.v.)\n。X̄-R管理図(かんりず)\nBiểu đồ kiểm soát X̄–R (X-bar – R chart)\nX̄ = giá trị trung bình mẫu\nR = phạm vi (Range)\nDùng để kiểm soát quá trình sản xuất có dữ liệu dạng liên tục, lấy mẫu theo nhóm nhỏ.\n。p管理図(かんりず)、np管理図(かんりず)\n-Biểu đồ kiểm soát p (p-chart)\nDùng để kiểm soát tỷ lệ lỗi (tỷ lệ sản phẩm không đạt) trong mẫu.\n-Biểu đồ kiểm soát np (np-chart)\nDùng để kiểm soát số lượng lỗi (số sản phẩm không đạt) trong mỗi mẫu, khi kích thước mẫu không đổi.",
           "learned": true
         },
         {
-          "front": "手法編（しゅほうへん)\nPhần phương pháp\n工程能力指数(こうていのうりょくしすう)\nChỉ số năng lực quá trình (Process Capability Index)",
+          "front": "手法編(しゅほうへん)\nPhần phương pháp\n工程能力指数(こうていのうりょくしすう)\nChỉ số năng lực quá trình (Process Capability Index)",
           "back": "。工程能力指数(こうていのうりょくしすう)の計算(けいさん)と評価方法(ひょうかほうほう)\nCách tính và phương pháp đánh giá chỉ số năng lực quá trình",
           "learned": true
         },
         {
-          "front": "手法編（しゅほうへん)\nPhần phương pháp\n相関分析(そうかんぶんせき)\nPhân tích tương quan (Correlation Analysis)\nDùng để xem mối quan hệ giữa hai biến có mạnh hay yếu, cùng chiều hay ngược chiều.",
+          "front": "手法編(しゅほうへん)\nPhần phương pháp\n相関分析(そうかんぶんせき)\nPhân tích tương quan (Correlation Analysis)\nDùng để xem mối quan hệ giữa hai biến có mạnh hay yếu, cùng chiều hay ngược chiều.",
           "back": "。相関係数(そうかんけいすう)\nHệ số tương quan (Correlation Coefficient)\nThường là hệ số r (Pearson), có giá trị từ –1 đến +1, cho biết mức độ liên quan giữa hai biến.",
           "learned": false
         },
@@ -499,7 +499,7 @@
           "learned": true
         },
         {
-          "front": "実践編(じっせんへん)(phần2)\n品質管理(ひんしつかんりの基本(きほん）\n→ Những điều cơ bản trong quản lý chất lượng\n（QC的(てき)なものの見方(みかた)／考(かんが)え方(かた））\n→ Cách nhìn và cách suy nghĩ theo quan điểm QC",
+          "front": "実践編(じっせんへん)(phần2)\n品質管理(ひんしつかんり)の基本(きほん)\n→ Những điều cơ bản trong quản lý chất lượng\n（QC的(てき)なものの見方(みかた)／考(かんが)え方(かた））\n→ Cách nhìn và cách suy nghĩ theo quan điểm QC",
           "back": "。事実(じじつ)に基(もと)づく活動(かつどう),三現主義(さんげんしゅぎ)\n→ Hoạt động dựa trên sự thật, chủ nghĩa “Tam hiện”\n事実に基づく活動: làm việc dựa trên sự thật, dữ liệu, thực tế\n三現主義 gồm 3 現(げん):\n現場(げんば): hiện trường\n現物(げんぶつ): vật thật\n現実(げんじつ): tình hình thực\n→ Nghĩa: phải đến hiện trường, xem vật thật, hiểu thực tế trước khi kết luận.\n。ばらつきに注目(ちゅうもく)する考(かんが)え方(かた)\n→ Cách nghĩ chú trọng đến biến động (độ phân tán)\nQC luôn quan tâm đến độ lệch, dao động, phân tán của dữ liệu để kiểm soát chất lượng.\n。全部門(ぜんぶもん),全員参加(ぜんいんさんか)\n→ Tất cả các bộ phận, mọi người cùng tham gia\nChất lượng không chỉ là việc của QC mà là trách nhiệm toàn công ty.\n。人間性尊重(にんげんせいそんちょう),従業員満足(じゅうぎょういんまんぞく)(ES)\n→ Tôn trọng con người, sự hài lòng của nhân viên (ES)\n人間性尊重: tôn trọng phẩm giá, ý kiến và sự phát triển của nhân viên\n従業員満足（ES）: Employee Satisfaction – sự hài lòng của nhân viên\n(ES cao thì chất lượng sản phẩm và năng suất cũng tăng)\n。見(み)える化(か)、潜在(せんざい)トラブルの顕在化(けんざいか)\n→ Làm lộ rõ các rủi ro tiềm ẩn\n(Nghĩa: đưa các vấn đề ẩn/ nguy cơ chưa lộ ra trở nên rõ ràng để xử lý sớm.)",
           "learned": true
         },
@@ -531,6 +531,16 @@
         {
           "front": "実践編(じっせんへん)\nLà chương nói về ứng dụng thực tế các kiến thức QC, cách áp dụng trong doanh nghiệp.\n品質経営(ひんしつけいえい)の要素(ようそ)\nYếu tố của quản trị chất lượng\nーー＞\n小集団活動(しょうしゅうだんかつどう)\n→ Hoạt động nhóm nhỏ",
           "back": "。小集団改善活動(しょうしゅうだんかいぜんかつどう)(QCサークル活動 など) と その進(すす)め方(かた)\n→ Hoạt động cải tiến của nhóm nhỏ (như hoạt động QC Circle) và cách triển khai",
+          "learned": true
+        },
+        {
+          "front": "特性要因図(とくせいよういんず)",
+          "back": "┌── Công nhân mới chưa quen thao tác\n              Man(人) ────────────────┤── Bỏ sót bước kiểm tra\n                                       └── Thiếu đào tạo\n\n                                       ┌── Dao cụ mòn\n              Machine(機械) ──────────┤── Máy rung mạnh\n                                       └── Thiết bị không được bảo dưỡng định kỳ\n\n                                       ┌── Trình tự thao tác không đúng\n              Method(方法) ───────────┤── Thiếu tiêu chuẩn công việc\n                                       └── Không có hướng dẫn hình ảnh\n\n                                       ┌── Nguyên liệu ẩm\n              Material(材料) ─────────┤── Lô hàng không đồng nhất\n                                       └── Nhà cung cấp thay đổi\n\n                                       ┌── Nhiệt độ xưởng quá cao\n              Environment(環境) ──────┤── Bụi nhiều\n                                       └── Độ ẩm thay đổi theo ngày\n\n────────────────────────> 特性（問題）\n                                                  不良率が高い\n                                               (Tỷ lệ lỗi cao)\n\n1️⃣ Xác định vấn đề (Tỷ lệ lỗi cao)\n2️⃣ Vẽ 4M + 1E\n3️⃣ Liệt kê nguyên nhân có thể xảy ra\n4️⃣ Chọn nguyên nhân nghi ngờ cao\n5️⃣ Thu thập dữ liệu → xác minh\n6️⃣ Chọn nguyên nhân gốc (真因)\n7️⃣ Đưa ra biện pháp cải tiến",
+          "learned": true
+        },
+        {
+          "front": "データの取り方・まとめ方\nCách tóm tắt và lấy dữ liệu",
+          "back": "1️⃣ 平均値(へいきんち) – Mean – Giá trị trung bình\nCông thức:\n平均値　=　tổng các giá trị/ số lượng dữ liệu\nÝ nghĩa:\nBiểu thị　分布(ぶんぷ)の中心(ちゅうしん)の位置(いち) trung tâm của phân bố, là đại lượng quan trọng nhất khi mô tả dữ liệu.\nDùng khi:\nDữ liệu phân bố đều, không có giá trị quá cực đoan.\n2️⃣中央値(ちゅうおうち) – Median – Trung vị\nLà giá trị nằm giữa dữ liệu khi xếp theo thứ tự tăng dần.\nDùng khi:\nCó dữ liệu cực trị làm lệch trung bình.\nVí dụ: lương nhân viên, giá nhà.\n3️⃣最大値(さいだいち) – Giá trị lớn nhất\nLà giá trị lớn nhất trong tập dữ liệu.\nKhông phải đại lượng trung tâm.\n4️⃣ 最小値(さいしょうち)– Giá trị nhỏ nhất\nDùng để tính 範囲(はんい)（Range）.\n5️⃣ 算術平均(さんじゅつへいきん) – Arithmetic mean\nChính là 平均値 (mean).\nTừ này nhấn mạnh “trung bình theo phép cộng”.\n🟧 PHẦN 2: CÁC ĐẠI LƯỢNG BIỂU THỊ “ばらつきの程度(ていど)（mức độ biến động)”\n\"ばらつき\" nghĩa là mức độ dao động, tức dữ liệu “ổn định hay không”.\n1️⃣ 標準偏差(ひょうじゅんへんさ)– Standard deviation – Độ lệch chuẩn\nLà đại lượng quan trọng nhất để biểu thị mức độ biến động.\nCông thức đơn giản:\n標準偏差(ひょうじゅんへんさ)=√分散(ぶんさん)\nÝ nghĩa:\nGiá trị nhỏ → dữ liệu “ít dao động” → quá trình ổn định\nGiá trị lớn → quá trình biến động nhiều → chất lượng kém ổn định\nTrong QC:\nDùng trong X-R 管理図, X-s 管理図, capability Cp, Cpk.\n2️⃣ 分散(ぶんさん)– Variance – Phương sai\nLà bình phương độ lệch chuẩn.\n分散(ぶんさん)=(偏差(へんさ)の平均(へいきん))\n3️⃣ 偏差(へんさ)– Deviation – Sai lệch\nLà “độ lệch” của một điểm dữ liệu so với trung bình.\nÝ nghĩa: mô tả độ phân tán.\n偏差(へんさ)=x−平均値(へいきんち)\nÝ nghĩa:\nKhông phải đại lượng mô tả toàn tập dữ liệu\nChỉ là giá trị của mỗi điểm dữ liệu\n4️⃣ 範囲(はんい)– Range – Khoảng biến thiên\n範囲(はんい)=最大値(さいだいち)−最小値(さいしょうち)\nÝ nghĩa:\nDễ tính\nThường dùng khi số lượng dữ liệu ít (≤10)\nDùng trong R của X–R 管理図\n5️⃣ 寄与率(きよりつ)– Contribution rate\nDùng trong phân tích các yếu tố (ANOVA).\nÝ nghĩa:\nTỷ lệ đóng góp của từng nguyên nhân vào tổng biến động.\n🟩 PHẦN 3: CÁC THUẬT NGữ THỐNG KÊ KHÁC TRONG 3 CÂU HỎI\n1️⃣ 母集団(ぼしゅうだん)– Population – Tổng thể\nLà toàn bộ dữ liệu mà ta muốn hiểu\n2️⃣ 標本(ひょうほん)– Sample – Mẫu\nMột phần nhỏ được lấy từ population.\nTrong QC, kiểm tra lấy mẫu là tiêu chuẩn.\n3️⃣ 相関係数(そうかんけいすう)– Correlation coefficient (hệ số tương quan)\n−1≤r≤+1\nÝ nghĩa:\nr = 1: tương quan thuận mạnh\nr = 0: không tương quan\nr = -1: tương quan nghịch mạnh\nDùng trong biểu đồ phân tán (散布図).",
           "learned": true
         }
       ]
