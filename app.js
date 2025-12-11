@@ -240,9 +240,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Card Controls
   // =======================
   const flipCard = () => {
+    const cards = getVisibleCards();
+    if (!cards.length) return;
+
     showingFront = !showingFront;
     if (!showingFront) {
-      const card = getVisibleCards()[currentCardIndex];
+      const card = cards[currentCardIndex];
       const cat = data.categories[data.currentCategoryIndex];
       const realIndex = cat?.cards?.indexOf(card);
       if (realIndex >= 0) {
@@ -505,7 +508,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       saveLocalDataNoMark();
 
       renderCategorySelect();
-      // giữ currentCardIndex, nhưng reset hiển thị về đầu category nếu muốn:
       currentCardIndex = 0;
       showingFront = true;
       renderCard();
@@ -528,9 +530,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   syncBtn?.addEventListener('click', () => syncFromRemote(false));
 
   // =======================
-  // Event Listeners
+  // Event Listeners cho flashcard (iOS-safe)
   // =======================
-    // --- iOS-safe tap handler: chạm thì lật, kéo/ vuốt thì không ---
   if (flashcard) {
     let startX = 0;
     let startY = 0;
@@ -613,7 +614,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // Các nút điều hướng/thao tác khác giữ nguyên
+  // =======================
+  // Event Listeners khác
+  // =======================
   nextBtn?.addEventListener('click', nextCard);
   prevBtn?.addEventListener('click', prevCard);
   addBtn?.addEventListener('click', () => showForm(false));
@@ -668,7 +671,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.addEventListener(
       'touchend',
       (e) => {
-        // ignore touches on form controls / contenteditable
+        // ignore touches trên form controls / contenteditable
         const tag = (e.target && e.target.tagName) || '';
         const isControl =
           /^(INPUT|TEXTAREA|SELECT|BUTTON)$/i.test(tag) ||
