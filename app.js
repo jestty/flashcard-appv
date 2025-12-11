@@ -530,98 +530,90 @@ document.addEventListener('DOMContentLoaded', async () => {
   // =======================
   // Event Listeners
   // =======================
-  flashcard?.addEventListener('click', flipCard);
-  flashcard?.addEventListener('touchend', (e) => {
-    e.preventDefault();
-    flipCard();
-  });
-
-  // --- Prevent long-press flicker / native context menu on iOS PWA ---
+    // --- iOS-safe tap handler: chạm thì lật, kéo/ vuốt thì không ---
   if (flashcard) {
-    let lpTimer = null;
-    const LP_DELAY = 500; // ms, long-press threshold
+    let startX = 0;
+    let startY = 0;
+    let touchMoved = false;
+    let touchActive = false;
+    let lastTouchWasSwipe = false;
+    const MOVE_TOLERANCE = 10; // px
 
-    // prevent the long-press context menu (only for flashcard)
+    // Bắt đầu chạm
     flashcard.addEventListener(
-      'contextmenu',
-      (ev) => {
-        ev.preventDefault();
+      'touchstart',
+      (e) => {
+        if (e.touches.length > 1) return; // bỏ multi-touch
+        const t = e.touches[0];
+        startX = t.clientX;
+        startY = t.clientY;
+        touchMoved = false;
+        touchActive = true;
+      },
+      { passive: true }
+    );
+
+    // Kiểm tra có kéo/di chuyển không
+    flashcard.addEventListener(
+      'touchmove',
+      (e) => {
+        if (!touchActive) return;
+        const t = e.touches[0];
+        if (
+          Math.abs(t.clientX - startX) > MOVE_TOLERANCE ||
+          Math.abs(t.clientY - startY) > MOVE_TOLERANCE
+        ) {
+          touchMoved = true;
+        }
+      },
+      { passive: true }
+    );
+
+    // Kết thúc chạm
+    flashcard.addEventListener(
+      'touchend',
+      (e) => {
+        if (!touchActive) return;
+        // chặn zoom / click mặc định cho gesture trên thẻ
+        e.preventDefault();
+
+        if (!touchMoved) {
+          // TAP: chạm không kéo -> lật thẻ
+          flipCard();
+          lastTouchWasSwipe = false;
+        } else {
+          // SWIPE/KÉO: không lật, chỉ ghi nhận là swipe
+          lastTouchWasSwipe = true;
+        }
+
+        touchActive = false;
       },
       { passive: false }
     );
 
-    flashcard.addEventListener(
-      'touchstart',
-      (ev) => {
-        if (ev.touches && ev.touches.length > 1) return; // ignore multi-touch
-        lpTimer = setTimeout(() => {
-          // On long press, prevent default to avoid iOS special UI/selection
-          // Use preventDefault on the last touch event when it fires (we can't call it here safely)
-          // Add a temporary flag class to reduce visual flicker
-          flashcard.classList.add('no-touch-flicker');
-        }, LP_DELAY);
-      },
-      { passive: true }
-    );
+    flashcard.addEventListener('touchcancel', () => {
+      touchActive = false;
+      touchMoved = false;
+    });
 
-    const clearLP = () => {
-      if (lpTimer) {
-        clearTimeout(lpTimer);
-        lpTimer = null;
+    // Chặn menu context trên iOS
+    flashcard.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    // Xử lý click synthetic mà iOS bắn sau touch
+    flashcard.addEventListener('click', (e) => {
+      if (lastTouchWasSwipe) {
+        // nếu vừa swipe xong, bỏ qua click giả
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        lastTouchWasSwipe = false;
+        return;
       }
-      flashcard.classList.remove('no-touch-flicker');
-    };
-
-    flashcard.addEventListener(
-      'touchend',
-      (ev) => {
-        clearLP();
-      },
-      { passive: true }
-    );
-    flashcard.addEventListener('touchmove', clearLP, { passive: true });
-    flashcard.addEventListener('touchcancel', clearLP, { passive: true });
+      // click thực (chuột / tap từ thiết bị khác): lật thẻ
+      flipCard();
+    });
   }
-    // --- iOS SAFE TOUCH FLIP PATCH (prevent flicker when finger moves) ---
-if (flashcard) {
-  let startX = 0, startY = 0, moved = false;
-  const MOVE_TOLERANCE = 10; // px
 
-  flashcard.addEventListener("touchstart", (e) => {
-    if (e.touches.length > 1) return;
-    const t = e.touches[0];
-    startX = t.clientX;
-    startY = t.clientY;
-    moved = false;
-  }, { passive: true });
-
-  flashcard.addEventListener("touchmove", (e) => {
-    const t = e.touches[0];
-    if (Math.abs(t.clientX - startX) > MOVE_TOLERANCE ||
-        Math.abs(t.clientY - startY) > MOVE_TOLERANCE) {
-      moved = true;
-    }
-  }, { passive: true });
-
-  flashcard.addEventListener("touchend", (e) => {
-    e.preventDefault();
-    if (!moved) flipCard();
-  }, { passive: false });
-
-  // --- BLOCK CLICK AFTER SWIPE (iOS creates synthetic click events) ---
-  flashcard.addEventListener("click", (e) => {
-    if (moved) {
-      e.stopImmediatePropagation();
-      e.preventDefault();
-      return;
-    }
-    // click hợp lệ nếu không di chuyển
-  });
-
-  flashcard.addEventListener("contextmenu", (e) => e.preventDefault());
-}
-  
-
+  // Các nút điều hướng/thao tác khác giữ nguyên
   nextBtn?.addEventListener('click', nextCard);
   prevBtn?.addEventListener('click', prevCard);
   addBtn?.addEventListener('click', () => showForm(false));
