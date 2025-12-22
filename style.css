@@ -9,6 +9,23 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  /* Center content responsively for desktop and mobile */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Adjust to center if needed, but start for scrolling */
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Reduce padding on small screens */
+    justify-content: center; /* Center vertically on mobile if content fits */
+  }
 }
 
 h1 {
@@ -62,7 +79,7 @@ button:active {
 .card {
   width: 300px;
   max-width: 90%;
-  /*height: 180px;*/
+  height: 180px;
   margin: 20px auto;
   padding: 20px;
   white-space: pre-wrap;
@@ -120,7 +137,7 @@ ruby {
 
 ruby rt {
   font-size: 0.6em;
-  color: #1755d1;
+  color: #986f6f;
   line-height: 1.2;
 }
 .counter {
