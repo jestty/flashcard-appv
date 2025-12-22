@@ -698,7 +698,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadData();
 
   // Auto sync khi online: giờ không có server, nên chỉ reload data.json khi online
-  setInterval(() => {
-    if (navigator.onLine) loadData();
-  }, 15000);
-});
+ // setInterval(() => {
+  //  if (navigator.onLine) loadData();
+//  }, 15000);
+//});
