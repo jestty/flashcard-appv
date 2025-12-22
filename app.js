@@ -1,7 +1,5 @@
-// Flashcard App JS (hoàn chỉnh + offline từ data.json + localStorage)
+// Flashcard App JS (chỉ dùng localStorage, bỏ data.json và import file)
 // =======================
-
-// NOTE: Bỏ server — chỉ dùng data.json (static) và localStorage
 let data = { categories: [], currentCategoryIndex: 0 };
 let currentCardIndex = 0;
 let showingFront = true;
@@ -30,9 +28,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const sliderContainer = document.getElementById('sliderContainer');
   const slider = document.getElementById('slider');
   const exportBtn = document.getElementById('exportBtn');
-  const importBtn = document.getElementById('importBtn');
-  const importInput = document.getElementById('importInput');
-  const syncBtn = document.getElementById('syncBtn');
 
   const nextBtn = document.getElementById('nextBtn');
   const prevBtn = document.getElementById('prevBtn');
@@ -44,6 +39,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const addCategoryBtn = document.getElementById('addCategoryBtn');
   const cancelCategoryBtn = document.getElementById('cancelCategoryBtn');
   const saveCategoryBtn = document.getElementById('saveCategoryBtn');
+  const deleteCategoryBtn = document.getElementById('deleteCategoryBtn');
   const themeToggleBtn = document.getElementById('themeToggleBtn');
 
   // =======================
@@ -82,92 +78,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
 
   // =======================
-  // Load từ data.json (fallback: localStorage / mặc định)
+  // Load từ localStorage (không dùng data.json nữa)
   // =======================
   const loadData = async () => {
-    // Hiển thị nhanh từ local nếu có
+    // Chỉ tải từ localStorage
     loadLocalData();
-
-    // Nếu local đã được chỉnh sửa bởi người dùng, không tự overwrite từ data.json
-    const localModified = localStorage.getItem('flashcardDataModified') === '1';
-    if (localModified) {
-      console.log(
-        '⚠️ Local changes detected — will NOT overwrite from data.json'
-      );
-      renderCategorySelect();
-      renderCard();
-      return;
-    }
-
-    try {
-      const res = await fetch('./data.json', { cache: 'no-store' });
-      if (!res.ok) throw new Error(`data.json HTTP ${res.status}`);
-      const fileData = await res.json();
-
-      // (giữ nguyên logic thích ứng với nhiều cấu trúc data.json)
-      if (Array.isArray(fileData)) {
-        if (
-          fileData.length &&
-          fileData[0] &&
-          Array.isArray(fileData[0].cards)
-        ) {
-          data = { categories: fileData, currentCategoryIndex: 0 };
-          console.log('✅ data.json: detected array of categories');
-        } else if (
-          fileData.length &&
-          fileData[0] &&
-          (fileData[0].front || fileData[0].back)
-        ) {
-          data = {
-            categories: [{ name: 'Mặc định', cards: fileData }],
-            currentCategoryIndex: 0,
-          };
-          console.log('✅ data.json: detected array of cards');
-        } else {
-          console.warn(
-            'data.json: mảng nhưng không nhận dạng được, giữ localStorage'
-          );
-        }
-      } else if (fileData && typeof fileData === 'object') {
-        if (Array.isArray(fileData.categories)) {
-          data = fileData;
-          console.log('✅ data.json: loaded object with categories');
-        } else if (Array.isArray(fileData.cards)) {
-          data = {
-            categories: [
-              { name: fileData.name || 'Mặc định', cards: fileData.cards },
-            ],
-            currentCategoryIndex: 0,
-          };
-          console.log(
-            '✅ data.json: object with cards -> wrapped into categories'
-          );
-        } else {
-          console.warn(
-            'data.json object nhưng không có categories/cards, giữ localStorage'
-          );
-        }
-      } else {
-        console.warn('data.json không có cấu trúc mong đợi, giữ localStorage');
-      }
-
-      ensureDataShape();
-      // Lưu vào local để làm nguồn chính cho lần mở sau
-      saveLocalData();
-    } catch (e) {
-      console.warn(
-        '⚠️ Không thể tải data.json, dùng localStorage/mặc định —',
-        e.message
-      );
-      if (!data.categories || data.categories.length === 0) {
-        data = {
-          categories: [{ name: 'Mặc định', cards: [] }],
-          currentCategoryIndex: 0,
-        };
-        saveLocalData();
-      }
-    }
-
     renderCategorySelect();
     renderCard();
   };
@@ -379,155 +294,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
-  // Import data.json from file input
-  const importDataFromFile = (file) => {
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      try {
-        const parsed = JSON.parse(ev.target.result);
-        // basic validation: accept object with categories OR array forms handled by existing logic
-        if (!parsed) throw new Error('Empty JSON');
-        // assign and normalize using existing ensureDataShape logic
-        data = parsed;
-        ensureDataShape();
-        saveLocalData();
-        renderCategorySelect();
-        currentCardIndex = 0;
-        showingFront = true;
-        renderCard();
-        alert('Đã import data.json thành công (đã lưu local).');
-      } catch (err) {
-        console.error('Import lỗi', err);
-        alert('File JSON không hợp lệ.');
-      }
-    };
-    reader.readAsText(file);
-  };
 
-  // Sync from remote data.json on-demand (merge, không overwrite)
-  const syncFromRemote = async (force = false) => {
-    const localModified = localStorage.getItem('flashcardDataModified') === '1';
-    if (localModified && !force) {
-      const ok = confirm(
-        'Phát hiện thay đổi trên thiết bị. Đồng bộ từ remote sẽ THÊM các thẻ mới nhưng KHÔNG ghi đè dữ liệu local. Tiếp tục?'
-      );
-      if (!ok) return;
-    }
 
-    try {
-      const res = await fetch('./data.json', { cache: 'no-store' });
-      if (!res.ok) throw new Error(`data.json HTTP ${res.status}`);
-      const fileData = await res.json();
 
-      // normalize nhiều dạng data.json vào form { categories: [...], currentCategoryIndex: 0 }
-      const normalize = (fd) => {
-        if (Array.isArray(fd)) {
-          if (fd.length && fd[0] && Array.isArray(fd[0].cards)) {
-            return { categories: fd, currentCategoryIndex: 0 };
-          }
-          if (fd.length && fd[0] && Array.isArray(fd[0].categories)) {
-            const candidate = fd[0];
-            return {
-              categories: candidate.categories || [],
-              currentCategoryIndex:
-                typeof candidate.currentCategoryIndex === 'number'
-                  ? candidate.currentCategoryIndex
-                  : 0,
-            };
-          }
-          if (fd.length && fd[0] && (fd[0].front || fd[0].back)) {
-            return {
-              categories: [{ name: 'Mặc định', cards: fd }],
-              currentCategoryIndex: 0,
-            };
-          }
-          return null;
-        } else if (fd && typeof fd === 'object') {
-          if (Array.isArray(fd.categories))
-            return {
-              ...fd,
-              currentCategoryIndex:
-                typeof fd.currentCategoryIndex === 'number'
-                  ? fd.currentCategoryIndex
-                  : 0,
-            };
-          if (Array.isArray(fd.cards))
-            return {
-              categories: [{ name: fd.name || 'Mặc định', cards: fd.cards }],
-              currentCategoryIndex: 0,
-            };
-          return null;
-        }
-        return null;
-      };
-
-      const remote = normalize(fileData);
-      if (!remote) throw new Error('data.json: cấu trúc không nhận dạng được');
-
-      // Merge remote into local: add new categories/cards, do NOT delete or overwrite local cards
-      const mergeRemoteIntoLocal = (remoteData) => {
-        ensureDataShape();
-        if (!remoteData || !Array.isArray(remoteData.categories)) return;
-
-        remoteData.categories.forEach((rCat) => {
-          const rName = rCat.name || 'Mặc định';
-          const rCards = Array.isArray(rCat.cards) ? rCat.cards : [];
-
-          // tìm category local bằng tên (case-sensitive). Bạn có thể đổi sang toLowerCase nếu muốn
-          let lCat = data.categories.find((c) => c.name === rName);
-          if (!lCat) {
-            // thêm toàn bộ category remote (clone để an toàn)
-            data.categories.push({
-              name: rName,
-              cards: rCards.map((c) => ({ ...c })),
-            });
-            return;
-          }
-
-          // merge cards: nếu card remote chưa tồn tại (so sánh front+back) thì thêm
-          lCat.cards = lCat.cards || [];
-          rCards.forEach((rCard) => {
-            const exists = lCat.cards.some((lCard) => {
-              // so sánh front + back; nếu cần bạn có thể mở rộng check (trim, lowercase, id)
-              return lCard.front === rCard.front && lCard.back === rCard.back;
-            });
-            if (!exists) {
-              lCat.cards.push({ ...rCard });
-            }
-          });
-        });
-
-        // giữ data.currentCategoryIndex như local (không overwrite)
-        ensureDataShape();
-      };
-
-      mergeRemoteIntoLocal(remote);
-
-      // lưu local (không đặt flag modified vì remote chỉ bổ sung)
-      saveLocalDataNoMark();
-
-      renderCategorySelect();
-      currentCardIndex = 0;
-      showingFront = true;
-      renderCard();
-      alert(
-        'Đã đồng bộ (merge) từ data.json — chỉ thêm các thẻ mới, không xóa dữ liệu local.'
-      );
-    } catch (err) {
-      console.error('Sync failed', err);
-      alert('Không thể đồng bộ từ remote: ' + (err.message || err));
-    }
-  };
 
   exportBtn?.addEventListener('click', exportData);
-  importBtn?.addEventListener('click', () => importInput?.click());
-  importInput?.addEventListener('change', (e) => {
-    const f = e.target.files && e.target.files[0];
-    if (f) importDataFromFile(f);
-    e.target.value = ''; // reset input
-  });
-  syncBtn?.addEventListener('click', () => syncFromRemote(false));
 
   // =======================
   // Event Listeners cho flashcard (iOS-safe)
@@ -624,14 +395,34 @@ document.addEventListener('DOMContentLoaded', async () => {
   deleteBtn?.addEventListener('click', async () => {
     const cards = getVisibleCards();
     if (!cards.length) return;
+    const ok = confirm('Bạn có chắc muốn xóa thẻ này?');
+    if (!ok) return;
     const cat = data.categories[data.currentCategoryIndex];
     const card = cards[currentCardIndex];
     const realIndex = cat.cards.indexOf(card);
-    cat.cards.splice(realIndex, 1);
+    if (realIndex >= 0) cat.cards.splice(realIndex, 1);
     if (!cat.cards.length) {
       data.categories.splice(data.currentCategoryIndex, 1);
       data.currentCategoryIndex = Math.max(0, data.currentCategoryIndex - 1);
     }
+    currentCardIndex = 0;
+    showingFront = true;
+    await saveData();
+    renderCategorySelect();
+    renderCard();
+  });
+
+  // Xóa cả nhóm (category)
+  deleteCategoryBtn?.addEventListener('click', async () => {
+    if (!data.categories || !data.categories.length) return;
+    const cat = data.categories[data.currentCategoryIndex];
+    const name = cat && cat.name ? cat.name : 'Nhóm';
+    const ok = confirm(
+      `Bạn có chắc muốn xóa cả nhóm "${name}" và tất cả thẻ trong nhóm này?`
+    );
+    if (!ok) return;
+    data.categories.splice(data.currentCategoryIndex, 1);
+    data.currentCategoryIndex = Math.max(0, data.currentCategoryIndex - 1);
     currentCardIndex = 0;
     showingFront = true;
     await saveData();
@@ -698,7 +489,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadData();
 
   // Auto sync khi online: giờ không có server, nên chỉ reload data.json khi online
- // setInterval(() => {
-  //  if (navigator.onLine) loadData();
-//  }, 15000);
-//});
+  setInterval(() => {
+    if (navigator.onLine) loadData();
+  }, 15000);
+});
