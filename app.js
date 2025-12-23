@@ -487,9 +487,35 @@ document.addEventListener('DOMContentLoaded', async () => {
   // =======================
   loadLocalData();
   await loadData();
+ // =======================
+// Sync data từ data.json
+// =======================
+const syncBtn = document.getElementById('syncBtn');
 
-  // Auto sync khi online: giờ không có server, nên chỉ reload data.json khi online
-  setInterval(() => {
-    if (navigator.onLine) loadData();
-  }, 15000);
+if (syncBtn) {
+  syncBtn.addEventListener('click', async () => {
+    const ok = confirm(
+      '⚠️ Đồng bộ sẽ GHI ĐÈ toàn bộ dữ liệu hiện tại bằng data.json.\nBạn có chắc không?'
+    );
+    if (!ok) return;
+
+    try {
+      const res = await fetch('./data.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('Không đọc được data.json');
+
+      const jsonData = await res.json();
+
+      // Lưu vào localStorage
+      localStorage.setItem('flashcardData', JSON.stringify(jsonData));
+
+      alert('✅ Đồng bộ dữ liệu thành công!\nTrang sẽ được tải lại.');
+      location.reload();
+    } catch (err) {
+      console.error(err);
+      alert('❌ Lỗi khi đồng bộ data.json');
+    }
+  });
+}
+
+  
 });
