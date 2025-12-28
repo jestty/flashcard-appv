@@ -587,6 +587,36 @@
           "front": "散布図(さんぷず)scatterとは：対(たい)になった二(ふた)つのデータを、横軸(よこじく)(x)と縦軸(たてじく)(y)にとって点(てん)で表(あらわ)した図(ず)\nBiểu đồ phân tán là đồ thị biểu diễn hai dữ liệu có quan hệ cặp đôi, bằng cách chấm điểm trên trục ngang và trục dọc.",
           "back": "。Ý nghĩa trục ngang và trục dọc (rất quan trọng)\n🔹 Trục(横軸(よこじく))\nThường là 要因(よういん) (nguyên nhân)\nVí dụ:\nNhiệt độ\nTốc độ máy\nThời gian\nLực ép\nĐộ ẩm\n🔹 Trục(縦軸(たてじく))\nThường là 特性(とくせい) (kết quả, đặc tính chất lượng)\nVí dụ:\nKích thước sản phẩm\nThời gian khô\nTỷ lệ lỗi\nĐộ bền\n。Các dạng quan hệ thường gặp trong 散布図(さんぷず)\nー 正(せい)の相関(そうかん)：tương quan dương trục ngang(nguyên nhân) tăng → trục dọc(kết quả, đặc tính) tăng\nー 負(ふ)の相関(そうかん)：tương quan âm trục ngang (nguyên nhân) tăng → trục dọc (kết quả, đặc tính) giảm\nー 相関(そうかん)なし：Không thấy xu hướng\nー 二次(にじ)の関係(かんけい)：Quan hệ cong (parabol)\n。Khái niệm tương quan mạnh 相関関係(そうかんかんけい)が強(つよ)い\nー Tương quan mạnh → các điểm xếp sát thành đường\nー Tương quan yếu → điểm rải rộng\n。散布図(さんぷず)を使(つか)った解析(かいせき)の目的(もくてき)として\nmục đích phân tích sử dụng biểu đồ phân tán\n- 特性(とくせい)のばらつきに影響(えいきょう)している要因(よういん)を調(しら)べる:Tìm yếu tố ảnh hưởng đến biến động\n‐　特性(とくせい)のばらつきに影響(えいきょう)しない要因(よういん)を調(しら)べる:Tìm yếu tố không ảnh hưởng đến biến động\n- 本来(ほんらい)の特性(とくせい)の測定(そくてい)に時間(じかん)がかかりすぎたり、破壊検査(はかいけんさ)のように測定(そくてい)が困難(こんなん)だったりする場合(ばあい)、本来(ほんらい)の特性(とくせい)に代(か)わるもの、つまり、代用特性(だいようとくせい)を探(さが)す: Tìm đặc tính thay thế khi đo khó, và quá tốn thời gian để việc kiểm tra không bị hủy.\n\n- Triển khai biện pháp giải quyết ngoài các yếu tố 要因(よういん) と 特性(とくせい) ra thì là sai mục đích của biểu đồ phân tán như: 目的(もくてき)と手段(しゅだん)の関係(かんけい)",
           "learned": true
+        },
+        {
+          "front": "統計図(とうけいず)\n-Biểu đồ thống kê dạng (System Diagram)",
+          "back": "達成(たっせい)すべき目標(もくひょう)からスタートする。その目標(もくひょう)を達成(たっせい)するためには何(なに)をすべき。手段(しゅだん)・対策(たいさく)を具体化(ぐたいか)する。\n-Bắt đầu từ mục đích để đạt dược mục đích thì nên làm gì, trình bày cụ thể các đối sách, phương pháp\n🔍 Dấu hiệu:\nCấu trúc cây\nTừ mục đích chia nhánh",
+          "learned": true
+        },
+        {
+          "front": "親和図(しんわず)\n多(おお)くの言語(げんご)データを、意味(いみ)の近(ちか)いもの同士(どうし)でまとめ、問題(もんだい)の全体像(ぜんたいぞう)や本質(ほんしつ)を明(あき)らかにする図(ず)\nSơ đồ gom nhóm các ý kiến / thông tin bằng chữ theo sự “gần nghĩa”\nđể làm rõ bản chất vấn đề.",
+          "back": "MỤC ĐÍCH của 親和図(しんわず)\n🎯 Dùng khi:\nÝ kiến quá nhiều\nThông tin lộn xộn\nChưa biết vấn đề nằm ở đâu\n-ĐẶC ĐIỂM NHẬN BIẾT KHI NHÌN HÌNH\n  -Toàn chữ – không số\n  -Các mảnh giấy / ô chữ\n  -Viết bằng ngôn ngữ tự do\n  -Đám mây\n  -Các cụm rời rạc\n  -Sticky notes dán lại\n📌 Từ khóa hay gặp:\n言語(げんご)データ\nグループ化(か)\n全体像(ぜんたいぞう)",
+          "learned": true
+        },
+        {
+          "front": "連関図(れんかんず)\n問題(もんだい)や要因(よういん)の間(あいだ)の因果関係(いんがかんけい)を、矢印(やじるし)で表(あらわ)し、\n複雑(ふくざつ)な関係(かんけい)を整理(せいり)するための図(ず)\nSơ đồ thể hiện mối quan hệ nguyên nhân– kết quả giữa nhiều yếu tố bằng mũi tên, để làm rõ vấn đề phức tạp.",
+          "back": "MỤC ĐÍCH của 連関図(れんかんず)\nDùng khi:\nVấn đề phức tạp\nNguyên nhân đan chéo\nKhông phải 1 nguyên nhân → 1 kết quả\nMục tiêu:\n因果関係(いんがかんけい)を明確(めいかく)にする\nlàm sáng tỏ mối quan hệ nguyên nhân kết quả \n主要因(しゅよういん)を見(み)つける\ntìm ra nguyên nhân chủ yếu\n問題(もんだい)の構造(こうぞう)を理解(りかい)する\nhiểu được cấu tạo của vấn đề\nĐẶC ĐIỂM NHẬN BIẾT KHI NHÌN HÌNH\n  -Rất nhiều 矢印(やじるし) (mũi tên)\n  -Mũi tên chỉ: 原因(げんいん) → 結果(けっか)\n  -Có thể vòng tròn lặp\n  -原因側(げんいんがわ) (nhiều mũi tên đi ra)\n  -結果側(けっかがわ) (nhiều mũi tên đi vào)",
+          "learned": true
+        },
+        {
+          "front": "アローダイアグラム\n作業(さぎょう)の順序(じゅんじょ)や所要時間(しょようじかん)を矢印(やじるし)で表(あらわ)し、\n計画(けいかく)や日程管理(にっていかんり)を行(おこな)うための図(ず)。\nSơ đồ dùng mũi tên để biểu diễn trình tự công việc và thời gian,\nnhằm lập kế hoạch và quản lý tiến độ.",
+          "back": "MỤC ĐÍCH\nDùng để:\n  -作業順序(さぎょうじゅんじょ)を明確(めいかく)にする\nlàm sáng tỏ thứ tự làm việc\n  -日程(にってい)を計画(けいかく)する\nlập kế hoạch tiến độ lịch trình\n  -遅(おく)れの原因(げんいん)を把握(はあく)する\nnắm được nguyên nhân chậm chạp\n  -重要(じゅうよう)な作業(さぎょう)（クリティカルパス）を知(し)る\nbiết đường dẫn về công đoạn quan trọng\n📌 Từ khóa ăn điểm:\n  -工程(こうてい)\n  -所要時間(しょようじかん)\n  -日程管理(にっていかんり)\n  -クリティカルパス\nĐẶC ĐIỂM NHẬN BIẾT KHI NHÌN HÌNH\n  -Mũi tên + công việc\n  -Mỗi 矢印(やじるし) = 1 công việc\n  -Có ghi:\n    -作業名(さぎょうめい)\n    -時間(じかん)（日(にち)、時間(じかん)）\n  -Có 開始(かいし) → 終了(しゅうりょう)\n  -Có điểm bắt đầu\n  -Có điểm kết thúc\n  -Công việc nối theo thứ tự\n  -Có nhiều nhánh song song\n  -Một số việc làm đồng thời\n  -Một số việc phải chờ",
+          "learned": true
+        },
+        {
+          "front": "1️⃣マトリックス図(ず)（Matrix Diagram）\n2つ以上(いじょう)の要素(ようそ)の関係(かんけい)を、行(こう)と列(れつ)で整理(せいり)し、\n重要度(じゅうようど)や関係(かんけい)の強(つよ)さを明確(めいかく)にする図(ず)\nSơ đồ dạng bảng (hàng × cột) để làm rõ mối quan hệ, mức độ quan trọng\nvà giúp lựa chọn đối sách.",
+          "back": "2️⃣MỤC ĐÍCH\nDùng để:\n関係(かんけい)を明確(めいかく)にする\nlàm sáng tỏ quan hệ\n優先順位(ゆうせんじゅんい)を決(き)める\nquyết định vị trí ưu tiên\n対策(たいさく)を選定(せんてい)する\nlựa chọn đối sách\n重点化(じゅうてんか)する\ntrọng điểm hóa\n📌 Từ khóa ăn điểm:\n行列(ぎょうれつ)\n関係性(かんけいせい)\n重要度(じゅうようど)\n優先順位(ゆうせんじゅんい)\n3️⃣ĐẶC ĐIỂM NHẬN BIẾT KHI NHÌN HÌNH\n✅  Dạng bảng\nCó hàng (行(こう)) và cột (列(れつ))\nGiao điểm có:\n◎ ○ △\nSố\nKý hiệu\nSo sánh chéo 2 nhóm yếu tố\nVí dụ:\n要因(よういん) × 特性(とくせい)\n対策(たいさく) × 効果(こうか)\n工程(こうてい) × 問題(もんだい)\n📌 Nhìn là thấy 2 tập yếu tố khác nhau.\nDùng để quyết định\nChọn phương án tốt nhất\nƯu tiên việc cần làm trước\n4️⃣Các dạng マトリックス図(ず) hay gặp (để nhận biết)\nL型(がた): 2 yếu tố\nT型(がた): 3 yếu tố\nY型(がた): 3 yếu tố giao nhau\nX型(がた): 4 yếu tố\n📌 QC検定 3級 thường chỉ cần nhận biết L型(がた).",
+          "learned": true
+        },
+        {
+          "front": "1️⃣PDPC（Process Decision Program Chart）\n計画(けいかく)の実行過程(じっこうかてい)で起(お)こりうる問題(もんだい)を想定(そうてい)し、\nそれに対(たい)する対応策(たいおうさく)をあらかじめ検討(けんとう)する図(ず)\nSơ đồ dùng để dự đoán các vấn đề có thể xảy ra trong quá trình thực hiện\nvà chuẩn bị đối sách trước.",
+          "back": "2️⃣ MỤC ĐÍCH\nDùng để:\nリスクを洗(あら)い出(だ)す\nlàm sáng tỏ lỗi\nトラブルを未然(みぜん)に防(ふせ)ぐ\nphòng ngừa lỗi tiềm ẩn\n実行可能(じっこうかのう)な計画(けいかく)にする\nlập kế hoạch có thể tiến hành\n📌 Từ khóa ăn điểm:\n想定(そうてい)\n問題発生(もんだいはっせい)\n対応策(たいおうさく)\n未然防止(みぜんぼうし)\n3️⃣ ĐẶC ĐIỂM NHẬN BIẾT KHI NHÌN HÌNH\n✅  Dạng cây, giống 系統図\nNhưng có nhánh rủi ro\n✅  Có từ khóa kiểu:\n起(お)こりうる問題(もんだい)\n不具合(ふぐあい)\nトラブル\n失敗(しっぱい)\n✅  Có 対策(たいさく) / 対応(たいおう)\nMỗi rủi ro đều có phương án xử lý\n✅  Không dùng số liệu\nToàn chữ\nLogic “nếu… thì…”\n4️⃣Vị trí trong chuỗi 新QC (hay ra)\n親和図 → 連関図 → 系統図 → マトリックス図 → アローダイアグラム → PDPC",
+          "learned": true
         }
       ]
     }
