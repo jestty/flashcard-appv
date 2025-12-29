@@ -111,31 +111,60 @@ document.addEventListener('DOMContentLoaded', async () => {
       /([一-龯々〆ヵヶ]+)\(([\u3040-\u309F]+)\)/g,
       '<ruby>$1<rt>$2</rt></ruby>'
     );
+  function highlightJapanese(html) {
+  if (!html) return html;
 
-  const renderCard = () => {
-    const cards = getVisibleCards();
-    if (!cards.length) {
-      flashcard.textContent = data.categories.length
-        ? 'Không còn thẻ'
-        : 'Chưa có nhóm nào';
-      counter.textContent = '0 / 0';
-      if (sliderContainer) sliderContainer.style.display = 'none';
-      return;
-    }
-    if (currentCardIndex >= cards.length) currentCardIndex = 0;
+  const rtStore = [];
 
-    const card = cards[currentCardIndex];
-    flashcard.innerHTML = convertFurigana(
-      showingFront ? card.front : card.back
-    );
-    counter.textContent = `${currentCardIndex + 1} / ${cards.length}`;
+  // 1. Tạm thay <rt>...</rt> bằng placeholder
+  html = html.replace(/<rt>.*?<\/rt>/g, (match) => {
+    rtStore.push(match);
+    return `__RT_${rtStore.length - 1}__`;
+  });
 
-    if (slider) {
-      slider.max = Math.max(0, cards.length - 1);
-      slider.value = currentCardIndex;
-      sliderContainer.style.display = 'block';
-    }
-  };
+  // 2. Highlight tiếng Nhật (ngoài rt)
+  html = html.replace(
+    /([\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9faf]+)/g,
+    '<span class="jp">$1</span>'
+  );
+
+  // 3. Khôi phục lại <rt>
+  html = html.replace(/__RT_(\d+)__/g, (_, i) => rtStore[i]);
+
+  return html;
+}
+  
+
+    const renderCard = () => {
+  const cards = getVisibleCards();
+  if (!cards.length) {
+    flashcard.textContent = data.categories.length
+      ? 'Không còn thẻ'
+      : 'Chưa có nhóm nào';
+    counter.textContent = '0 / 0';
+    if (sliderContainer) sliderContainer.style.display = 'none';
+    return;
+  }
+
+  if (currentCardIndex >= cards.length) currentCardIndex = 0;
+
+  const card = cards[currentCardIndex];
+
+  const rawText = showingFront ? card.front : card.back;
+
+  const withFurigana = convertFurigana(rawText);
+  const finalHTML = highlightJapanese(withFurigana);
+
+  flashcard.innerHTML = finalHTML;
+
+  counter.textContent = `${currentCardIndex + 1} / ${cards.length}`;
+
+  if (slider) {
+    slider.max = Math.max(0, cards.length - 1);
+    slider.value = currentCardIndex;
+    sliderContainer.style.display = 'block';
+  }
+};
 
   const renderCategorySelect = () => {
     if (!categorySelect) return;
