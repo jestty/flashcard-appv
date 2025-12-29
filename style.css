@@ -102,6 +102,10 @@ button:active {
   -webkit-user-drag: none;
   user-select: none;
   -ms-touch-action: manipulation;
+    /* --- Flashcard bullet + capitalize --- */
+  text-transform: capitalize;
+  position: relative;
+  padding-left: 28px; /* chừa chỗ cho bullet */
 }
 
 /* prevent double-tap zoom / tap highlight on interactive elements */
@@ -135,10 +139,23 @@ ruby {
   vertical-align: middle;
 }
 
-ruby rt {
+/*ruby rt {
   font-size: 0.6em;
   color: #986f6f;
   line-height: 1.2;
+}
+*/
+.card .jp {
+  color: #0b5ed7;
+  font-weight: 350;
+}
+.card rt {
+  font-size: 0.6em;
+  line-height: 1.2;
+  color: #78372a; /* màu furigana của bạn */
+}
+body.dark-mode .card .jp {
+  color: #7ab7ff;
 }
 .counter {
   margin-top: 5px;
