@@ -664,8 +664,8 @@
           "learned": true
         },
         {
-          "front": "品質(ひんしつ)の概念(がいねん)\nkhái niệm về chất lượng\nねらい品質(ひんしつ)とできばえ品質(ひんしつ)\nChất lượng thực tế và chất lượng mục tiêu",
-          "back": "1️⃣ ねらい品質(ひんしつ)\n🔹 Định nghĩa chuẩn\nねらい品質(ひんしつ)とは、\n👉 企画(きかく)・設計(せっけい)の段階(だんかい)でねらって設定(せってい)した品質(ひんしつ)\nChất lượng mục tiêu – chất lượng được đặt ra trước, ngay từ khi lập kế hoạch / thiết kế\n🔸 Đặc điểm\nXác định trước khi sản xuất\nThể hiện:　Tiêu chuẩn, Bản vẽ, Thông số kỹ thuật\nMang tính mục tiêu / mong muốn\n📌 Từ khóa hay ra:\n設計段階(せっけいだんかい), 目標(もくひょう), 設定(せってい)する\n2️⃣ できばえ品質(ひんしつ)\n🔹 Định nghĩa chuẩn\nできばえ品質(ひんしつ)とは、\n👉 実際(じっさい)に製造(せいぞう)された結果(けっか)としての品質(ひんしつ)\nChất lượng thực tế đạt được – chất lượng sau khi sản xuất xong\n🔸 Đặc điểm\nXuất hiện sau sản xuất\nLà kết quả thực tế\nCó thể:　Đạt, Không đạt, Lệch so với mục tiêu\n📌 Từ khóa hay ra:\n実際(じっさい), 結果(けっか), 製造後(せいぞうご)\n3️⃣Mối quan hệ giữa 2 khái niệm\nねらい品質(ひんしつ)　--> 製造(せいぞう) --> できばえ品質(ひんしつ) --> 評価(ひょうか)・改善(かいぜん)",
+          "front": "品質(ひんしつ)の概念(がいねん)\nkhái niệm về chất lượng\nねらい品質(ひんしつ)もしくは設計品質(せっけいひんしつ)とできばえ品質(ひんしつ)\nChất lượng thực tế và chất lượng mục tiêu hoặc là chất lượng thiết kế.",
+          "back": "1️⃣ ねらい品質(ひんしつ)もしくは設計品質(せっけいひんしつ)\n🔹 Định nghĩa chuẩn\nねらい品質(ひんしつ)とは、\n👉 企画(きかく)・設計(せっけい)の段階(だんかい)でねらって設定(せってい)した品質(ひんしつ)\nChất lượng mục tiêu – chất lượng được đặt ra trước, ngay từ khi lập kế hoạch / thiết kế\n🔸 Đặc điểm\nXác định trước khi sản xuất\nThể hiện:　Tiêu chuẩn, Bản vẽ, Thông số kỹ thuật\nMang tính mục tiêu / mong muốn\n📌 Từ khóa hay ra:\n設計段階(せっけいだんかい), 目標(もくひょう), 設定(せってい)する\n2️⃣ できばえ品質(ひんしつ)\n🔹 Định nghĩa chuẩn\nできばえ品質(ひんしつ)とは、\n👉 実際(じっさい)に製造(せいぞう)された結果(けっか)としての品質(ひんしつ)\nChất lượng thực tế đạt được – chất lượng sau khi sản xuất xong\n🔸 Đặc điểm\nXuất hiện sau sản xuất\nLà kết quả thực tế\nCó thể:　Đạt, Không đạt, Lệch so với mục tiêu\n📌 Từ khóa hay ra:\n実際(じっさい), 結果(けっか), 製造後(せいぞうご)\n3️⃣Mối quan hệ giữa 2 khái niệm\nねらい品質(ひんしつ)　--> 製造(せいぞう) --> できばえ品質(ひんしつ) --> 評価(ひょうか)・改善(かいぜん)",
           "learned": true
         }
       ]
