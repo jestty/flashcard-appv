@@ -9,6 +9,10 @@ let relatedCycle = {
   index: 0,
 };
 
+let touchStartX = 0;
+let touchStartY = 0;
+let isSwiping = false;
+
 let currentCard = null;
 let data = { categories: [], currentCategoryIndex: 0 };
 let currentCardIndex = 0;
@@ -678,12 +682,35 @@ document.addEventListener('DOMContentLoaded', async () => {
   // =======================
   // Event Listeners
   // =======================
-  flashcard?.addEventListener('click', flipCard);
+  flashcard?.addEventListener('click', (e) => {
+    if ('ontouchstart' in window) return; // iOS / Android
+    if (e.target.closest('.related-link')) return;
+    flipCard(e);
+  });
+
   flashcard?.addEventListener('touchend', (e) => {
     if (e.target.closest('.related-link')) return;
+    // ❌ Vuốt → không flip
+    if (isSwiping) return;
 
     e.preventDefault();
     flipCard(e);
+  });
+  flashcard.addEventListener('touchstart', (e) => {
+    const t = e.touches[0];
+    touchStartX = t.clientX;
+    touchStartY = t.clientY;
+    isSwiping = false;
+  });
+
+  flashcard.addEventListener('touchmove', (e) => {
+    const t = e.touches[0];
+    const dx = Math.abs(t.clientX - touchStartX);
+    const dy = Math.abs(t.clientY - touchStartY);
+
+    if (dx > 10 || dy > 10) {
+      isSwiping = true;
+    }
   });
 
   nextBtn?.addEventListener('click', nextCard);
@@ -778,7 +805,4 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadData();
 
   // Auto sync khi online: giờ không có server, nên chỉ reload data.json khi online
-  setInterval(() => {
-    if (navigator.onLine) loadData();
-  }, 15000);
 });
