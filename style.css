@@ -105,6 +105,18 @@ button:active {
     /* --- Flashcard bullet + capitalize --- */
   padding-left: 28px; /* chừa chỗ cho bullet */
 }
+/* Mới: Định dạng liên kết nội bộ */
+
+.related-link:hover {
+  background: rgba(7, 45, 83, 0.15);
+}
+.related-link {
+  cursor: pointer;
+  pointer-events: auto;
+  text-decoration: underline;
+  color: #0b5ed7;
+}
+
 
 /* prevent double-tap zoom / tap highlight on interactive elements */
 html,
