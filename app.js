@@ -364,7 +364,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (slider) {
       slider.max = Math.max(0, cards.length - 1);
       slider.value = currentCardIndex;
-      sliderContainer.style.display = 'block';
+      sliderContainer.style.display = 'flex';
     }
   };
 
