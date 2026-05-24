@@ -719,7 +719,82 @@
           "learned": true
         }
       ]
+    },
+    {
+      "name": "1Q84-村上春樹",
+      "cards": [
+        {
+          "front": "聴(き)くのにうってつけの音楽(おんがく)とは言(い)えないはずだ。",
+          "back": "Không thể nói chắc chắn rằng bản nhạc đó phù hợp để nghe",
+          "learned": true
+        },
+        {
+          "front": "巻(ま)き込(こ)まれる",
+          "back": "Bị cuốn vào",
+          "learned": true
+        },
+        {
+          "front": "耳(みみ)を澄(す)ませる\nようには見(み)えない",
+          "back": "Lắng nghe\nKhông có vẻ như",
+          "learned": true
+        },
+        {
+          "front": "まるで～のように\n舳先(へさき)に立(た)って\n不吉(ふきつ)な潮目(しおめ)を読(よ)む\n老練(ろうれん)な漁師(りょうし)\n途切(とぎ)れなく \n 並(なら)んだ車列(しゃれつ)\nただ口(くち)を閉(と)ざして見(み)つめていた",
+          "back": "-giống như…\n-đứng ở mũi thuyền\n-Nhìn ra sự bất thường của dòng nước\n-Ngư dân lão luyện\n-không ngắt quãng\n-hàng xe nối dài\n-chỉ im lặng nhìn chằm chằm",
+          "learned": true
+        }
+      ]
+    },
+    {
+      "name": "BJT",
+      "cards": [
+        {
+          "front": "丁寧語(ていねいご)\nMức độ bình thường\n後ろに「です」「ます」をつける。\nです。",
+          "back": "Trang trọng hơn\n-->でございます。",
+          "learned": true
+        },
+        {
+          "front": "丁寧語(ていねいご)\nMức độ bình thường\nではありません",
+          "back": "Trang trọng hơn\n--> でございません",
+          "learned": true
+        },
+        {
+          "front": "丁寧語(ていねいご)\nMức độ bình thường\nあります。",
+          "back": "Trang trọng hơn\n-->ございます。",
+          "learned": true
+        },
+        {
+          "front": "丁寧語(ていねいご)\nMức độ bình thường\nありません。",
+          "back": "Trang trọng hơn\n--> ございません。",
+          "learned": true
+        },
+        {
+          "front": "丁寧語(ていねいご)\nMức độ bình thường\nここ、そこ、あそこ",
+          "back": "Trang trọng hơn\n--> こちら、そちら、あちら",
+          "learned": true
+        },
+        {
+          "front": "丁寧語(ていねいご)\nMức độ bình thường\n私(わたし)",
+          "back": "Mức độ trang trọng hơn\n私(わたくし)",
+          "learned": true
+        },
+        {
+          "front": "丁寧語(ていねいご)\nMức độ bình thường\nごめんなさい。",
+          "back": "Mức độ trang trọng hơn\n申(もう)し訳(わけ)ありません／申(もう)し訳(わけ)ございません。",
+          "learned": true
+        },
+        {
+          "front": "丁寧語(ていねいご)\nMức độ bình thường\nいいですか",
+          "back": "Mức độ　trang trọng hơn\n-->よろしいでしょうか",
+          "learned": true
+        },
+        {
+          "front": "丁寧語(ていねいご)\n前(まえ)に「お」「ご」などをつける。",
+          "back": "例えば、食事-->お食事\n「お」は和語(わご)、「ご」は漢語(かんご)につきます。例外（*）もあります。\nお時間(じかん)、お電話(でんわ)、お客様(きゃくさま)などご住所(じゅうしょ)、ご両親(りょうしん)",
+          "learned": true
+        }
+      ]
     }
   ],
-  "currentCategoryIndex": 1
+  "currentCategoryIndex": 3
 }
