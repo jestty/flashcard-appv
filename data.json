@@ -749,48 +749,33 @@
       "name": "BJT",
       "cards": [
         {
-          "front": "丁寧語(ていねいご)\nMức độ bình thường\n後ろに「です」「ます」をつける。\nです。",
-          "back": "Trang trọng hơn\n-->でございます。",
+          "front": "。Mức độ bình thường\n後ろに「です」「ます」をつける。\n\nです\n\nではありません\n\nあります\n\nありません\n\nここ、そこ、あそこ\n\n私(わたし)\n\nごめんなさい\n\nいいですか",
+          "back": "。丁寧語(ていねいご)\nTrang trọng hơn\n-->でございます。\n\n-->でございません\n\n-->ございます\n\n-->ございません\n\n-->こちら、そちら、あちら\n\n-->私(わたくし)\n\n-->申(もう)し訳(わけ)ありません／申(もう)し訳(わけ)ございません。\n\n-->よろしいでしょうか",
           "learned": true
         },
         {
-          "front": "丁寧語(ていねいご)\nMức độ bình thường\nではありません",
-          "back": "Trang trọng hơn\n--> でございません",
-          "learned": true
-        },
-        {
-          "front": "丁寧語(ていねいご)\nMức độ bình thường\nあります。",
-          "back": "Trang trọng hơn\n-->ございます。",
-          "learned": true
-        },
-        {
-          "front": "丁寧語(ていねいご)\nMức độ bình thường\nありません。",
-          "back": "Trang trọng hơn\n--> ございません。",
-          "learned": true
-        },
-        {
-          "front": "丁寧語(ていねいご)\nMức độ bình thường\nここ、そこ、あそこ",
-          "back": "Trang trọng hơn\n--> こちら、そちら、あちら",
-          "learned": true
-        },
-        {
-          "front": "丁寧語(ていねいご)\nMức độ bình thường\n私(わたし)",
-          "back": "Mức độ trang trọng hơn\n私(わたくし)",
-          "learned": true
-        },
-        {
-          "front": "丁寧語(ていねいご)\nMức độ bình thường\nごめんなさい。",
-          "back": "Mức độ trang trọng hơn\n申(もう)し訳(わけ)ありません／申(もう)し訳(わけ)ございません。",
-          "learned": true
-        },
-        {
-          "front": "丁寧語(ていねいご)\nMức độ bình thường\nいいですか",
-          "back": "Mức độ　trang trọng hơn\n-->よろしいでしょうか",
-          "learned": true
-        },
-        {
-          "front": "丁寧語(ていねいご)\n前(まえ)に「お」「ご」などをつける。",
+          "front": "。丁寧語(ていねいご)\n\n前(まえ)に「お」「ご」などをつける。",
           "back": "例えば、食事-->お食事\n「お」は和語(わご)、「ご」は漢語(かんご)につきます。例外（*）もあります。\nお時間(じかん)、お電話(でんわ)、お客様(きゃくさま)などご住所(じゅうしょ)、ご両親(りょうしん)",
+          "learned": true
+        },
+        {
+          "front": "。Sử dụng trong giao tiếp thông thường\n\n今日(きょう)　   Hôm nay\n昨日(きのう)     Hôm qua\n明日(あした)     Ngày mai\n一昨日(おととい) Hôm kia\n明後日(あさって) Hôm kìa\n今度(こんど)     Lần này, lần tới\nさっき         Lúc nãy\n前(まえ)に       Trước đó\n後(あと)で       Sau đó\nもうすぐ         Sắp sửa",
+          "back": "。Sử dụng trong kinh doanh\n\n本日(ほんじつ)\n昨日(さくじつ)\n明日(あす、みょうにち)\n一昨日(いっさくじつ)\n明後日(みょうごにち)\nこのたび\nさっきほど\n以前(いぜん)\n後(のち)ほど\nまもなく",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ\n\nする",
+          "back": "。尊敬語(そんけいご)　相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->なさる、される\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nChỉ dùng cho bản thân\n-->いたす Dùng cho một phía là bản thân mình\n-->させていただく Dùng khi muốn nhận được sự đồng ý, ơn huệ từ đối phương\n\n。丁寧語(ていねいご)\nDùng cho người nghe (khách hàng)\n-->します",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ\n\n言(い)う",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->おっしゃる、言(い)われる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nChỉ dùng cho bản thân\n-->申(もう)す、申(もう)し上(あ)げる\n\n。丁寧語(ていねいご)\nDùng cho người nghe (khách hàng)\n-->言(い)います",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ\n\n行(い)く",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->行(い)かれる、\n\n   いらっしゃる、\n\n   おいでになる、\n\n   お越(こ)しになる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nChỉ dùng cho bản thân\n-->うかがう、参(まい)る\n\n。丁寧語(ていねいご)\nDùng cho người nghe (khách hàng)\n-->行(い)きます",
           "learned": true
         }
       ]
