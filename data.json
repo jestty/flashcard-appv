@@ -805,12 +805,52 @@
         },
         {
           "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n見(み)せる",
-          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お見(み)せになる、\n　　お示(しめ)しになる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->お見(み)せする、\n　　ご覧(らん)に入(い)れる、\n　　お目にかける\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->見せます",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お見(み)せになる、\n　　お示(しめ)しになる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->お見(み)せする、\n　　ご覧(らん)に入(い)れる、\n　　お目(め)にかける\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->見せます",
           "learned": true
         },
         {
           "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n聞(き)く",
           "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お聞(き)きになる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->拝聴(はいちょう)する、うかがう\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->聞(き)きます",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n聞(き)かせる",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お聞(き)かせになる\n\n。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お耳(みみ)に入(い)れる\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->聞(き)かせます",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n読(よ)む",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お読(よ)みになる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->拝読(はいどく)する\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->読(よ)みます",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n座(すわ)る",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お掛(か)けになる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->お座(すわ)りする、\n　座(すわ)らせていただく\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->座(すわ)ります",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n会(あ)う",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お会(あ)いになる、\n　　会(あ)われる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->お目(め)にかかる\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->会(あ)います",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n伝(つた)える",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お伝(つた)えになる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->申(もう)し伝(つた)える\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->伝(つた)えます",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n訪(たず)ねる",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お訪(たず)ねになる、\n　　訪(たず)ねられる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->お訪(たず)ねする、\n　　伺(うかが)う、お伺(うかが)いする、\n　　参上(さんじょう)する、参(まい)る、\n　　上(あ)がる、お邪魔(じゃま)する\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->訪(たず)ねます",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\nわかる",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->おわかりになる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->かしこまる、\n　　承知(しょうち)する\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->わかりました",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n受(う)け取(と)る",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お受(う)け取(と)りになる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->頂戴(ちょうだい)する、\n　　拝受(はいじゅ)する、\n　　賜(たまわ)る\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->受(う)け取(と)ります",
           "learned": true
         }
       ]
