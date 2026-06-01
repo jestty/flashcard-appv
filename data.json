@@ -912,6 +912,41 @@
           "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n年(とし)を取(と)る",
           "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お年(とし)を召(め)す\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->なし\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->年(とし)を取(と)ります",
           "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n着(き)る",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->召(め)す、\n　着(き)られる、\n　お召(め)しになる\n　\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->着(き)させいただく、\n　身(み)につけさせていただく\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->着(き)ます",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n確認(かくにん)する",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->確認(かくにん)なさる、\n   確認(かくにん)される、\n   ご確認(かくにん)くださる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->確認(かくにん)いたす\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->確認(かくにん)します",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n借(か)りる",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->お借(か)りになる、\n   借(か)りられる\n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->お借りする、\n   お借りいたす、\n   拝借(はいしゃく)する\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->借(か)ります",
+          "learned": true
+        },
+        {
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n承諾(しょうだく)する",
+          "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->ご承諾(しょうだく)になる、\n   承諾(しょうだく)される、\n  （ご）承諾(しょうだく)なさる、\n   ご承諾(しょうだく)くださる \n\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->かしこまる、\n　 承諾(しょうだく)いたす、\n   承諾(しょうだく)申(もう)し上(あ)げる、\n   承諾(しょうだく)させていただく\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->承諾(しょうだく)します",
+          "learned": true
+        },
+        {
+          "front": "尊敬語(そんけいご)\n\nいらっしゃる(行(い)く、来(く)る、いる)\nおいでになる(行(い)く、来(く)る、いる)\nおっしゃる(言(い)う)\nお休(やす)みになる\nお求(もと)めになる\nお見(み)えになる\nお考(かん)がえになる\nお受(う)け取(と)りになる\nお召(め)しになる\nお待(ま)ちくださる",
+          "back": "Đi, đến, có,ở\nĐi, đến, có,ở\nNói\nNghỉ\nyêu cầu\nNhìn thấy\nSuy nghĩ\nNhận, hiểu, chịu trách nhiệm\nĂn cơm\nchờ đợi",
+          "learned": true
+        },
+        {
+          "front": "尊敬語(そんけいご)\n\nおわかりになる\nお越(こ)しになる(来(く)る)\nお会(あ)いになる\nお待(ま)ちになる\nお伝(つた)えになる\nお読(よ)みになる\nお年(と)しを召(め)す\nお買(か)いになる\nお聞(き)きになる\nくださる(くれる)",
+          "back": "Hiểu\nĐến\nGặp mặt\nĐợi chờ\nTruyền đạt\nĐọc\nThêm tuổi\nNghe \nCho tôi",
+          "learned": true
+        },
+        {
+          "front": "尊敬語(そんけいご)\n\nお掛(か)けになる\nお帰(かえ)りになる\nお気(き)に召(め)す\nご存(ぞん)じだ\nご覧(らん)になる(見(み)る)\nご利(り)用(よう)になる\nご理(り)解(かい)いただく\nなさる(する)\n召(め)し上(あ)がる",
+          "back": "Ngồi\nTrở về\nThích\nBiết\nNhìn\nSử dụng\nHiểu\nLàm\nĂn cơm",
+          "learned": true
         }
       ]
     }
