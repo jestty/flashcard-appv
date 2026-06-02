@@ -779,7 +779,7 @@
           "learned": true
         },
         {
-          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n来る",
+          "front": "。不規則動詞(ふきそくどうし)\nĐộng từ bất quy tắc chia về kính ngữ, khiêm nhường ngữ, lịch sự \n\n来(く)る",
           "back": "。尊敬語(そんけいご)相手(あいて)のみ\nKính ngữ chỉ dùng cho đối phương\n-->[[いらっしゃる]]、\n　　[[おいでになる]]、\n　　見(み)える、\n　　お越(こ)しになる\n。謙譲語(けんじょうご)自分(じぶん)のみ\nKhiêm nhuờng ngữ chỉ dùng cho bản thân\n-->参(まい)る、伺(うかが)う\n\n。丁寧語(ていねいご)\nThể lịch sự cho người nghe (khách hàng...)\n-->来(き)ます",
           "learned": true
         },
@@ -934,18 +934,23 @@
           "learned": true
         },
         {
-          "front": "尊敬語(そんけいご)\n\nいらっしゃる(行(い)く、来(く)る、いる)\nおいでになる(行(い)く、来(く)る、いる)\nおっしゃる(言(い)う)\nお休(やす)みになる\nお求(もと)めになる\nお見(み)えになる\nお考(かん)がえになる\nお受(う)け取(と)りになる\nお召(め)しになる\nお待(ま)ちくださる",
+          "front": "尊敬語(そんけいご)\nKính ngữ\nいらっしゃる(行(い)く、来(く)る、いる)\nおいでになる(行(い)く、来(く)る、いる)\nおっしゃる(言(い)う)\nお休(やす)みになる\nお求(もと)めになる\nお見(み)えになる\nお考(かん)がえになる\nお受(う)け取(と)りになる\nお召(め)しになる\nお待(ま)ちくださる",
           "back": "Đi, đến, có,ở\nĐi, đến, có,ở\nNói\nNghỉ\nyêu cầu\nNhìn thấy\nSuy nghĩ\nNhận, hiểu, chịu trách nhiệm\nĂn cơm\nchờ đợi",
           "learned": true
         },
         {
-          "front": "尊敬語(そんけいご)\n\nおわかりになる\nお越(こ)しになる(来(く)る)\nお会(あ)いになる\nお待(ま)ちになる\nお伝(つた)えになる\nお読(よ)みになる\nお年(と)しを召(め)す\nお買(か)いになる\nお聞(き)きになる\nくださる(くれる)",
+          "front": "尊敬語(そんけいご)\nKính ngữ\nおわかりになる\nお越(こ)しになる(来(く)る)\nお会(あ)いになる\nお待(ま)ちになる\nお伝(つた)えになる\nお読(よ)みになる\nお年(と)しを召(め)す\nお買(か)いになる\nお聞(き)きになる\nくださる(くれる)",
           "back": "Hiểu\nĐến\nGặp mặt\nĐợi chờ\nTruyền đạt\nĐọc\nThêm tuổi\nNghe \nCho tôi",
           "learned": true
         },
         {
-          "front": "尊敬語(そんけいご)\n\nお掛(か)けになる\nお帰(かえ)りになる\nお気(き)に召(め)す\nご存(ぞん)じだ\nご覧(らん)になる(見(み)る)\nご利(り)用(よう)になる\nご理(り)解(かい)いただく\nなさる(する)\n召(め)し上(あ)がる",
+          "front": "尊敬語(そんけいご)\nKính ngữ\nお掛(か)けになる\nお帰(かえ)りになる\nお気(き)に召(め)す\nご存(ぞん)じだ\nご覧(らん)になる(見(み)る)\nご利(り)用(よう)になる\nご理(り)解(かい)いただく\nなさる(する)\n召(め)し上(あ)がる",
           "back": "Ngồi\nTrở về\nThích\nBiết\nNhìn\nSử dụng\nHiểu\nLàm\nĂn cơm",
+          "learned": true
+        },
+        {
+          "front": "敬語表現(けいごひょうげん)\nCác cụm từ kính ngữ hay dùng trong công việc và BJT\nーあいにくですが、\nーいかがですか。\nーいたしかねます。\nー お手(て)数(すう)をおかけする。\nーお世(せ)話(わ)になっております。\nーお早(はや)めにご連(れん)絡(らく)ください。\nーお力(ちから)添(ぞ)えありがとうございす。\nーお詫(わ)び申(もう)し上(あ)げます。\nーかしこまりました。\nーくれぐれもお気(き)をつけください。",
+          "back": "ーRất tiếc nhưng...\nーNgài/anh/chị thấy thế nào?; Có muốn... không?\nーChúng tôi không thể...\nーLàm phiền, gây mất công cho quý vị\nーCảm ơn anh/chị đã luôn giúp đỡ, rất cảm ơn sự hỗ trợ của anh/chị (câu mở đầu email công việc rất phổ biến)\nーXin vui lòng liên lạc sớm\nーCảm ơn sự giúp đỡ/hỗ trợ của quý vị\nーXin chân thành xin lỗi\nーTôi đã hiểu rồi ạ (lịch sự hơn 承知(しょうち)しました)\nーXin hãy hết sức cẩn thận",
           "learned": true
         }
       ]
