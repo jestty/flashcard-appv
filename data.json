@@ -962,6 +962,16 @@
           "front": "敬語表現(けいごひょうげん)\nCác cụm từ kính ngữ hay dùng trong công việc và BJT\n\nー 恐(きょう)縮(しゅく)ではございますが、\nー御(ご)愛(あい)顧(こ)いただきありがとうございます。\nー御(おん)礼(れい)申(もう)し上(あ)げます。\nー差(さ)し支(つか)えなければ、\nー失(しつ)礼(れい)ですが、\nー承(しょう)知(ち)しました。\nー申(もう)し上(あ)げにくいのですが、\nー早(さっ)速(そく)ですが、\nー なんなりとお申(もう)し付(つ)けください。\nー取(とり)急(いそ)ぎご報(ほう)告(こく)させていただきました。\nー何卒(なにとぞ)よろしくお願(ねが)いします。",
           "back": "ーThành thật xin lỗi nhưng..., rất ngại phải nhờ nhưng...\nーXin cảm ơn quý khách đã luôn ủng hộ\nーXin chân thành cảm ơn\nーNếu không phiền..., nếu thuận tiện...\nーXin thất lễ nhưng..., cho phép tôi hỏi...\nーTôi đã hiểu, tôi đã tiếp nhận thông tin\nーThật khó nói nhưng..., tôi rất ngại phải nói rằng...\nーXin vào việc ngay, không để quý vị chờ lâu\nーXin cứ tự nhiên yêu cầu bất cứ điều gì\nーTôi xin báo cáo gấp trước tiên như vậy\nーKính mong nhận được sự giúp đỡ/hợp tác",
           "learned": true
+        },
+        {
+          "front": "謙(けん)譲(じょう)語(ご)\nKhiêm nhường ngữ\nー致(いた)(する)\nー 頂(いただ)く(もらう)\nー 伺(うかが)う(行(い)く、来(く)る、訪(たず)ねる)\nー 賜(たまわ)る(もらう)\nー承(うけたまわ)る(聞(き)く、受(う)ける)\nーおる(いる)\nーお待(ま)ちする(待(ま)つ)\nーお目(め)にかかる(会(あ)う)\nーかしこまる(わかる、引(ひ)き受(う)ける)\nー検(けん)討(とう)いたす(検討(けんとう)する)",
+          "back": "ーLàm\nーNhận\nーĐi, đến, ghé thăm\nーNhận (rất trang trọng)\nーNghe, nhận, tiếp nhận\nーCó mặt, ở\nーChờ\nーGặp\nーHiểu, xin vâng\nーXem xét",
+          "learned": true
+        },
+        {
+          "front": "謙(けん)譲(じょう)語(ご)\nKhiêm nhường ngữ\n\nー させていただく(する)\nー差(さ)し上(あ)げる(あげる)\nー 承(しょう)知(ち)する(わかる、引(ひ)き受(う)ける)\nー 存(ぞん)じる(知(し)る、思(おも)う)\nー存(ぞん)じ上(あ)げる(知(し)る)\nー 頂(ちょう)戴(だい)する(もらう)\nー拝(はい)見(けん)する(見(み)る)\nー拝(はい)借(しゃく)する(借(か)りる)\nー拝聴(はいちょう)する(聞(き)く)\nー 拝(はい)読(どく)する(読(よ)む)\nー参(ま)いる(行(い)く、来(く)る)\nー 申(もう)し上(あ)げる(言(い)う)\nー申(もう)し伝(つた)える(伝(つた)える)\nー 申(もう)す(言(い)う)",
+          "back": "ーXin phép được làm\nーTặng, cho\nーHiểu, tiếp nhận\nーBiết, nghĩ\nーBiết (về người nào đó)\nーNhận\nーXem\nーMượn\nーLắng nghe\nーĐọc\nーĐi, đến\nーNói với người bề trên (trang trọng hơn 申す)\nーChuyển lời, nhắn lại\nーNói, tự giới thiệu",
+          "learned": true
         }
       ]
     }
